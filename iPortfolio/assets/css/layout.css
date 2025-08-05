@@ -1,0 +1,363 @@
+
+        /* Variables CSS pour faciliter la personnalisation */
+        :root {
+            --primary-color: #007bff;
+            --primary-hover: #0056b3;
+            --secondary-color: #6c757d;
+            --dark-bg: #212529;
+            --darker-bg: #1a1d20;
+            --white-70: rgba(255, 255, 255, 0.7);
+            --white-50: rgba(255, 255, 255, 0.5);
+            --transition-fast: 0.3s ease;
+            --transition-medium: 0.5s ease;
+            --transition-slow: 0.8s ease;
+        }
+
+       
+
+        /* Footer principal avec animations */
+        .footer-modern {
+            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--darker-bg) 100%);
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition-medium);
+        }
+
+        .footer-modern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        /* Animations pour les sections */
+        .footer-about, .footer-links, .contact-info, .social-links {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .footer-about { animation-delay: 0.1s; }
+        .footer-links { animation-delay: 0.2s; }
+        .contact-info { animation-delay: 0.3s; }
+        .social-links { animation-delay: 0.4s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Effets hover pour les titres */
+        .footer-modern h5 {
+            position: relative;
+            transition: var(--transition-fast);
+            cursor: pointer;
+        }
+
+        .footer-modern h5::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: var(--transition-fast);
+        }
+
+        .footer-modern h5:hover {
+            color: var(--primary-color) !important;
+            transform: translateX(5px);
+        }
+
+        .footer-modern h5:hover::after {
+            width: 100%;
+        }
+
+        /* Liens de navigation avec effets */
+        .footer-links li {
+            transition: var(--transition-fast);
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .footer-links li:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(10px);
+            padding-left: 10px;
+        }
+
+        .footer-links a {
+            transition: var(--transition-fast);
+            position: relative;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color) !important;
+            text-decoration: none;
+        }
+
+        .footer-links a .fa-chevron-right {
+            transition: var(--transition-fast);
+        }
+
+        .footer-links a:hover .fa-chevron-right {
+            transform: translateX(5px);
+            color: var(--primary-color);
+        }
+
+        /* Informations de contact avec animations */
+        .contact-info li {
+            transition: var(--transition-fast);
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info li:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        .contact-info i {
+            transition: var(--transition-fast);
+        }
+
+        .contact-info li:hover i {
+            transform: scale(1.2);
+            color: var(--primary-color);
+        }
+
+        /* Boutons sociaux avec effets avancés */
+        .btn-social {
+            width: 45px;
+            height: 45px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-fast);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-social::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: var(--primary-color);
+            border-radius: 50%;
+            transition: var(--transition-medium);
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        .btn-social i {
+            position: relative;
+            z-index: 1;
+            transition: var(--transition-fast);
+        }
+
+        .btn-social:hover::before {
+            width: 100%;
+            height: 100%;
+        }
+
+        .btn-social:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 123, 255, 0.4);
+            border-color: var(--primary-color);
+        }
+
+        .btn-social:hover i {
+            color: white;
+            transform: rotate(360deg);
+        }
+
+        /* Effets spécifiques par réseau social */
+        .btn-social:nth-child(1):hover { /* Facebook */
+            box-shadow: 0 10px 20px rgba(59, 89, 152, 0.4);
+        }
+
+        .btn-social:nth-child(2):hover { /* YouTube */
+            box-shadow: 0 10px 20px rgba(255, 0, 0, 0.4);
+        }
+
+        .btn-social:nth-child(3):hover { /* Instagram */
+            box-shadow: 0 10px 20px rgba(225, 48, 108, 0.4);
+        }
+
+        .btn-social:nth-child(4):hover { /* LinkedIn */
+            box-shadow: 0 10px 20px rgba(0, 119, 181, 0.4);
+        }
+
+        /* Newsletter avec animations */
+        .newsletter {
+            transition: var(--transition-fast);
+        }
+
+        .newsletter:hover {
+            transform: translateY(-2px);
+        }
+
+        .newsletter .form-control {
+            transition: var(--transition-fast);
+            border: 2px solid transparent;
+        }
+
+        .newsletter .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+            transform: scale(1.02);
+        }
+
+        .newsletter .btn {
+            transition: var(--transition-fast);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .newsletter .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: var(--transition-fast);
+        }
+
+        .newsletter .btn:hover::before {
+            left: 100%;
+        }
+
+        .newsletter .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+        }
+
+        /* Badges de confiance avec effets */
+        .trust-badges img {
+            transition: var(--transition-fast);
+            filter: grayscale(50%);
+            opacity: 0.7;
+        }
+
+        .trust-badges img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        /* Liens légaux avec effets */
+        .legal-links a {
+            transition: var(--transition-fast);
+            position: relative;
+        }
+
+        .legal-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--primary-color);
+            transition: var(--transition-fast);
+        }
+
+        .legal-links a:hover {
+            color: var(--primary-color) !important;
+            transform: translateY(-2px);
+        }
+
+        .legal-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Animation de l'année courante */
+        .current-year {
+            display: inline-block;
+            transition: var(--transition-fast);
+        }
+
+        .current-year:hover {
+            color: var(--primary-color);
+            transform: scale(1.1);
+        }
+
+        /* Effets de pulsation pour attirer l'attention */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .newsletter .btn {
+            animation: pulse 2s infinite;
+        }
+
+        .newsletter .btn:hover {
+            animation: none;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .footer-modern h5:hover {
+                transform: none;
+            }
+            
+            .footer-links li:hover {
+                transform: none;
+                padding-left: 0;
+            }
+            
+            .btn-social:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        /* Effet de particules en arrière-plan */
+        .footer-modern::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(0, 123, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 123, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 60%, rgba(0, 123, 255, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Classe utilitaire pour le texte blanc avec opacité */
+        .text-white-70 {
+            color: var(--white-70) !important;
+        }
+
+        .text-white-50 {
+            color: var(--white-50) !important;
+        }
