@@ -45,7 +45,31 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+<style>
+   .img a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* coins arrondis */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ombre douce */
+}
 
+.img a img {
+  width: 100%;         /* Garde la largeur responsive dans la colonne */
+  height: 350px;       /* Tu peux ajuster cette valeur (150px, 180px, etc.) */
+  object-fit: cover;   /* Garde un bon cadrage même avec une taille fixe */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.img a:hover img {
+  transform: scale(1.05); /* zoom léger */
+  filter: brightness(0.9); /* effet sombre au survol */
+}
+</style>
 </head>
 
 <body>
@@ -252,33 +276,28 @@
         </div>
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-                <a href="assets/img/IMG-20220617-WA0027 (1).jpg" class="portfolio-lightbox" title="Voir l'image">
-                  <img src="assets/img/IMG-20220617-WA0027 (1).jpg" class="img-fluid" alt="">
-                </a>
-              <div class="portfolio-links">
-                <a href="assets/img/IMG-20220617-WA0027 (1).jpg" class="portfolio-lightbox" title="Voir l'image">
-                  <i class="bx bx-plus"></i>
-                </a>
-                <a href="emissions/debattons.html" title="More Details">
-                   ➤  détails 
-                </a>
-              </div>
+            <div class="img">
+              <a href="emissions/debattons.html" title="Voir les détails de l’émission">
+                <img src="assets/img/IMG-20220617-WA0027 (1).jpg" class="img-fluid hover-zoom" alt="Débattons">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="img">
+              <a href="emissions/debattons.html" title="Voir les détails de l’émission">
+                <img src="assets/img/IMG-20220617-WA0027 (1).jpg" class="img-fluid hover-zoom" alt="Débattons">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="img">
+              <a href="emissions/debattons.html" title="Voir les détails de l’émission">
+                <img src="assets/img/IMG-20220617-WA0027 (1).jpg" class="img-fluid hover-zoom" alt="Débattons">
+              </a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/IMG-20220617-WA0027 (1).jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/sur.png" class="portfolio-lightbox" title="Voir l'image">
-                  <i class="bx bx-plus"></i>
-                </a>
-                <a href="#" title="More Details">
-                   ➤  détails 
-                </a>
-              </div>
-            </div>
+            
           </div>
                   
       </div>
