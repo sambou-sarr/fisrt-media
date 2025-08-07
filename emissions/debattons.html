@@ -19,6 +19,7 @@
    
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
   <!-- Vendor CSS Files -->
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
@@ -31,6 +32,7 @@
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
   <!-- =======================================================
   * Template Name: iPortfolio
   * Updated: Jan 09 2024 with Bootstrap v5.3.2
@@ -38,6 +40,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
 </head>
 
 <body>
@@ -65,76 +68,438 @@
       </div>
     </div>
   </nav>
+<main id="main">
 
-  <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs" style="margin-top: 80px;">
-    <div class="container">
+    <section id="breadcrumbs" class="breadcrumbs" style="margin-top: -55px;">
+      <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-        <h2 class="display-6 d-flex align-items-center">
-            <img src="../assets/img/IMG-20220617-WA0027 (1).jpg" style="width: 100px; height: 90px;" alt="">
-            <span class="ms-3">Débattons Lycée</span>
-        </h2>
-        <ol class="breadcrumb bg-transparent p-0 m-0">
-            <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
-            <li class="breadcrumb-item active">Débattons Lycée</li>
-        </ol>
+          <h2 class="display-6 d-flex align-items-center">
+            <img src="../assets/img/logodebattonlycee.jpg" style="width: 100px; height: 90px;" alt="Logo Débattons">
+            <span class="ms-3">Débattons</span>
+          </h2>
+          <ol class="breadcrumb bg-transparent p-0 m-0">
+            <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
+            <li class="breadcrumb-item"><a href="../index.html#portfolio">Émissions</a></li>
+            <li class="breadcrumb-item active">Débattons</li>
+          </ol>
         </div>
-    </div>
+      </div>
     </section>
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <!-- ======= Hero Section Émission ======= -->
+    <section id="emission-hero" class="emission-hero">
+      
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
+            <div class="emission-slider swiper">
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                  <img src="../assets/img/debat.jpg" alt="Plateau de l'émission Débattons">
                 </div>
-
+              </div>
+              <div class="swiper-pagination"></div>
+            </div><br>
+            <div class="emission-description">
+              <h2>Une Plateforme de Débat Citoyen</h2>
+              <p>
+                "Débattons" est une émission phare de First Media qui rassemble les jeunes autour de sujets d'actualité, 
+                sociétaux et politiques. L'objectif est de développer l'esprit critique et les compétences oratoires 
+                des participants tout en favorisant un dialogue constructif entre différentes générations.
+              </p>
+            </div><br>
+            <div class="emission-slider swiper" style="margin-top: 15px;">
+              <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                  <img src="../assets/img/postbac1.jpg" alt="Plateau de l'émission Débattons">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="../assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                  <img src="../assets/img/postbac1.jpg" alt="Plateau de l'émission Débattons">
                 </div>
-
+                <div class="swiper-slide">
+                  <img src="../assets/img/postbac1.jpg" alt="Plateau de l'émission Débattons">
+                </div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+            <div class="emission-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img src="../assets/img/nd.jpg" alt="Plateau de l'émission Débattons">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div><br>
+            <div class="emission-info">
+              <h3>Informations de l'Émission</h3>
+              <ul class="debat-list">
+                <li style="--item-index: 0;"><strong>Genre</strong>: Débat & Discussion</li>
+                <li style="--item-index: 1;"><strong>Diffusion</strong>: Hebdomadaire</li>
+                <li style="--item-index: 2;"><strong>Durée</strong>: 60 minutes</li>
+                <li style="--item-index: 3;"><strong>Public</strong>: Lycéens & Étudiants</li>
+                <li style="--item-index: 4;"><strong>Première</strong>: Janvier 2020</li>
+                <li style="--item-index: 5;"><strong>Saisons</strong>: 4 saisons produites</li>
               </ul>
             </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Section Concept ======= -->
+    <section class="emission-concept">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="concept-content">
+              <h2>Le Concept de l'Émission</h2>
+              <p class="lead">
+                "Débattons" met en scène des débats structurés entre équipes d'étudiants sur des thématiques 
+                choisies par des personnalités du monde politique, économique ou académique.
               </p>
+              
+              <h3>Format de l'Émission</h3>
+              <ul class="advantages-list">
+                <li style="--item-index: 0;">Deux équipes de 3 participants chacune</li>
+                <li style="--item-index: 1;">Un modérateur professionnel</li>
+                <li style="--item-index: 2;">Jury composé d'experts du domaine</li>
+                <li style="--item-index: 3;">Temps de préparation de 30 minutes</li>
+                <li style="--item-index: 4;">Débat en direct de 45 minutes</li>
+                <li style="--item-index: 5;">Délibération et annonce du vainqueur</li>
+              </ul>
             </div>
           </div>
 
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="concept-image">
+              <img src="../assets/img/debattons1.jpg" alt="Concept Débattons" class="img-fluid rounded shadow-lg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Section Variantes ======= -->
+    <section class="emission-variants section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Les Deux Variantes de Débattons</h2>
+          <p>L'émission se décline en deux formats adaptés aux différents niveaux d'éducation</p>
         </div>
 
+        <div class="row">
+          <!-- Débattons Lycée -->
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="variant-card lycee-card">
+              <div class="variant-header">
+                <img src="../assets/img/logodebattonlycee.jpg" alt="Logo Débattons Lycée" class="variant-logo">
+                <h3>DÉBATTONS LYCÉE</h3>
+              </div>
+              <div class="variant-content">
+                <p>
+                  Destiné aux élèves du secondaire, cette version met l'accent sur l'apprentissage 
+                  des techniques de débat et le développement de l'esprit critique chez les jeunes.
+                </p>
+                
+                <h4>Conditions d'Éligibilité</h4>
+                <ul class="eligibility-list">
+                  <li style="--item-index: 0;">Être âgé de 15 à 18 ans</li>
+                  <li style="--item-index: 1;">Être inscrit dans un lycée</li>
+                  <li style="--item-index: 2;">Avoir un niveau académique satisfaisant</li>
+                  <li style="--item-index: 3;">Présenter une lettre de motivation</li>
+                </ul>
+
+                <h4>Objectifs Pédagogiques</h4>
+                <ul class="debat-list">
+                  <li style="--item-index: 0;">Développer l'expression orale</li>
+                  <li style="--item-index: 1;">Renforcer la confiance en soi</li>
+                  <li style="--item-index: 2;">Améliorer la culture générale</li>
+                  <li style="--item-index: 3;">Préparer aux études supérieures</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Débattons Post Bac -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="variant-card postbac-card">
+              <div class="variant-header">
+                <img src="../assets/img/logodebattonspbac.jpg" alt="Logo Débattons Post Bac" class="variant-logo">
+                <h3>DÉBATTONS POST BAC</h3>
+              </div>
+              <div class="variant-content">
+                <p>
+                  Version universitaire qui aborde des sujets plus complexes et techniques, 
+                  préparant les étudiants aux défis du monde professionnel et citoyen.
+                </p>
+                
+                <h4>Conditions d'Éligibilité</h4>
+                <ul class="eligibility-list">
+                  <li style="--item-index: 0;">Être âgé de 18 à 35 ans</li>
+                  <li style="--item-index: 1;">Être inscrit dans une école supérieure</li>
+                  <li style="--item-index: 2;">Avoir le Baccalauréat</li>
+                  <li style="--item-index: 3;">Ne pas dispenser de cours</li>
+                </ul>
+
+                <h4>Avantages Participants</h4>
+                <ul class="advantages-list">
+                  <li style="--item-index: 0;">Renforcement de l'image de leader</li>
+                  <li style="--item-index: 1;">Leadership panafricain</li>
+                  <li style="--item-index: 2;">Crédibilité auprès des jeunes</li>
+                  <li style="--item-index: 3;">Innovation et développement</li>
+                  <li style="--item-index: 4;">Visibilité nationale et internationale</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </section>
+
+    <!-- ======= Section Équipe ======= -->
+    <section class="team-composition">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="./../assets/img/logodebattonlycee.jpg" alt="Logo Débattons" class="logo-big img-fluid">
+          </div>
+          
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="team-content">
+              <h3>Composition de l'Équipe</h3>
+              <p class="lead">Chaque équipe participante doit respecter une structure précise pour garantir l'équité et la qualité des débats.</p>
+              
+              <ul>
+                <li style="--item-index: 0;">L'équipe est composée de 03 étudiant(e)s</li>
+                <li style="--item-index: 1;">Un coordonnateur est obligatoire</li>
+                <li style="--item-index: 2;">Un capitaine est désigné parmi les débatteurs</li>
+                <li style="--item-index: 3;">Le niveau est laissé à l'appréciation de l'école</li>
+              </ul>
+
+              <div class="team-roles mt-4">
+                <h4>Rôles et Responsabilités</h4>
+                <div class="role-item">
+                  <h5><i class="fas fa-crown text-warning"></i> Le Capitaine</h5>
+                  <p>Dirige l'équipe, présente les arguments principaux et conclut le débat.</p>
+                </div>
+                <div class="role-item">
+                  <h5><i class="fas fa-users text-info"></i> Les Débatteurs</h5>
+                  <p>Développent les arguments, répondent aux questions et participent aux échanges.</p>
+                </div>
+                <div class="role-item">
+                  <h5><i class="fas fa-clipboard-list text-success"></i> Le Coordonnateur</h5>
+                  <p>Organise la préparation, gère le temps et assiste l'équipe en coulisses.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Section Processus ======= -->
+    <section class="emission-process section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Processus de Participation</h2>
+          <p>De l'inscription à la finale, découvrez toutes les étapes pour participer à Débattons</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="process-timeline">
+              <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-marker">1</div>
+                <div class="timeline-content">
+                  <h4>Inscription</h4>
+                  <p>Les écoles soumettent leur candidature avec la composition de leur équipe et une lettre de motivation.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-marker">2</div>
+                <div class="timeline-content">
+                  <h4>Sélection</h4>
+                  <p>Un jury examine les candidatures et sélectionne les équipes participantes selon les critères d'éligibilité.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-marker">3</div>
+                <div class="timeline-content">
+                  <h4>Formation</h4>
+                  <p>Les équipes sélectionnées participent à des ateliers de formation sur les techniques de débat.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="timeline-marker">4</div>
+                <div class="timeline-content">
+                  <h4>Préparation</h4>
+                  <p>Annonce du thème et période de préparation de 2 semaines pour rechercher et structurer les arguments.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="timeline-marker">5</div>
+                <div class="timeline-content">
+                  <h4>Enregistrement</h4>
+                  <p>Débat en direct dans les studios de First Media avec jury professionnel et public.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="timeline-marker">6</div>
+                <div class="timeline-content">
+                  <h4>Diffusion</h4>
+                  <p>L'émission est diffusée sur les chaînes partenaires et les plateformes digitales de First Media.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Section Impact ======= -->
+    <section class="emission-impact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Impact et Résultats</h2>
+          <p>Débattons a transformé la vie de centaines de jeunes participants</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up">
+            <div class="impact-stat">
+              <div class="stat-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Participants</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="impact-stat">
+              <div class="stat-icon">
+                <i class="fas fa-school"></i>
+              </div>
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Écoles Partenaires</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="impact-stat">
+              <div class="stat-icon">
+                <i class="fas fa-tv"></i>
+              </div>
+              <div class="stat-number">80+</div>
+              <div class="stat-label">Émissions Produites</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="impact-stat">
+              <div class="stat-icon">
+                <i class="fas fa-eye"></i>
+              </div>
+              <div class="stat-number">2M+</div>
+              <div class="stat-label">Vues Cumulées</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div class="testimonial-section">
+              <h3>Témoignages de Participants</h3>
+              <div class="testimonial-carousel">
+                <div class="testimonial-item">
+                  <blockquote>
+                    "Participer à Débattons a complètement changé ma façon de voir les choses. J'ai appris à structurer ma pensée et à défendre mes idées avec conviction."
+                  </blockquote>
+                  <cite>- Aminata Diallo, Lycée Blaise Diagne</cite>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Section Contact/Inscription ======= -->
+    <section class="emission-contact section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Rejoignez Débattons</h2>
+          <p>Votre école souhaite participer ? Contactez-nous pour plus d'informations</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="contact-form">
+              <form action="#" method="post">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="school-name">Nom de l'École</label>
+                      <input type="text" class="form-control" id="school-name" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="contact-person">Personne de Contact</label>
+                      <input type="text" class="form-control" id="contact-person" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="phone">Téléphone</label>
+                      <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="variant">Variante d'Intérêt</label>
+                  <select class="form-control" id="variant" required>
+                    <option value="">Choisissez une variante</option>
+                    <option value="lycee">Débattons Lycée</option>
+                    <option value="postbac">Débattons Post Bac</option>
+                    <option value="both">Les deux variantes</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Décrivez votre motivation et vos attentes..."></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary btn-lg">Envoyer la Candidature</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main><!-- End #main -->
+
+
 
     <!-- ======= Footer ======= -->
 <footer class="footer-modern bg-dark w-100">
@@ -234,6 +599,24 @@
 </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swipers = document.querySelectorAll('.emission-slider');
+  swipers.forEach((el) => {
+    new Swiper(el, {
+      loop: true,
+      autoplay: {
+        delay: 3000, // 3 secondes
+        disableOnInteraction: false, // continuer même après interaction
+      },
+      pagination: {
+        el: el.querySelector('.swiper-pagination'),
+        clickable: true,
+      },
+    });
+  });
+</script>
+
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
