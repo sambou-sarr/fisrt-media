@@ -45,31 +45,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-<style>
-   .img a {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px; /* coins arrondis */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ombre douce */
-}
+  <link rel="stylesheet" href="style1.css">
 
-.img a img {
-  width: 100%;         /* Garde la largeur responsive dans la colonne */
-  height: 350px;       /* Tu peux ajuster cette valeur (150px, 180px, etc.) */
-  object-fit: cover;   /* Garde un bon cadrage même avec une taille fixe */
-  transition: transform 0.3s ease, filter 0.3s ease;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-.img a:hover img {
-  transform: scale(1.05); /* zoom léger */
-  filter: brightness(0.9); /* effet sombre au survol */
-}
-</style>
 </head>
 
 <body>
@@ -78,7 +55,7 @@
     <div class="container d-flex align-items-center justify-content-between">
      <!-- Logo + Titre -->
       <a class="navbar-brand d-flex align-items-center" href="index.html" style="color: white;">
-        <img src="assets/img/logo.png" alt="Logo" class="me-2" style="width: 60px; height: 60px;">
+        <img src="assets/img/logoo.png" alt="Logo" class="me-2" style="width: 60px; height: 60px;">
         <span>First Media</span>
       </a>
       <!-- Bouton responsive -->
@@ -100,12 +77,14 @@
   </nav>
              <!-- End NAVBAR -->
              <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center" style="background: url('iPortfolio/assets/img/herio-bg.jpg ') top center; background-size: cover;">
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <img src="assets/img/logoo.png" alt="">
     <div class="hero-container" data-aos="fade-in">
       <h1 class="display-1">FIRST MEDIA Group</h1>
       <p>Nous sommes <span class="typed" data-typed-items=" Freelancer, Photographer"></span></p>
     </div>
   </section>
+
              <!-- End Hero -->
   <main id="main">
              <!-- ======= About Section ======= -->
@@ -117,7 +96,7 @@
         </div>
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/logo.png" class="img-fluid rounded" alt="Studio audiovisuel First Media">
+            <img src="assets/img/logoo.png" class="img-fluid rounded" alt="Studio audiovisuel First Media">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
              <h3>Production Audiovisuelle & Communication Digitale</h3>
@@ -321,7 +300,9 @@
           </div>
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/logoZERO-FAUTE.png" class="img-fluid rounded" alt="Studio audiovisuel First Media">
+            <a href="">
+              <img src="assets/img/logoZERO-FAUTE.png" class="img-fluid rounded" alt="Studio audiovisuel First Media">
+            </a>
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Jeu Éducatif Primé & Innovation Pédagogique</h3>
