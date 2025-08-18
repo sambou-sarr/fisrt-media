@@ -51,30 +51,35 @@
 
 <body>
             <!-- ======= NAVBAR ======= -->
-  <nav class="navbar navbar-expand-lg custom-navbar fixed-top bg-dark">
-    <div class="container d-flex align-items-center justify-content-between">
-     <!-- Logo + Titre -->
-      <a class="navbar-brand d-flex align-items-center" href="index.html" style="color: white;">
-        <img src="assets/img/logoo.png" alt="Logo" class="me-2" style="width: 60px; height: 60px;">
-        <span>First Media</span>
-      </a>
-      <!-- Bouton responsive -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Liens -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">Émissions</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#abouts">À Propos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#zerofaute">Zéro Faute</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" id="contact-link">Contact</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top bg-dark">
+  <div class="container d-flex align-items-center justify-content-between">
+    <!-- Logo + Titre -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html" style="color: white;">
+      <img src="assets/img/logoo.png" alt="Logo" class="me-2" style="width: 60px; height: 60px;">
+      <!-- Le texte sera caché en mobile et visible seulement sur grand écran -->
+      <span class="d-none d-lg-inline">First Media</span>
+    </a>
+    
+    <!-- Bouton responsive aligné avec le logo -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Liens -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Émissions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#abouts">À Propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#zerofaute">Zéro Faute</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" id="contact-link">Contact</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
+
              <!-- End NAVBAR -->
              <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
@@ -86,9 +91,9 @@
   </section>
 
              <!-- End Hero -->
-  <main id="main">
+  <main id="main" >
              <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about" style="margin-top: -70px;">
       <div class="container">
         <div class="section-title">
           <h2>Nos Services</h2>
@@ -254,36 +259,51 @@
     </section><!-- End Portfolio Section -->
 
             <!-- ======= Services Section ======= -->
-    <section id="abouts" class="about">
-          <div class="container">
+ <section id="abouts" class="about">
+  <div class="container">
 
-            <div class="section-title">
-              <h2>À propos de First Media</h2>
-              <p>
-                <strong>First Media</strong> est une agence audiovisuelle basée au Sénégal, dédiée à la **création de contenus innovants et impactants**. 
-                Nous accompagnons entreprises, institutions et particuliers dans la réalisation de vidéos professionnelles, reportages photos et créations sonores. 
-                Notre mission : <em>valoriser vos idées</em> à travers une production de haute qualité, qu’il s’agisse de contenus éducatifs, culturels, corporates ou promotionnels.
-              </p>
-            </div>
+    <div class="section-title ">
+      <h2>À propos de First Media</h2>
+      <p>
+        <strong>First Media</strong> est une agence audiovisuelle basée au Sénégal, dédiée à la 
+        <strong>création de contenus innovants et impactants</strong>. 
+        Nous accompagnons entreprises, institutions et particuliers dans la réalisation de vidéos professionnelles, 
+        reportages photos et créations sonores. 
+        Notre mission : <em>valoriser vos idées</em> à travers une production de haute qualité.
+      </p>
+    </div>
 
-            <div class="row content">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-check-circle"></i> Production audiovisuelle HD et 4K</li>
-                  <li><i class="bi bi-check-circle"></i> Réalisation de documentaires & spots publicitaires</li>
-                  <li><i class="bi bi-check-circle"></i> Captation & montage vidéo pour événements</li>
-                </ul>
-              </div>
-              <div class="col-lg-6 pt-4 pt-lg-0">
-                <p>
-                  Notre équipe jeune et créative vous garantit un service rapide, professionnel et adapté à vos besoins. 
-                  Faites confiance à First Media pour transformer votre vision en images captivantes.
-                </p>
-              </div>
-            </div>
+    <div class="row align-items-center">
+      
+      <!-- Colonne gauche : slider -->
+      <div class="col-lg-6">
+        <div class="about-slider">
+          <img src="assets/img/equipe/DSC_2539.jpg" class="active" alt="Production audiovisuelle">
+          <img src="assets/img/equipe/DSC_2549.jpg" alt="Équipe en tournage">
+          <img src="assets/img/equipe/DSC_2594.jpg" alt="Montage vidéo">
+          <img src="assets/img/equipe/DSC_2737.jpg" alt="Montage vidéo">
+          <img src="assets/img/equipe/DSC_2762.jpg" alt="Montage vidéo">
+        </div>
+      </div>
 
-          </div>
-    </section>
+      <!-- Colonne droite : infos -->
+      <div class="col-lg-6 pt-4 pt-lg-0">
+        <ul>
+          <li><i class="bi bi-check-circle"></i> Production audiovisuelle HD et 4K</li>
+          <li><i class="bi bi-check-circle"></i> Réalisation de documentaires & spots publicitaires</li>
+          <li><i class="bi bi-check-circle"></i> Captation & montage vidéo pour événements</li>
+        </ul>
+        <p>
+          Notre équipe jeune et créative vous garantit un service rapide, professionnel et adapté à vos besoins. 
+          Faites confiance à First Media pour transformer votre vision en images captivantes.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
   <section id="zerofaute" class="about">
       <div class="container">
         <div class="section-title">
@@ -410,6 +430,53 @@
           </div>
     </section>
               <!-- End Testimonials Section -->
+    <section id="partenaires" class="testimonials section-bg">
+          <div class="container">
+
+            <div class="section-title">
+              <h2>Ils nous ont fait confiance</h2>
+              <p>Des partenaires, clients et collaborateurs partagent leur expérience avec First Media.</p>
+            </div>
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item" data-aos="fade-up">
+                    <img src="assets/img/logo_maxit.png" class="testimonial-img" alt="">
+                    <h3>max it</h3>
+                  </div>
+                </div>
+
+                  <div class="swiper-slide">
+                  <div class="testimonial-item" data-aos="fade-up">
+                    <img src="assets/img/partenaire/villededakar.png" class="testimonial-img" alt="">
+                    <h3>Ville de Dakar</h3>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item" data-aos="fade-up">
+                    <img src="assets/img/partenaire/image.png" class="testimonial-img" alt="">
+                    <h3>Orange money</h3>
+                  </div>
+                </div>
+
+
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item" data-aos="fade-up">
+                    <img src="assets/img/partenaire/or.png" class="testimonial-img" alt="">
+                    <h3>Orange</h3>
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+    </section>
   </main>
   <!-- End #main -->
 <br><br>
@@ -559,6 +626,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+const aboutSlides = document.querySelectorAll(".about-slider img");
+let aboutCurrent = 0;
+
+function showAboutSlide(index) {
+  aboutSlides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) slide.classList.add("active");
+  });
+}
+
+// afficher la première image
+showAboutSlide(aboutCurrent);
+
+// défiler toutes les 5s
+setInterval(() => {
+  aboutCurrent = (aboutCurrent + 1) % aboutSlides.length;
+  showAboutSlide(aboutCurrent);
+}, 5000);
 
 </script>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
