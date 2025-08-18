@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZÉRO FAUTE - Le Jeu Éducatif Révolutionnaire</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #a6d388 0%, #457b9d 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .logo-animation {
+            animation: logoEntrance 2s ease-out forwards;
+            opacity: 0;
+            transform: scale(0.8) translateY(30px);
+        }
+        
+        .subtitle-animation {
+            animation: subtitleFade 2.5s ease-out 0.5s forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .accent-animation {
+            animation: accentPulse 3s ease-in-out 1s forwards;
+            opacity: 0;
+        }
+        
+        @keyframes logoEntrance {
+            0% {
+                opacity: 0;
+                transform: scale(0.8) translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+        
+        @keyframes subtitleFade {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes accentPulse {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            50% {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .floating-letters {
+            position: absolute;
+            font-size: 120px;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.1);
+            font-family: 'Montserrat', sans-serif;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        
+        .letter-1 { top: 10%; left: 10%; animation-delay: 0s; }
+        .letter-2 { top: 20%; right: 15%; animation-delay: 1s; }
+        .letter-3 { bottom: 30%; left: 20%; animation-delay: 2s; }
+        .letter-4 { bottom: 15%; right: 10%; animation-delay: 3s; }
+    </style>
+</head>
+<body><!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Faute - Jeu Éducatif Révolutionnaire | First Media</title>
+     <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+        <!-- AOS Animation Library -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+          <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+            <!-- ======= NAVBAR ======= -->
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top bg-dark">
+    <div class="container d-flex align-items-center justify-content-between">
+     <!-- Logo + Titre -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html" style="color: white;">
+        <img src="assets/img/logoo.png" alt="Logo" class="me-2" style="width: 60px; height: 60px;">
+        <span>First Media</span>
+      </a>
+      <!-- Bouton responsive -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Liens -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html#">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Émissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#abouts">À Propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#zerofaute">Zéro Faute</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact" id="contact-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section section-light" id="accueil" >
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 mx-auto text-center" data-aos="fade-right">
+                    <h1 class="hero-title"><img src="assets/img/logoZERO-FAUTE.png" alt="Zéro Faute Logo"></h1>
+                    <p class="hero-subtitle">
+                        Découvrez le jeu éducatif révolutionnaire développé par First Media Group ! 
+                        Zero Faute transforme l'apprentissage de l'orthographe française en une aventure 
+                        passionnante et interactive. Ce jeu primé combine innovation pédagogique et 
+                        plaisir de jouer pour une maîtrise parfaite de la langue française.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <button class="btn btn-danger-custom">
+                            <i class="bi bi-play-circle-fill me-2"></i>Découvrir le Jeu
+                        </button>
+                       <!-- <button class="btn btn-outline-custom">
+                            <i class="bi bi-download me-2"></i>Télécharger
+                        </button>-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section section-light" id="zerofaute">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Jeu Éducatif Primé & Innovation Pédagogique</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Zero Faute révolutionne l'apprentissage en combinant technologie de pointe, 
+                méthodes pédagogiques éprouvées et plaisir de jouer pour une maîtrise parfaite de l'orthographe française.
+            </p>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-trophy-fill"></i>
+                        </div>
+                        <h3 class="feature-title">Récompenses</h3>
+                        <p class="feature-description">Multiples prix éducatifs reconnaissant l'excellence pédagogique et l'innovation du jeu.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-gamepad2"></i>
+                        </div>
+                        <h3 class="feature-title">Format Ludique</h3>
+                        <p class="feature-description">Jeu interactif et ludique qui transforme l'apprentissage en aventure passionnante.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-mortarboard-fill"></i>
+                        </div>
+                        <h3 class="feature-title">Public Cible</h3>
+                        <p class="feature-description">Conçu spécialement pour les élèves et étudiants de tous niveaux.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-book-fill"></i>
+                        </div>
+                        <h3 class="feature-title">Pédagogie</h3>
+                        <p class="feature-description">Méthodes pédagogiques éprouvées et validées par des experts en éducation.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <h3 class="feature-title">Résultats</h3>
+                        <p class="feature-description">Amélioration garantie des compétences orthographiques avec suivi des progrès.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <h3 class="feature-title">Made in Sénégal</h3>
+                        <p class="feature-description">Créé par First Media Group, fierté de l'innovation éducative sénégalaise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+   <section class="section section-white">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Aperçu du Jeu</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+      Découvrez le jeu éducatif physique Zero Faute et explorez son plateau, ses cartes et ses récompenses !
+    </p>
+    
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="screenshot-item">
+          <img src="assets/img/JEUX-ZERO-FAUTE-A2.jpg" alt="Boîte du Jeu" class="img-fluid rounded">
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="screenshot-item">
+          <img src="assets/img/JEUX-ZERO-FAUTE-A2.jpg" alt="Cartes du Jeu" class="img-fluid rounded">
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="screenshot-item">
+          <img src="assets/img/JEUX-ZERO-FAUTE-A2.jpg" alt="Plateau du Jeu" class="img-fluid rounded">
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="screenshot-item">
+          <img src="assets/img/JEUX-ZERO-FAUTE-A2.jpg" alt="Pions du Jeu" class="img-fluid rounded">
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+        <div class="screenshot-item">
+          <img src="assets/img/JEUX-ZERO-FAUTE-A2.jpg" alt="Règles du Jeu" class="img-fluid rounded">
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="700">
+        <div class="screenshot-item">
+          <img src="assets/img/JEUX-ZERO-FAUTE-A2.jpg" alt="Récompenses" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Awards Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Prix et Reconnaissances</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Zero Faute a été reconnu par de nombreuses institutions pour son excellence éducative
+            </p>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="award-item">
+                        <div class="award-icon">🏆</div>
+                        <h4 class="award-title">Prix de l'Innovation Éducative</h4>
+                        <p class="award-description">Récompense pour l'approche révolutionnaire de l'apprentissage</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="award-item">
+                        <div class="award-icon">🥇</div>
+                        <h4 class="award-title">Meilleur Jeu Éducatif</h4>
+                        <p class="award-description">Distinction pour l'excellence en matière de jeu éducatif</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="award-item">
+                        <div class="award-icon">⭐</div>
+                        <h4 class="award-title">Prix du Public</h4>
+                        <p class="award-description">Choix des utilisateurs pour la qualité et l'efficacité</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="award-item">
+                        <div class="award-icon">🎖️</div>
+                        <h4 class="award-title">Certification Pédagogique</h4>
+                        <p class="award-description">Validé par les experts en éducation et pédagogie</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Prêt à Révolutionner l'Apprentissage ?</h2>
+                    <p class="section-subtitle">
+                        Rejoignez des milliers d'apprenants qui ont déjà transformé leur maîtrise de l'orthographe 
+                        avec Zero Faute. L'aventure éducative vous attend !
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+ <footer class="footer-modern bg-dark w-100">
+    <div class="container pt-5">
+        <div class="row g-4">
+            <!-- Section À propos -->
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="footer-about">
+                    <h5 class="text-uppercase text-white mb-4">À propos</h5>
+                    <p class="text-white-70 mb-4">
+                        First Media - Première structure de communication audiovisuelle sénégalaise spécialisée dans la production de contenus éducatifs et innovants.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Liens rapides -->
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <h5 class="text-uppercase text-white mb-4">Navigation</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Accueil</a></li>
+                    <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Équipe</a></li>
+                    <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Réalisations</a></li>
+                    <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Coordonnées -->
+            <div class="col-md-4 col-lg-3 mb-4">
+                <h5 class="text-uppercase text-white mb-4">Coordonnées</h5>
+                <ul class="list-unstyled contact-info">
+                    <li class="mb-3 d-flex">
+                        <i class="fas fa-map-marker-alt text-primary mt-1 me-3"></i>
+                        <div>
+                            <span class="text-white-70 d-block">03 rue Beranger Feraud Immeuble CTIC Dakar</span>
+                            <span class="text-white-70">Dakar , Senegal</span>
+                        </div>
+                    </li>
+                    <li class="mb-3">
+                        <a href="tel:+221776317892" class="text-white-70 text-decoration-none d-flex align-items-center">
+                            <i class="fas fa-phone text-primary me-3"></i>
+                            <div>
+                                <span class="d-block">+221 33 842 49 00</span>
+                                <span class="d-block">+221 77 631 78 92</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="mailto:info@first-media-groupe.com" class="text-white-70 text-decoration-none d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            info@first-media-groupe.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Réseaux sociaux -->
+            <div class="col-md-4 col-lg-4 mb-4">
+                <h5 class="text-uppercase text-white mb-4">Réseaux sociaux</h5>
+                <div class="social-links mb-4">
+                    <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+                <div class="newsletter">
+                    <h6 class="text-white mb-3">Abonnez-vous à notre newsletter</h6>
+                    <form class="input-group">
+                        <input type="email" class="form-control border-0" placeholder="Votre email">
+                        <button class="btn btn-primary" type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mentions légales -->
+        <div class="footer-legal py-4 border-top border-dark">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <div class="legal-links">
+                        <a href="#" class="text-white-70 me-3">Mentions légales</a>
+                        <a href="#" class="text-white-70 me-3">Conditions</a>
+                        <a href="#" class="text-white-70">Politique de confidentialité</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="text-white-70 mb-0">
+                        &copy; <span class="current-year"></span> FIRST MEDIA Group — Tous droits réservés — Développé par
+                        <a href="#" class="text-primary text-decoration-none">sambou sarr</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Counter Animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const duration = 2000;
+                const step = target / (duration / 16);
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    counter.textContent = Math.floor(current).toLocaleString();
+                }, 16);
+            });
+        }
+
+        // Trigger counter animation when stats section is visible
+        const statsSection = document.querySelector('.stats-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(statsSection);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(44, 62, 80, 0.95)';
+                navbar.style.backdropFilter = 'blur(10px)';
+            } else {
+                navbar.style.background = 'var(--dark-bg)';
+                navbar.style.backdropFilter = 'none';
+            }
+        });
+
+        // Add active class to navigation links based on scroll position
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+</body>
+</html>
+
