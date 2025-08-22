@@ -202,3 +202,16 @@
             box-shadow: 0 8px 25px rgba(231, 76, 60, 0.6);
             color: white;
         }
+.emission-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Effet hover (zoom + légère rotation + glow) */
+.emission-logo:hover {
+  transform: scale(1.2) rotate(5deg);
+  filter: drop-shadow(0 0 8px rgba(0,0,0,0.4));
+}
+

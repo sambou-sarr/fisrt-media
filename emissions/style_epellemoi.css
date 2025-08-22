@@ -1,35 +1,66 @@
-        #hero {
-        position: relative;
-        width: 100%;
-        height: 80vh; /* ou la hauteur voulue */
-        overflow: hidden;
-        }
-
-        #hero::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('../assets/img/heroepellemoi.png') top center / cover no-repeat;
-        filter: blur(4px); /* intensité du flou */
-        transform: scale(1.1); /* éviter les bords après flou */
-        z-index: -1; /* derrière le contenu */
-        }
-            @media (max-width: 768px) {
-  .hero-section {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-  .hero-logo {
-    max-width: 180px;
-    margin-top: 20px;
-  }
+/* Section Hero */
+#hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: left;
+  z-index: 1;
 }
+
+/* Slideshow container */
+#hero .slides {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1; /* Derrière le contenu */
+}
+
+/* Chaque image de fond */
+#hero .slide {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  transform: scale(1.1); /* éviter les bords après flou */
+  opacity: 0;
+  animation: fadeSlideshow 36s infinite;
+}
+
+/* 6 images → cycle complet = 36s (6 images x 6s chacune) */
+#hero .slide:nth-child(1) { animation-delay: 0s; }
+#hero .slide:nth-child(2) { animation-delay: 6s; }
+#hero .slide:nth-child(3) { animation-delay: 12s; }
+#hero .slide:nth-child(4) { animation-delay: 18s; }
+#hero .slide:nth-child(5) { animation-delay: 50s; }
+
+
+/* Animation fondu */
+@keyframes fadeSlideshow {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }  /* apparition */
+  25%  { opacity: 1; }  /* reste visible */
+  35%  { opacity: 0; }  /* disparaît */
+  100% { opacity: 0; }
+}
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/img/gallerie/eppellemoi/facebookepplemoi.png') top center / cover no-repeat;
+  filter: blur(8px); /* intensité du flou */
+  transform: scale(1.1); /* éviter les bords après flou */
+  z-index: -1; /* derrière le contenu */
+}
+
+ 
             /* Variables CSS héritées de la page principale */
         :root {
             --primary-color: #007bff;
@@ -450,4 +481,129 @@
                 font-size: 2.5rem;
             }
         }
+    
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+        .section-title h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #0056b3;
+            margin-bottom: 15px;
+        }
+        .section-title p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+        }
+        .section-padding {
+            padding: 80px 0;
+            overflow-x: hidden; /* Important pour éviter les barres de défilement horizontales causées par les animations */
+        }
+        .bg-light-blue {
+            background-color: #f8f9fa;
+        }
+        .feature-section .feature-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1 );
+        }
+        .feature-section .feature-content {
+            padding: 20px;
+        }
+        .feature-section h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+        .feature-section p {
+            line-height: 1.8;
+        }
+        .feature-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .feature-section ul li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .feature-section ul li:before {
+            content: '\f058';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: #28a745;
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+        .impact-stat {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        .impact-stat:hover {
+            transform: translateY(-10px);
+        }
+        .impact-stat .stat-icon i {
+            font-size: 40px;
+            color: #0056b3;
+        }
+        .impact-stat .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            margin: 10px 0;
+        }
+        .impact-stat .stat-label {
+            font-size: 1rem;
+            color: #666;
+        }
+
+.btn-hero i {
+    font-size: 1.2rem;
+}/* Style général des boutons */
+.btn-hero {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-right: 10px;
+}
+
+/* Couleur spécifique à chaque réseau */
+.btn-hero.facebook { background-color: #1877f2; }
+.btn-hero.youtube { background-color: #FF0000; }
+.btn-hero.instagram { 
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+/* Au survol */
+.btn-hero:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Icônes Font Awesome */
+.btn-hero i {
+    font-size: 1.2rem;
+}
+
+
     

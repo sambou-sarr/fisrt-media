@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <title>Emission - Épelle-moi</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -34,144 +34,135 @@
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style_epellemoi.css">
+   <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- ================================= -->
+    <!--  AOS - Animate On Scroll CSS      -->
+    <!-- ================================= -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body >
   <!-- ======= NAVBAR ======= -->
-  <nav class="navbar navbar-expand-lg custom-navbar fixed-top bg-dark">
-    <div class="container d-flex align-items-center justify-content-between">
-     <!-- Logo + Titre -->
-      <a class="navbar-brand d-flex align-items-center" href="../index.html" style="color: white;">
-        <img src="../assets/img/logo.png" alt="Logo" class="me-2" style="width: 60px; height: 60px;">
-         <span class="d-none d-lg-inline">First Media</span>
-      </a>
-      <!-- Bouton responsive -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Liens -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link " href="../index.html">Accueil</a></li>
-          <li class="nav-item"><a class="nav-link active" href="../index.html#portfolio">Émissions</a></li>
-          <li class="nav-item"><a class="nav-link" href="../index.html#about">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="../index.html#abouts">À Propos</a></li>
-          <li class="nav-item"><a class="nav-link" href="../zero_faute.html">Zéro Faute</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" id="contact-link">Contact</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top bg-dark">
+  <div class="container d-flex align-items-center justify-content-between">
+    <!-- Logo + Titre -->
+    <a class="navbar-brand d-flex align-items-center" href="../index.html" style="color: white;">
+      <img src="../assets/img/firstlogo.png" alt="Logo" class="me-2" style="width: 60px; height: 60px;">
+      <span class="d-none d-lg-inline">First Media</span>
+    </a>
+
+    <!-- Bouton responsive -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Liens -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+
+        <!-- Dropdown Émissions -->
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle " href="#" id="emissionsDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Émissions
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="emissionsDropdown">
+            <li><a class="dropdown-item" href="debattons.html">Débattons</a></li>
+            <li><a class="dropdown-item " href="epelle-moi.html">Épelle-Moi</a></li>
+            <li><a class="dropdown-item " href="diwane_bi.html">Diwane Bi</a></li>
+            <!-- Divider -->
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../index.html#portfolio">Toutes les émissions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="../index.html#about">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#abouts">À Propos</a></li>
+        <li class="nav-item"><a class="nav-link " href="../zero_faute.html">Zéro Faute</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" id="contact-link">Contact</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
     <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center" style="margin-top: 100px;">
-                <div class="col-lg-6">
-                    <div class="hero-content">
-                        <h1 class="hero-title">
-                            <h1 class="display-4 display-lg-1 fw-bold">Épelle-Moi</h1></h1>
-                        <p class="hero-subtitle">L'émission éducative sénégalaise de concours d'orthographe française créée par First Media</p>
-                        <a href="#concept" class="btn-hero">
-                            <i class="fas fa-play me-2"></i>
-                            Découvrir le concours
+<section id="hero" class="hero-section"> 
+    <!-- Slideshow de fond --> 
+    <div class="slides"> 
+        <div class="slide" style="background-image: url('../assets/img/heroepellemoi.png');"></div> 
+        <div class="slide" style="background-image: url('../assets/img/gallerie/eppellemoi/_DSC8163.jpg');"></div> 
+        <div class="slide" style="background-image: url('../assets/img/gallerie/eppellemoi/eppl.jpg');"></div> 
+        <div class="slide" style="background-image: url('../assets/img/gallerie/eppellemoi/photo_hd.jpg');"></div> 
+        <div class="slide" style="background-image: url('../assets/img/gallerie/eppellemoi/facebookepplemoi.png');"></div> 
+    </div> 
+
+    <!-- Contenu --> 
+    <div class="container"> 
+        <div class="row align-items-center" style="margin-top: 100px;"> 
+            <div class="col-lg-6"> 
+                <div class="hero-content"> 
+                    <h1 class="display-4 display-lg-1 fw-bold">Épelle-Moi</h1> 
+                    <p class="hero-subtitle"> 
+                        L'émission éducative sénégalaise de concours d'orthographe française créée par First Media 
+                    </p> 
+
+                    <!-- Boutons réseaux sociaux -->
+                    <div class="social-buttons">
+                        <a href="https://www.facebook.com/share/1AUc3NhnGj/?mibextid=wwXIfr" target="_blank" class="btn-hero facebook">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCVOTx..." target="_blank" class="btn-hero youtube">
+                            <i class="fab fa-youtube"></i> YouTube
+                        </a>
+                        <a href="https://www.instagram.com/epelle_moi?igsh=MTZzYjR4NWh6MG5pNQ==" target="_blank" class="btn-hero instagram">
+                            <i class="fab fa-instagram"></i> Instagram
                         </a>
                     </div>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <img src="../assets/img/logoepellemoi.png" alt="Logo Épelle-Moi" class="hero-logo img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Section Concept -->
-    <section id="concept" class="concept-section" >
+                </div> 
+            </div> 
+
+            <div class="col-lg-6 text-center"> 
+                <img src="../assets/img/logoepellemoi.png" alt="Logo Épelle-Moi" class="hero-logo img-fluid"> 
+            </div> 
+        </div> 
+    </div> 
+</section>
+
+<!-- =================================== -->
+    <!-- SECTION 1 : VALORISER L'ÉDUCATION   -->
+    <!-- =================================== -->
+    <section class="section-padding feature-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Le Concept</h2>
-                <p>Une émission éducative sénégalaise où les participants s'affrontent dans un concours d'orthographe française</p>
+            <div class="section-title text-center" data-aos="fade-up">
+                <h2>Épelle-Moi Sénégal : L'Excellence par les Mots</h2>
+                <p>Une initiative télévisuelle unique, produite par First Media, dédiée à la promotion de la langue française et à la valorisation des jeunes talents au cœur du système éducatif sénégalais.</p>
             </div>
             
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="concept-card">
-                        <div class="concept-icon">
-                            <i class="fas fa-spell-check"></i>
-                        </div>
-                        <h3>Orthographe</h3>
-                        <p>Les participants doivent épeler correctement des mots de difficulté croissante en français, démontrant leur maîtrise de l'orthographe française.</p>
-                    </div>
+            <div class="row align-items-center">
+                <!-- EMPLACEMENT PHOTO 1 avec animation -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+                    <img src="https://via.placeholder.com/600x400.png?text=Élèves+concentrés+en+classe" alt="Jeunes élèves sénégalais en pleine concentration" class="feature-image">
                 </div>
                 
-                <div class="col-lg-4 mb-4">
-                    <div class="concept-card">
-                        <div class="concept-icon">
-                            <i class="fas fa-tv"></i>
-                        </div>
-                        <h3>First Media</h3>
-                        <p>Une production de First Media, chaîne de télévision sénégalaise engagée dans la promotion de l'éducation et de la culture française au Sénégal.</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 mb-4">
-                    <div class="concept-card">
-                        <div class="concept-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3>Éducation</h3>
-                        <p>Une mission éducative qui vise à améliorer le niveau de français des jeunes sénégalais et à promouvoir l'excellence académique.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Sénégal -->
-    <section class="variants-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Épelle-Moi au Sénégal</h2>
-                <p>Une émission qui valorise la maîtrise du français dans le système éducatif sénégalais</p>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="variant-card canada-card">
-                        <div class="variant-header">
-                            <h3>Système Éducatif</h3>
-                        </div>
-                        <ul class="advantages-list">
-                            <li>Renforcement du français scolaire</li>
-                            <li>Motivation des élèves</li>
-                            <li>Excellence académique</li>
-                            <li>Valorisation des talents</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 mb-4">
-                    <div class="variant-card afrique-card">
-                        <div class="variant-header">
-                            <h3>First Media</h3>
-                        </div>
-                        <ul class="advantages-list">
-                            <li>Production télévisuelle de qualité</li>
-                            <li>Diffusion nationale</li>
-                            <li>Engagement éducatif</li>
-                            <li>Innovation pédagogique</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 mb-4">
-                    <div class="variant-card chretien-card">
-                        <div class="variant-header">
-                            <h3>Impact Social</h3>
-                        </div>
-                        <ul class="advantages-list">
-                            <li>Promotion de la culture française</li>
-                            <li>Développement intellectuel</li>
-                            <li>Fierté nationale</li>
-                            <li>Rayonnement culturel</li>
+                <!-- Texte détaillé 1 avec animation -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                    <div class="feature-content">
+                        <h3>Renforcer le Français, Révéler les Talents</h3>
+                        <p>Au-delà d'un simple concours d'orthographe, "Épelle-Moi" est une véritable plateforme d'émulation intellectuelle. L'émission s'inscrit comme un outil pédagogique puissant qui encourage les élèves à approfondir leur maîtrise de la langue, à enrichir leur vocabulaire et à gagner en confiance.</p>
+                        <ul>
+                            <li><strong>Motivation Scolaire :</strong> Transforme l'apprentissage en un défi stimulant et ludique.</li>
+                            <li><strong>Excellence Académique :</strong> Pousse les élèves à viser les plus hauts standards de maîtrise linguistique.</li>
+                            <li><strong>Fierté et Reconnaissance :</strong> Offre une visibilité nationale aux élèves méritants et à leurs établissements.</li>
                         </ul>
                     </div>
                 </div>
@@ -179,50 +170,74 @@
         </div>
     </section>
 
-    <!-- Section Impact -->
-    <section class="impact-section">
+    <!-- =================================== -->
+    <!-- SECTION 2 : UN PARTENARIAT STRATÉGIQUE -->
+    <!-- =================================== -->
+    <section class="section-padding feature-section bg-light-blue">
         <div class="container">
-            <div class="section-title">
-                <h2>Impact au Sénégal</h2>
-                <p>Épelle-Moi contribue à l'amélioration du niveau de français dans le système éducatif sénégalais</p>
+            <div class="row align-items-center">
+                <!-- Texte détaillé 2 avec animation -->
+                <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-duration="800">
+                    <div class="feature-content">
+                        <h3>First Media : Un Engagement pour l'Éducation</h3>
+                        <p>En tant que producteur et diffuseur, First Media ne se contente pas de créer du divertissement. La chaîne s'engage activement dans le développement social et culturel du Sénégal en portant des projets à forte valeur ajoutée éducative.</p>
+                        <p>"Épelle-Moi" est l'incarnation de cette vision : une production télévisuelle de haute qualité qui allie rigueur académique et dynamisme, touchant ainsi des milliers de foyers à travers le pays.</p>
+                        <ul>
+                            <li><strong>Production de Qualité :</strong> Des moyens techniques professionnels pour une expérience télévisuelle captivante.</li>
+                            <li><strong>Diffusion Nationale :</strong> Une large audience pour maximiser l'impact du message éducatif.</li>
+                            <li><strong>Innovation Pédagogique :</strong> Un format qui sort des sentiers battus pour enseigner autrement.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- EMPLACEMENT PHOTO 2 avec animation -->
+                <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/600x400.png?text=Plateau+TV+de+First+Media" alt="Plateau de tournage de l'émission Épelle-Moi" class="feature-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== -->
+    <!-- SECTION 3 : L'IMPACT EN CHIFFRES    -->
+    <!-- =================================== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <h2>Un Impact Mesurable à l'Échelle Nationale</h2>
+                <p>Depuis son lancement, "Épelle-Moi" a su s'imposer comme un rendez-vous incontournable, créant un véritable engouement dans les écoles et les familles sur l'ensemble du territoire.</p>
             </div>
             
             <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
+                <!-- Cartes de statistiques avec animations décalées -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-duration="500">
                     <div class="impact-stat">
-                        <div class="stat-icon">
-                            <i class="fas fa-school"></i>
-                        </div>
+                        <div class="stat-icon"><i class="fas fa-school"></i></div>
                         <div class="stat-number">100+</div>
-                        <div class="stat-label">Écoles Participantes</div>
+                        <div class="stat-label">Établissements Partenaires</div>
                     </div>
                 </div>
                 
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="150">
                     <div class="impact-stat">
-                        <div class="stat-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
+                        <div class="stat-icon"><i class="fas fa-user-graduate"></i></div>
                         <div class="stat-number">500+</div>
-                        <div class="stat-label">Élèves Participants</div>
+                        <div class="stat-label">Finalistes Nationaux</div>
                     </div>
                 </div>
                 
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300">
                     <div class="impact-stat">
-                        <div class="stat-icon">
-                            <i class="fas fa-tv"></i>
-                        </div>
+                        <div class="stat-icon"><i class="fas fa-tv"></i></div>
                         <div class="stat-number">5+</div>
-                        <div class="stat-label">Saisons Diffusées</div>
+                        <div class="stat-label">Saisons à Succès</div>
                     </div>
                 </div>
                 
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="450">
                     <div class="impact-stat">
-                        <div class="stat-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
+                        <div class="stat-icon"><i class="fas fa-map-marked-alt"></i></div>
+                        <div class="stat-label">Présence dans les</div>
                         <div class="stat-number">14</div>
                         <div class="stat-label">Régions du Sénégal</div>
                     </div>
@@ -231,145 +246,114 @@
         </div>
     </section>
 
-    <!-- Section Processus -->
-    <section class="process-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Comment Participer à l'Émission</h2>
-                <p>Le processus de sélection et de participation à l'émission Épelle-Moi sur First Media</p>
-            </div>
-            
-            <div class="process-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker">1</div>
-                    <div class="timeline-content">
-                        <h4>Sélection Scolaire</h4>
-                        <p>Les écoles sénégalaises organisent des sélections internes pour identifier leurs meilleurs élèves en orthographe française.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-marker">2</div>
-                    <div class="timeline-content">
-                        <h4>Auditions Régionales</h4>
-                        <p>Les candidats sélectionnés participent aux auditions régionales organisées par First Media dans les différentes régions du Sénégal.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-marker">3</div>
-                    <div class="timeline-content">
-                        <h4>Enregistrement</h4>
-                        <p>Les finalistes participent à l'enregistrement de l'émission dans les studios de First Media à Dakar.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-marker">4</div>
-                    <div class="timeline-content">
-                        <h4>Diffusion</h4>
-                        <p>L'émission est diffusée sur First Media et les gagnants reçoivent des prix et une reconnaissance nationale.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- ================================= -->
+    <!--  AOS - Animate On Scroll JS       -->
+    <!-- ================================= -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialisation de la bibliothèque d'animation
+        AOS.init({
+            once: true, // L'animation ne se joue qu'une seule fois
+            offset: 100, // Déclenche l'animation un peu avant que l'élément n'arrive en bas de l'écran
+            duration: 600, // Durée par défaut des animations en millisecondes
+        } );
+    </script>
   <!-- ======= Footer ======= -->
- <footer class="footer-modern bg-dark w-100">
-    <div class="container pt-5">
-        <div class="row g-4">
-            <!-- Section À propos -->
-            <div class="col-md-4 col-lg-3 mb-4">
-                <div class="footer-about">
-                    <h5 class="text-uppercase text-white mb-4">À propos</h5>
-                    <p class="text-white-70 mb-4">
-                        First Media - Première structure de communication audiovisuelle sénégalaise spécialisée dans la production de contenus éducatifs et innovants.
-                    </p>
-                </div>
-            </div>
+<footer class="footer-modern bg-dark w-100">
+      <div class="container pt-5">
+          <div class="row g-4">
+              <!-- Section À propos -->
+              <div class="col-md-4 col-lg-3 mb-4">
+                  <div class="footer-about">
+                      <h5 class="text-uppercase text-white mb-4">À propos</h5>
+                      <p class="text-white-70 mb-4">
+                          First Media - Première structure de communication audiovisuelle sénégalaise spécialisée dans la production de contenus éducatifs et innovants.
+                      </p>
+                  </div>
+              </div>
 
-            <!-- Liens rapides -->
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <h5 class="text-uppercase text-white mb-4">Navigation</h5>
-                <ul class="list-unstyled footer-links">
-                    <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Accueil</a></li>
-                    <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Équipe</a></li>
-                    <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Réalisations</a></li>
-                    <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Contact</a></li>
-                </ul>
-            </div>
+              <!-- Liens rapides -->
+              <div class="col-6 col-md-4 col-lg-2 mb-4">
+                  <h5 class="text-uppercase text-white mb-4">Navigation</h5>
+                  <ul class="list-unstyled footer-links">
+                      <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Accueil</a></li>
+                      <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Équipe</a></li>
+                      <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Réalisations</a></li>
+                      <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Contact</a></li>
+                  </ul>
+              </div>
 
-            <!-- Coordonnées -->
-            <div class="col-md-4 col-lg-3 mb-4">
-                <h5 class="text-uppercase text-white mb-4">Coordonnées</h5>
-                <ul class="list-unstyled contact-info">
-                    <li class="mb-3 d-flex">
-                        <i class="fas fa-map-marker-alt text-primary mt-1 me-3"></i>
-                        <div>
-                            <span class="text-white-70 d-block">03 rue Beranger Feraud Immeuble CTIC Dakar</span>
-                            <span class="text-white-70">Dakar , Senegal</span>
-                        </div>
-                    </li>
-                    <li class="mb-3">
-                        <a href="tel:+221776317892" class="text-white-70 text-decoration-none d-flex align-items-center">
-                            <i class="fas fa-phone text-primary me-3"></i>
-                            <div>
-                                <span class="d-block">+221 33 842 49 00</span>
-                                <span class="d-block">+221 77 631 78 92</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="mb-3">
-                        <a href="mailto:info@first-media-groupe.com" class="text-white-70 text-decoration-none d-flex align-items-center">
-                            <i class="fas fa-envelope text-primary me-3"></i>
-                            info@first-media-groupe.com
-                        </a>
-                    </li>
-                </ul>
-            </div>
+              <!-- Coordonnées -->
+              <div class="col-md-4 col-lg-3 mb-4">
+                  <h5 class="text-uppercase text-white mb-4">Coordonnées</h5>
+                  <ul class="list-unstyled contact-info">
+                      <li class="mb-3 d-flex">
+                          <i class="fas fa-map-marker-alt text-primary mt-1 me-3"></i>
+                          <div>
+                              <span class="text-white-70 d-block">03 rue Beranger Feraud Immeuble CTIC Dakar</span>
+                              <span class="text-white-70">Dakar , Senegal</span>
+                          </div>
+                      </li>
+                      <li class="mb-3">
+                          <a href="tel:+221776317892" class="text-white-70 text-decoration-none d-flex align-items-center">
+                              <i class="fas fa-phone text-primary me-3"></i>
+                              <div>
+                                  <span class="d-block">+221 33 842 49 00</span>
+                                  <span class="d-block">+221 77 631 78 92</span>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="mb-3">
+                          <a href="mailto:info@first-media-groupe.com" class="text-white-70 text-decoration-none d-flex align-items-center">
+                              <i class="fas fa-envelope text-primary me-3"></i>
+                              info@first-media-groupe.com
+                          </a>
+                      </li>
+                  </ul>
+              </div>
 
-            <!-- Réseaux sociaux -->
-            <div class="col-md-4 col-lg-4 mb-4">
-                <h5 class="text-uppercase text-white mb-4">Réseaux sociaux</h5>
-                <div class="social-links mb-4">
-                    <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-tiktok"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-youtube"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+              <!-- Réseaux sociaux -->
+              <div class="col-md-4 col-lg-4 mb-4">
+                  <h5 class="text-uppercase text-white mb-4">Réseaux sociaux</h5>
+                  <div class="social-links mb-4">
+                      <a href="https://www.tiktok.com/@firstmediagroup1?_t=ZM-8ycjPuJ7uA2&_r=1" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-tiktok"></i></a>
+                      <a href="https://www.facebook.com/share/1BxVquMz8N/?mibextid=wwXIfr" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.youtube.com/@firstmediagroup5105?si=Q_0A-aNQX8ArJvKO" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-youtube"></i></a>
+                      <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
 
-                <div class="newsletter">
-                    <h6 class="text-white mb-3">Abonnez-vous à notre newsletter</h6>
-                    <form class="input-group">
-                        <input type="email" class="form-control border-0" placeholder="Votre email">
-                        <button class="btn btn-primary" type="submit">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
+                  <div class="newsletter">
+                      <h6 class="text-white mb-3">Abonnez-vous à notre newsletter</h6>
+                      <form class="input-group">
+                          <input type="email" class="form-control border-0" placeholder="Votre email">
+                          <button class="btn btn-primary" type="submit">
+                              <i class="fas fa-paper-plane"></i>
+                          </button>
+                      </form>
+                  </div>
+              </div>
+          </div>
 
-        <!-- Mentions légales -->
-        <div class="footer-legal py-4 border-top border-dark">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <div class="legal-links">
-                        <a href="#" class="text-white-70 me-3">Mentions légales</a>
-                        <a href="#" class="text-white-70 me-3">Conditions</a>
-                        <a href="#" class="text-white-70">Politique de confidentialité</a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="text-white-70 mb-0">
-                        &copy; <span class="current-year"></span> FIRST MEDIA Group — Tous droits réservés — Développé par
-                        <a href="#" class="text-primary text-decoration-none">sambou sarr</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+          <!-- Mentions légales -->
+          <div class="footer-legal py-4 border-top border-dark">
+              <div class="row align-items-center">
+                  <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                      <div class="legal-links">
+                          <a href="#" class="text-white-70 me-3">Mentions légales</a>
+                          <a href="#" class="text-white-70 me-3">Conditions</a>
+                          <a href="#" class="text-white-70">Politique de confidentialité</a>
+                      </div>
+                  </div>
+                  <div class="col-md-6 text-center text-md-end">
+                      <p class="text-white-70 mb-0">
+                          &copy; <span class="current-year"></span> FIRST MEDIA Group — Tous droits réservés — Développé par
+                          <a href="#" class="text-primary text-decoration-none">sambou sarr</a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
 </footer>
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

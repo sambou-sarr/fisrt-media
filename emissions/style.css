@@ -1073,3 +1073,42 @@ body {
 .pulse-element {
     animation: pulse 2s infinite;
 }
+
+.btn-hero {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-right: 10px;
+}
+
+/* Couleur spécifique à chaque réseau */
+.btn-hero.facebook { background-color: #1877f2; }
+.btn-hero.youtube { background-color: #FF0000; }
+.btn-hero.instagram { 
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+/* Au survol */
+.btn-hero:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Icônes Font Awesome */
+.btn-hero i {
+    font-size: 1.2rem;
+}
+
+/* Alignement des boutons */
+.social-buttons {
+    margin-top: 20px;
+}

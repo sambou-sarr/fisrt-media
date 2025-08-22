@@ -27,6 +27,15 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+     <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -35,32 +44,50 @@
 </head>
 <body>
   <!-- ======= NAVBAR ======= -->
-  <nav class="navbar navbar-expand-lg custom-navbar fixed-top bg-dark">
-    <div class="container d-flex align-items-center justify-content-between">
-      <!-- Logo + Titre -->
-      <a class="navbar-brand d-flex align-items-center" href="index.html" style="color: white;">
-        <img src="assets/img/logoo.png" alt="Logo" class="me-2" style="width: 60px; height: 60px;">
-        <!-- Le texte sera caché en mobile et visible seulement sur grand écran -->
-        <span class="d-none d-lg-inline">First Media</span>
-      </a>
-      <!-- Bouton responsive aligné avec le logo -->
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Liens -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">Émissions</a></li>
-          
-          <li class="nav-item"><a class="nav-link" href="#about">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#abouts">À Propos</a></li>
-          <li class="nav-item"><a class="nav-link" href="zero_faute.html">Zéro Faute</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" id="contact-link">Contact</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top bg-dark">
+  <div class="container d-flex align-items-center justify-content-between">
+    <!-- Logo + Titre -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html" style="color: white;">
+      <img src="assets/img/firstlogo.png" alt="Logo" class="me-2" style="width: 60px; height: 60px;">
+      <span class="d-none d-lg-inline">First Media</span>
+    </a>
+
+    <!-- Bouton responsive -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Liens -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+
+        <!-- Dropdown Émissions -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="emissionsDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Émissions
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="emissionsDropdown">
+            <li><a class="dropdown-item" href="emissions/debattons.html">Débattons</a></li>
+            <li><a class="dropdown-item" href="emissions/epelle-moi.html">Épelle-Moi</a></li>
+            <li><a class="dropdown-item" href="emissions/diwane_bi.html">Diwane Bi</a></li>
+            <!-- Divider -->
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="index.html#portfolio">Toutes les émissions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="index.html#about">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#abouts">À Propos</a></li>
+        <li class="nav-item"><a class="nav-link " href="zero_faute.html">Zéro Faute</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" id="contact-link">Contact</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
   <!-- End NAVBAR -->
   <!-- ======= Hero Section ======= -->
 
@@ -115,7 +142,7 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-camera-video"></i> <strong>Services:</strong> <span>Production vidéo & Motion design</span></li>
+                  <li><i class="bi bi-camera-video"></i> <strong>Services:</strong> <span>Production vidéo </span></li>
                   <li><i class="bi bi-broadcast"></i> <strong>Diffusion:</strong> <span>TV, Réseaux sociaux, Web</span></li>
                   <li><i class="bi bi-geo-alt"></i> <strong>Localisation:</strong> <span> CTIC Dakar</span></li>
                   <li><i class="bi bi-phone"></i> <strong>Téléphone:</strong> <span>+221 33 842 49 00</span></li>
@@ -123,9 +150,8 @@
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-mic"></i> <strong>Voix Off & Podcasts:</strong> <span>Studio professionnel</span></li>
-                  <li><i class="bi bi-images"></i> <strong>Photographie:</strong> <span>Événementielle & Produits</span></li>
-                  <li><i class="bi bi-envelope"></i> <strong>Email:</strong> <span>contact@firstmedia.sn</span></li>
+                  <li><i class="bi bi-images"></i> <strong>Photographie:</strong> <span>Événementielle </span></li>
+                  <li><i class="bi bi-envelope"></i> <strong>Email:</strong> <span>info@first-media-groupe.com</span></li>
                   <li><i class="bi bi-check2-circle"></i> <strong>Disponible:</strong> <span>Sur rendez-vous</span></li>
                 </ul>
               </div>
@@ -191,8 +217,8 @@
               <p><em>Agence audiovisuelle innovante spécialisée dans la création de contenus éducatifs et culturels, à forte valeur ajoutée sociale.</em></p>
               <ul>
                 <li>Dakar, Sénégal</li>
-                <li>+221 77 123 45 67</li>
-                <li>contact@firstmedia.sn</li>
+                <li>+221 77 631 78 92</li>
+                <li>info@first-media-groupe.com</li>
               </ul>
             </div>
             <h3 class="resume-title">Domaines d’Expertise</h3>
@@ -206,29 +232,26 @@
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Émissions Réalisées</h3>
+          <h3 class="resume-title">Émissions Réalisées</h3>
 
-            <div class="resume-item">
+          <div class="resume-item d-flex align-items-start">
+            <img src="assets/img/logodebatclean.png" alt="Logo Débattons" class="emission-logo me-3">
+            <div>
               <h4><strong>Débattons</strong></h4>
               <p><em>Plateforme de discussions citoyennes autour de sujets sociétaux, politiques et culturels du Sénégal et d’ailleurs.</em></p>
             </div>
-
-            <div class="resume-item">
-              <h4><strong>Diwane-Bi</strong></h4>
-              <p><em>Émission culturelle dédiée à la valorisation des traditions orales, chants et danses du patrimoine sénégalais.</em></p>
-            </div>
-
-            <div class="resume-item">
-              <h4><strong> Épelle-Moi</strong></h4>
+          </div>
+          <div class="resume-item d-flex align-items-start">
+            <img src="assets/img/logoepellemoi.png" alt="Logo Épelle-Moi" class="emission-logo me-3">
+            <div>
+              <h4><strong>Épelle-Moi</strong></h4>
               <p><em>Compétition ludique et pédagogique autour de l’orthographe et du vocabulaire français pour les jeunes.</em></p>
             </div>
-
-            <div class="resume-item">
-              <h4><strong>Les Navétanes</strong></h4>
-              <p><em>Couverture et production audiovisuelle des championnats de football communautaire au Sénégal, avec une approche immersive et festive.</em></p>
-            </div>
-
           </div>
+
+
+        </div>
+
         </div>
 
           </div>
@@ -254,6 +277,13 @@
             <div class="img">
               <a href="emissions/epelle-moi.html" title="Voir les détails de l’émission">
                 <img src="assets/img/eppellemoi.jpg" class="img-fluid hover-zoom" alt="Épelle-Moi">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="img">
+              <a href="emissions/epelle-moi.html" title="Voir les détails de l’émission">
+                <img src="assets/img/Logo-Diwane-BI.png" class="img-fluid hover-zoom" alt="Diwane Bi">
               </a>
             </div>
           </div>
@@ -328,8 +358,8 @@
                 <div class="col-lg-6">
                   <ul>
                                     <li><i class="bi bi-trophy"></i> <strong>Récompenses:</strong> <span>Multiples prix éducatifs</span></li>
-                                    <li><i class="bi bi-gamepad2"></i> <strong>Format:</strong> <span>Jeu interactif & ludique</span></li>
-                                    <li><i class="bi bi-mortarboard"></i> <strong>Public:</strong> <span>Élèves & Étudiants</span></li>
+                                    <li><i class="bi bi-mortarboard"></i> <strong>Format:</strong> <span>Jeu interactif & ludique</span></li>
+                                    <li><i class="bi bi-people"></i> <strong>Public:</strong> <span>Élèves & Étudiants</span></li>
                                     <li><i class="bi bi-star-fill"></i> <strong>Innovation:</strong> <span>Approche révolutionnaire</span></li>
                                 </ul>
                             </div>
@@ -513,10 +543,10 @@
               <div class="col-md-4 col-lg-4 mb-4">
                   <h5 class="text-uppercase text-white mb-4">Réseaux sociaux</h5>
                   <div class="social-links mb-4">
-                      <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-tiktok"></i></a>
-                      <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-youtube"></i></a>
-                      <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.tiktok.com/@firstmediagroup1?_t=ZM-8ycjPuJ7uA2&_r=1" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-tiktok"></i></a>
+                      <a href="https://www.facebook.com/share/1BxVquMz8N/?mibextid=wwXIfr" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.youtube.com/@firstmediagroup5105?si=Q_0A-aNQX8ArJvKO" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-youtube"></i></a>
+                      <a href="https://www.instagram.com/firstmediagroupdakar?igsh=MWs4NjRmMjZlb2I5NQ==" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-instagram"></i></a>
                       <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-linkedin-in"></i></a>
                   </div>
 
