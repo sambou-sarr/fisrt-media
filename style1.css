@@ -214,4 +214,45 @@
   transform: scale(1.2) rotate(5deg);
   filter: drop-shadow(0 0 8px rgba(0,0,0,0.4));
 }
+.btn-social {
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border: none;
+  color: #fff; /* icône blanche */
+  transition: all 0.3s ease;
+}
 
+/* TikTok */
+.btn-social.tiktok {
+  background-color: #010101;
+}
+
+/* Facebook */
+.btn-social.facebook {
+  background-color: #1877f2;
+}
+
+/* YouTube */
+.btn-social.youtube {
+  background-color: #ff0000;
+}
+
+/* Instagram (dégradé officiel) */
+.btn-social.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+/* LinkedIn */
+.btn-social.linkedin {
+  background-color: #0a66c2;
+}
+
+/* Effet au survol */
+.btn-social:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}

@@ -273,70 +273,9 @@
             color: var(--primary-color);
         }
 
-        /* Boutons sociaux avec effets avancés */
-        .btn-social {
-            width: 45px;
-            height: 45px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            transition: var(--transition-fast);
-            position: relative;
-            overflow: hidden;
-        }
+        /* Style commun */
 
-        .btn-social::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            background: var(--primary-color);
-            border-radius: 50%;
-            transition: var(--transition-medium);
-            transform: translate(-50%, -50%);
-            z-index: 0;
-        }
 
-        .btn-social i {
-            position: relative;
-            z-index: 1;
-            transition: var(--transition-fast);
-        }
-
-        .btn-social:hover::before {
-            width: 100%;
-            height: 100%;
-        }
-
-        .btn-social:hover {
-            transform: translateY(-3px) scale(1.1);
-            box-shadow: 0 10px 20px rgba(0, 123, 255, 0.4);
-            border-color: var(--primary-color);
-        }
-
-        .btn-social:hover i {
-            color: white;
-            transform: rotate(360deg);
-        }
-
-        /* Effets spécifiques par réseau social */
-        .btn-social:nth-child(1):hover { /* Facebook */
-            box-shadow: 0 10px 20px rgba(59, 89, 152, 0.4);
-        }
-
-        .btn-social:nth-child(2):hover { /* YouTube */
-            box-shadow: 0 10px 20px rgba(255, 0, 0, 0.4);
-        }
-
-        .btn-social:nth-child(3):hover { /* Instagram */
-            box-shadow: 0 10px 20px rgba(225, 48, 108, 0.4);
-        }
-
-        .btn-social:nth-child(4):hover { /* LinkedIn */
-            box-shadow: 0 10px 20px rgba(0, 119, 181, 0.4);
-        }
 
         /* Newsletter avec animations */
         .newsletter {
