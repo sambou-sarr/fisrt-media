@@ -34,113 +34,101 @@
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style_epellemoi.css">
-   <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-    <!-- ================================= -->
-    <!--  AOS - Animate On Scroll CSS      -->
-    <!-- ================================= -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!--  AOS - Animate On Scroll CSS      -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
-<body >
-  <!-- ======= NAVBAR ======= -->
-<nav class="navbar navbar-expand-lg custom-navbar fixed-top bg-dark">
-  <div class="container d-flex align-items-center justify-content-between">
-    <!-- Logo + Titre -->
-    <a class="navbar-brand d-flex align-items-center" href="../index.html" style="color: white;">
-      <img src="../assets/img/firstlogo.png" alt="Logo" class="me-2" style="width: 60px; height: 60px;">
-      <span class="d-none d-lg-inline">First Media</span>
-    </a>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top bg-dark">
+    <div class="container d-flex align-items-center justify-content-between">
+        <!-- Logo + Titre -->
+        <a class="navbar-brand d-flex align-items-center" href="../index.html" style="color: white;">
+        <img src="../assets/img/firstlogo.png" alt="Logo" class="me-2" style="width: 60px; height: 60px;">
+        <span class="d-none d-lg-inline">First Media</span>
+        </a>
 
-    <!-- Bouton responsive -->
-    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <!-- Bouton responsive -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Liens -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+        <!-- Liens -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
 
-        <!-- Dropdown Émissions -->
-        <li class="nav-item dropdown">
-          <a class="nav-link active dropdown-toggle " href="#" id="emissionsDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Émissions
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="emissionsDropdown">
-            <li><a class="dropdown-item" href="debattons.html">Débattons</a></li>
-            <li><a class="dropdown-item " href="epelle-moi.html">Épelle-Moi</a></li>
-            <li><a class="dropdown-item " href="diwane_bi.html">Diwane Bi</a></li>
-            <!-- Divider -->
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="../index.html#portfolio">Toutes les émissions</a></li>
-          </ul>
-        </li>
+            <!-- Dropdown Émissions -->
+            <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="emissionsDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Émissions
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="emissionsDropdown" data-bs-auto-close="false">
+                <li><a class="dropdown-item" href="debattons.html">Débattons</a></li>
+                <li><a class="dropdown-item" href="epelle-moi.html">Épelle-Moi</a></li>
+                <li><a class="dropdown-item" href="diwane_bi.html">Diwane Bi</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../index.html#portfolio">Toutes les émissions</a></li>
+            </ul>
+            </li>
 
-        <li class="nav-item"><a class="nav-link" href="../index.html#about">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="../index.html#abouts">À Propos</a></li>
-        <li class="nav-item"><a class="nav-link " href="../zero_faute.html">Zéro Faute</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" id="contact-link">Contact</a></li>
-      </ul>
+            <li class="nav-item"><a class="nav-link" href="../index.html#about">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#abouts">À Propos</a></li>
+            <li class="nav-item"><a class="nav-link " href="../zero_faute.html">Zéro Faute</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" id="contact-link">Contact</a></li>
+        </ul>
+        </div>
     </div>
-  </div>
-</nav>
-    <!-- Hero Section -->
-<section id="hero" class="hero-section"> 
-    <!-- Slideshow de fond --> 
-    <div class="slides"> 
-        <div class="slide" style="background-image: url('../assets/img/heroepellemoi.png');"></div> 
-        <div class="slide" style="background-image: url('../assets/img/gallerie/eppellemoi/_DSC8163.jpg');"></div> 
-        <div class="slide" style="background-image: url('../assets/img/gallerie/eppellemoi/eppl.jpg');"></div> 
-        <div class="slide" style="background-image: url('../assets/img/gallerie/eppellemoi/photo_hd.jpg');"></div> 
-        <div class="slide" style="background-image: url('../assets/img/gallerie/eppellemoi/facebookepplemoi.png');"></div> 
-    </div> 
+    </nav>
 
-    <!-- Contenu --> 
-    <div class="container"> 
-        <div class="row align-items-center" style="margin-top: 100px;"> 
-            <div class="col-lg-6"> 
-                <div class="hero-content"> 
-                    <h1 class="display-4 display-lg-1 fw-bold">Épelle-Moi</h1> 
-                    <p class="hero-subtitle"> 
-                        L'émission éducative sénégalaise de concours d'orthographe française créée par First Media 
-                    </p> 
+    <section id="hero" class="hero-section"> 
+        <div class="slides"> 
+            <div class="slide" style="background-image: url('../assets/img/heroepellemoi.png');"></div> 
+            <div class="slide" style="background-image: url('../assets/img/gallerie/eppellemoi/_DSC8163.jpg');"></div> 
+            <div class="slide" style="background-image: url('../assets/img/gallerie/eppellemoi/eppl.jpg');"></div> 
+            <div class="slide" style="background-image: url('../assets/img/gallerie/eppellemoi/photo_hd.jpg');"></div> 
+            <div class="slide" style="background-image: url('../assets/img/gallerie/eppellemoi/facebookepplemoi.png');"></div> 
+        </div> 
 
-                    <!-- Boutons réseaux sociaux -->
-                    <div class="social-buttons">
-                        <a href="https://www.facebook.com/share/1AUc3NhnGj/?mibextid=wwXIfr" target="_blank" class="btn-hero facebook">
-                            <i class="fab fa-facebook-f"></i> Facebook
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCVOTx..." target="_blank" class="btn-hero youtube">
-                            <i class="fab fa-youtube"></i> YouTube
-                        </a>
-                        <a href="https://www.instagram.com/epelle_moi?igsh=MTZzYjR4NWh6MG5pNQ==" target="_blank" class="btn-hero instagram">
-                            <i class="fab fa-instagram"></i> Instagram
-                        </a>
-                    </div>
+        <div class="container"> 
+            <div class="row align-items-center" style="margin-top: 100px;"> 
+                <div class="col-lg-6"> 
+                    <div class="hero-content"> 
+                        <h1 class="display-4 display-lg-1 fw-bold">Épelle-Moi</h1> 
+                        <p class="hero-subtitle"> 
+                            L'émission éducative sénégalaise de concours d'orthographe française créée par First Media 
+                        </p> 
 
+                        <!-- Boutons réseaux sociaux -->
+                        <div class="social-buttons">
+                            <a href="https://www.facebook.com/share/1AUc3NhnGj/?mibextid=wwXIfr" target="_blank" class="btn-hero facebook">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCVOTx..." target="_blank" class="btn-hero youtube">
+                                <i class="fab fa-youtube"></i> YouTube
+                            </a>
+                            <a href="https://www.instagram.com/epelle_moi?igsh=MTZzYjR4NWh6MG5pNQ==" target="_blank" class="btn-hero instagram">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+
+                    </div> 
+                </div> 
+
+                <div class="col-lg-6 text-center"> 
+                    <img src="../assets/img/logoepellemoi.png" alt="Logo Épelle-Moi" class="hero-logo img-fluid"> 
                 </div> 
             </div> 
-
-            <div class="col-lg-6 text-center"> 
-                <img src="../assets/img/logoepellemoi.png" alt="Logo Épelle-Moi" class="hero-logo img-fluid"> 
-            </div> 
         </div> 
-    </div> 
-</section>
+    </section>
 
-<!-- =================================== -->
-    <!-- SECTION 1 : VALORISER L'ÉDUCATION   -->
-    <!-- =================================== -->
     <section class="section-padding feature-section">
         <div class="container">
             <div class="section-title text-center" data-aos="fade-up">
@@ -170,9 +158,6 @@
         </div>
     </section>
 
-    <!-- =================================== -->
-    <!-- SECTION 2 : UN PARTENARIAT STRATÉGIQUE -->
-    <!-- =================================== -->
     <section class="section-padding feature-section bg-light-blue">
         <div class="container">
             <div class="row align-items-center">
@@ -198,9 +183,6 @@
         </div>
     </section>
 
-    <!-- =================================== -->
-    <!-- SECTION 3 : L'IMPACT EN CHIFFRES    -->
-    <!-- =================================== -->
     <section class="section-padding">
         <div class="container">
             <div class="section-title text-center" data-aos="fade-up">
@@ -209,7 +191,6 @@
             </div>
             
             <div class="row">
-                <!-- Cartes de statistiques avec animations décalées -->
                 <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-duration="500">
                     <div class="impact-stat">
                         <div class="stat-icon"><i class="fas fa-school"></i></div>
@@ -246,184 +227,192 @@
         </div>
     </section>
 
-    <!-- ================================= -->
-    <!--  AOS - Animate On Scroll JS       -->
-    <!-- ================================= -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <footer class="footer-modern bg-dark w-100">
+        <div class="container pt-5">
+            <div class="row g-4">
+                <!-- Section À propos -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="footer-about">
+                        <h5 class="text-uppercase text-white mb-4">À propos</h5>
+                        <p class="text-white-70 mb-4">
+                            First Media - Première structure de communication audiovisuelle sénégalaise spécialisée dans la production de contenus éducatifs et innovants.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Liens rapides -->
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <h5 class="text-uppercase text-white mb-4">Navigation</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Accueil</a></li>
+                        <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Équipe</a></li>
+                        <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Réalisations</a></li>
+                        <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                    <!-- Coordonnées -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <h5 class="text-uppercase text-white mb-4">Coordonnées</h5>
+                    <ul class="list-unstyled contact-info">
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-map-marker-alt text-primary mt-1 me-3"></i>
+                            <div>
+                                <span class="text-white-70 d-block">03 rue Beranger Feraud Immeuble CTIC Dakar</span>
+                                <span class="text-white-70">Dakar , Senegal</span>
+                            </div>
+                        </li>
+                        <li class="mb-3">
+                            <a href="tel:+221776317892" class="text-white-70 text-decoration-none d-flex align-items-center">
+                                <i class="fas fa-phone text-primary me-3"></i>
+                                <div>
+                                    <span class="d-block">+221 33 842 49 00</span>
+                                    <span class="d-block">+221 77 631 78 92</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="mailto:info@first-media-groupe.com" class="text-white-70 text-decoration-none d-flex align-items-center">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                info@first-media-groupe.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                    <!-- Réseaux sociaux -->
+                <div class="col-md-4 col-lg-4 mb-4">
+                    <h5 class="text-uppercase text-white mb-4">Réseaux sociaux</h5>
+                    <div class="social-links mb-4">
+                        <a href="https://www.tiktok.com/@firstmediagroup1?_t=ZM-8ycjPuJ7uA2&_r=1" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/share/1BxVquMz8N/?mibextid=wwXIfr" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/@firstmediagroup5105?si=Q_0A-aNQX8ArJvKO" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    <div class="newsletter">
+                        <h6 class="text-white mb-3">Abonnez-vous à notre newsletter</h6>
+                        <form class="input-group">
+                            <input type="email" class="form-control border-0" placeholder="Votre email">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-legal py-4 border-top border-dark">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <div class="legal-links">
+                            <a href="#" class="text-white-70 me-3">Mentions légales</a>
+                            <a href="#" class="text-white-70 me-3">Conditions</a>
+                            <a href="#" class="text-white-70">Politique de confidentialité</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="text-white-70 mb-0">
+                            &copy; <span class="current-year"></span> FIRST MEDIA Group — Tous droits réservés — Développé par
+                            <a href="#" class="text-primary text-decoration-none">sambou sarr</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Initialisation de la bibliothèque d'animation
-        AOS.init({
-            once: true, // L'animation ne se joue qu'une seule fois
-            offset: 100, // Déclenche l'animation un peu avant que l'élément n'arrive en bas de l'écran
-            duration: 600, // Durée par défaut des animations en millisecondes
-        } );
+            // Initialisation de la bibliothèque d'animation
+            AOS.init({
+                once: true, 
+                offset: 100, 
+                duration: 600, 
+            } );
     </script>
-  <!-- ======= Footer ======= -->
-<footer class="footer-modern bg-dark w-100">
-      <div class="container pt-5">
-          <div class="row g-4">
-              <!-- Section À propos -->
-              <div class="col-md-4 col-lg-3 mb-4">
-                  <div class="footer-about">
-                      <h5 class="text-uppercase text-white mb-4">À propos</h5>
-                      <p class="text-white-70 mb-4">
-                          First Media - Première structure de communication audiovisuelle sénégalaise spécialisée dans la production de contenus éducatifs et innovants.
-                      </p>
-                  </div>
-              </div>
-
-              <!-- Liens rapides -->
-              <div class="col-6 col-md-4 col-lg-2 mb-4">
-                  <h5 class="text-uppercase text-white mb-4">Navigation</h5>
-                  <ul class="list-unstyled footer-links">
-                      <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Accueil</a></li>
-                      <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Équipe</a></li>
-                      <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Réalisations</a></li>
-                      <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Contact</a></li>
-                  </ul>
-              </div>
-
-              <!-- Coordonnées -->
-              <div class="col-md-4 col-lg-3 mb-4">
-                  <h5 class="text-uppercase text-white mb-4">Coordonnées</h5>
-                  <ul class="list-unstyled contact-info">
-                      <li class="mb-3 d-flex">
-                          <i class="fas fa-map-marker-alt text-primary mt-1 me-3"></i>
-                          <div>
-                              <span class="text-white-70 d-block">03 rue Beranger Feraud Immeuble CTIC Dakar</span>
-                              <span class="text-white-70">Dakar , Senegal</span>
-                          </div>
-                      </li>
-                      <li class="mb-3">
-                          <a href="tel:+221776317892" class="text-white-70 text-decoration-none d-flex align-items-center">
-                              <i class="fas fa-phone text-primary me-3"></i>
-                              <div>
-                                  <span class="d-block">+221 33 842 49 00</span>
-                                  <span class="d-block">+221 77 631 78 92</span>
-                              </div>
-                          </a>
-                      </li>
-                      <li class="mb-3">
-                          <a href="mailto:info@first-media-groupe.com" class="text-white-70 text-decoration-none d-flex align-items-center">
-                              <i class="fas fa-envelope text-primary me-3"></i>
-                              info@first-media-groupe.com
-                          </a>
-                      </li>
-                  </ul>
-              </div>
-
-              <!-- Réseaux sociaux -->
-              <div class="col-md-4 col-lg-4 mb-4">
-                  <h5 class="text-uppercase text-white mb-4">Réseaux sociaux</h5>
-                  <div class="social-links mb-4">
-                      <a href="https://www.tiktok.com/@firstmediagroup1?_t=ZM-8ycjPuJ7uA2&_r=1" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-tiktok"></i></a>
-                      <a href="https://www.facebook.com/share/1BxVquMz8N/?mibextid=wwXIfr" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-facebook-f"></i></a>
-                      <a href="https://www.youtube.com/@firstmediagroup5105?si=Q_0A-aNQX8ArJvKO" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-youtube"></i></a>
-                      <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-instagram"></i></a>
-                      <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-linkedin-in"></i></a>
-                  </div>
-
-                  <div class="newsletter">
-                      <h6 class="text-white mb-3">Abonnez-vous à notre newsletter</h6>
-                      <form class="input-group">
-                          <input type="email" class="form-control border-0" placeholder="Votre email">
-                          <button class="btn btn-primary" type="submit">
-                              <i class="fas fa-paper-plane"></i>
-                          </button>
-                      </form>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Mentions légales -->
-          <div class="footer-legal py-4 border-top border-dark">
-              <div class="row align-items-center">
-                  <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                      <div class="legal-links">
-                          <a href="#" class="text-white-70 me-3">Mentions légales</a>
-                          <a href="#" class="text-white-70 me-3">Conditions</a>
-                          <a href="#" class="text-white-70">Politique de confidentialité</a>
-                      </div>
-                  </div>
-                  <div class="col-md-6 text-center text-md-end">
-                      <p class="text-white-70 mb-0">
-                          &copy; <span class="current-year"></span> FIRST MEDIA Group — Tous droits réservés — Développé par
-                          <a href="#" class="text-primary text-decoration-none">sambou sarr</a>
-                      </p>
-                  </div>
-              </div>
-          </div>
-      </div>
-</footer>
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Animation au scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+            // Animation au scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observer tous les éléments avec animation
+            document.querySelectorAll('.concept-card, .variant-card, .impact-stat, .timeline-content').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
             });
-        }, observerOptions);
 
-        // Observer tous les éléments avec animation
-        document.querySelectorAll('.concept-card, .variant-card, .impact-stat, .timeline-content').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
+            // Smooth scroll pour les liens d'ancrage
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+                const swipers = document.querySelectorAll('.emission-slider');
+        swipers.forEach((el) => {
+        new Swiper(el, {
+            loop: true,
+            autoplay: {
+            delay: 3000, // 3 secondes
+            disableOnInteraction: false, // continuer même après interaction
+            },
+            pagination: {
+            el: el.querySelector('.swiper-pagination'),
+            clickable: true,
+            },
         });
+        });
+  
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+                element.addEventListener('click', function () {
+                let navbarToggler = document.querySelector('.navbar-toggler');
+                let navbarCollapse = document.querySelector('.navbar-collapse');
 
-        // Smooth scroll pour les liens d'ancrage
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                if (navbarToggler && navbarCollapse.classList.contains('show')) {
+                    navbarToggler.click();
                 }
+                });
             });
         });
-            const swipers = document.querySelectorAll('.emission-slider');
-    swipers.forEach((el) => {
-      new Swiper(el, {
-        loop: true,
-        autoplay: {
-          delay: 3000, // 3 secondes
-          disableOnInteraction: false, // continuer même après interaction
-        },
-        pagination: {
-          el: el.querySelector('.swiper-pagination'),
-          clickable: true,
-        },
-      });
-    });
     </script>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <!-- Vendor JS Files -->
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
 
