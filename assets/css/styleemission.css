@@ -39,7 +39,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../assets/img/debat.jpg') top center / cover no-repeat;
+  background: url('../img/debat.jpg') top center / cover no-repeat;
   filter: blur(8px); /* intensité du flou */
   transform: scale(1.1); /* éviter les bords après flou */
   z-index: -1; /* derrière le contenu */
@@ -1111,4 +1111,51 @@ body {
 /* Alignement des boutons */
 .social-buttons {
     margin-top: 20px;
+}
+    @media (max-width: 668px) {
+    .hide-mobile {
+        display: none !important;
+    }
+    }/* Style général des boutons */
+.social-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  margin: 5px;
+}
+
+/* Facebook */
+.social-buttons .facebook {
+  background-color: #1877f2;
+}
+
+/* YouTube */
+.social-buttons .youtube {
+  background-color: #ff0000;
+}
+
+/* Instagram */
+.social-buttons .instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+/* Adaptation mobile */
+@media (max-width: 768px) {
+  .social-buttons {
+    display: flex;
+    flex-direction: column; /* boutons en colonne */
+    align-items: center;
+  }
+
+  .social-buttons a {
+    width: 70%;   /* au lieu de 100% */
+    font-size: 14px;
+    padding: 8px 15px;
+  }
 }
