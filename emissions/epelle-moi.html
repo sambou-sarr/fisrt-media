@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="../assets/css/style_index.css">
   <link rel="stylesheet" href="styleemission.css">
   <link rel="stylesheet" href="../assets/css/style_epellemoi.css">
+  <link rel="stylesheet" href="../assets/css/styleemission.css">
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
@@ -120,8 +121,6 @@
             <!-- Logo + Réseaux sociaux (toujours visibles) -->
             <div class="col-lg-6 text-center"> 
                 <img src="../assets/img/logoepellemoi.png" alt="Logo Épelle-Moi" class="hero-logo img-fluid mb-3" style="padding-bottom: 0px;"> 
-                
-
             </div> 
         </div> 
     </div> 
@@ -190,7 +189,7 @@
             </div>
             
             <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-duration="500">
+                <div class="col-lg-3 col-md-6 mb-5" data-aos="zoom-in" data-aos-duration="500">
                     <div class="impact-stat">
                         <div class="stat-icon"><i class="fas fa-school"></i></div>
                         <div class="stat-number">100+</div>
@@ -198,33 +197,111 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="150">
+                <div class="col-lg-3 col-md-6 mb-5" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="150">
                     <div class="impact-stat">
                         <div class="stat-icon"><i class="fas fa-user-graduate"></i></div>
                         <div class="stat-number">500+</div>
                         <div class="stat-label">Finalistes Nationaux</div>
                     </div>
                 </div>
-                
-                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300">
+
+                <div class="col-lg-3 col-md-6 mb-5" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300">
                     <div class="impact-stat">
                         <div class="stat-icon"><i class="fas fa-tv"></i></div>
                         <div class="stat-number">5+</div>
                         <div class="stat-label">Saisons à Succès</div>
                     </div>
                 </div>
-                
-                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="450">
-                    <div class="impact-stat">
-                        <div class="stat-icon"><i class="fas fa-map-marked-alt"></i></div>
-                        <div class="stat-label">Présence dans les</div>
-                        <div class="stat-number">14</div>
-                        <div class="stat-label">Régions du Sénégal</div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
+    <section class="emission-contact section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Rejoignez L'Epelle-moi</h2>
+          <p>Votre école souhaite participer ? Contactez-nous pour plus d'informations</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="contact-form">
+            <!-- Message de confirmation (caché au départ) -->
+            <div id="form-message" class="alert alert-success text-center" style="display:none; margin-top:15px;">
+              🎉 Merci ! Votre candidature a bien été envoyée.  
+              Nous vous recontacterons très bientôt.
+            </div>
+            <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="1913cdc3-b90a-441a-b1a3-44219ac0bd89">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="school-name">Nom de l'École </label>
+                    <input type="text" class="form-control" name="ecole" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="job-title">Poste Occupé</label>
+                <input type="text" class="form-control" name="poste" required>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" class="form-control" name="telephone" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message (optionnel)</label>
+                <textarea class="form-control" name="message" rows="5" placeholder="Décrivez votre motivation et vos attentes..."></textarea>
+              </div>
+
+              <!-- On peut enlever redirect si on veut rester sur la même page -->
+              <!-- <input type="hidden" name="redirect" value="https://sambou-sarr.github.io/fisrt-media/emissions/debattons.html"> -->
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Envoyer la Candidature</button>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(e){
+  e.preventDefault(); // empêche le rechargement/redirection
+
+  var form = e.target;
+  var data = new FormData(form);
+
+  fetch(form.action, {
+    method: form.method,
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  }).then(response => {
+    if (response.ok) {
+      form.reset(); // vide le formulaire
+      document.getElementById("form-message").style.display = "block"; // affiche le message
+    } else {
+      alert("❌ Une erreur est survenue. Réessayez.");
+    }
+  }).catch(error => {
+    alert("⚠️ Impossible d’envoyer le formulaire. Vérifiez votre connexion.");
+  });
+});
+</script>
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <footer class="footer-modern bg-dark w-100">

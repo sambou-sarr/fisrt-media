@@ -509,58 +509,64 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <div class="contact-form">
-              <form action="#" method="post">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="school-name">Nom de l'École ou Mairie</label>
-                      <input type="text" class="form-control" id="school-name" required>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="contact-person">Personne de Contact</label>
-                      <input type="text" class="form-control" id="contact-person" required>
-                    </div>
-                  </div>
-                </div>
-                
-                    <div class="form-group">
-                      <label for="job-title">Poste Occupé</label>
-                      <input type="text" class="form-control" id="job-title" required>
-                    </div>
-               
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email" required>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="phone">Téléphone</label>
-                      <input type="tel" class="form-control" id="phone" required>
-                    </div>
+            <!-- Message de confirmation (caché au départ) -->
+            <div id="form-message" class="alert alert-success text-center" style="display:none; margin-top:15px;">
+              🎉 Merci ! Votre candidature a bien été envoyée.  
+              Nous vous recontacterons très bientôt.
+            </div>
+            <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="1913cdc3-b90a-441a-b1a3-44219ac0bd89">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="school-name">Nom de l'École ou Mairie</label>
+                    <input type="text" class="form-control" name="ecole" required>
                   </div>
                 </div>
-                <div class="form-group">
-                  <label for="variant">Variante d'Intérêt</label>
-                  <select class="form-control" id="variant" required>
-                    <option value="">Choisissez une variante</option>
-                    <option value="lycee">Débattons Lycée</option>
-                    <option value="postbac">Débattons Post Bac</option>
-                    <option value="both">Les Navetanes Débattons</option>
-                  </select>
+              </div>
+
+              <div class="form-group">
+                <label for="job-title">Poste Occupé</label>
+                <input type="text" class="form-control" name="poste" required>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" required>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Décrivez votre motivation et vos attentes..."></textarea>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" class="form-control" name="telephone" required>
+                  </div>
                 </div>
-                <div class="text-center">
-                  <button type="submit" class="btn btn-primary btn-lg">Envoyer la Candidature</button>
-                </div>
-              </form>
+              </div>
+
+              <div class="form-group">
+                <label for="variant">Variante d'Intérêt</label>
+                <select class="form-control" name="debattons" required>
+                  <option value="">Choisissez une variante</option>
+                  <option value="lycee">Débattons Lycée</option>
+                  <option value="postbac">Débattons Post Bac</option>
+                  <option value="both">Les Navetanes Débattons</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" rows="5" placeholder="Décrivez votre motivation et vos attentes..."></textarea>
+              </div>
+
+              <!-- On peut enlever redirect si on veut rester sur la même page -->
+              <!-- <input type="hidden" name="redirect" value="https://sambou-sarr.github.io/fisrt-media/emissions/debattons.html"> -->
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Envoyer la Candidature</button>
+              </div>
+            </form>
             </div>
           </div>
         </div>
@@ -696,6 +702,28 @@
       });
     });
   });
+ 
+document.getElementById("myForm").addEventListener("submit", function(e){
+  e.preventDefault(); // empêche le rechargement/redirection
+
+  var form = e.target;
+  var data = new FormData(form);
+
+  fetch(form.action, {
+    method: form.method,
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  }).then(response => {
+    if (response.ok) {
+      form.reset(); // vide le formulaire
+      document.getElementById("form-message").style.display = "block"; // affiche le message
+    } else {
+      alert("❌ Une erreur est survenue. Réessayez.");
+    }
+  }).catch(error => {
+    alert("⚠️ Impossible d’envoyer le formulaire. Vérifiez votre connexion.");
+  });
+});
   </script>
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
