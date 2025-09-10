@@ -92,9 +92,6 @@
     box-shadow: 0 8px 20px rgba(225, 48, 108, 0.4);
 }
 
-
-
-
 /* Animation fondu */
 @keyframes fadeSlideshow {
   0%   { opacity: 0; }
