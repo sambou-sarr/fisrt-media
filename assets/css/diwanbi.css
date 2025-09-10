@@ -2,7 +2,7 @@
 
 /* Variables CSS héritées du thème First Media */
 :root {
-    --primary-color: #bd4a00;
+    --primary-color: #007bff;
     --primary-hover: #0056b3;
     --secondary-color: #6c757d;
     --dark-bg: #212529;
@@ -335,7 +335,7 @@ body {
 
 /* ===== SECTIONS GÉNÉRALES ===== */
 .section-title {
-    color: var(--primary-color);
+    color: #bd4a00;
     font-weight: 700;
     margin-bottom: 30px;
     position: relative;
@@ -521,7 +521,7 @@ body {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(90deg, #bd4a00, var(--accent-color));
     transform: scaleX(0);
     transition: transform var(--transition-fast);
 }
@@ -538,7 +538,7 @@ body {
 .activity-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    background: linear-gradient(135deg, #bd4a00);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -558,7 +558,7 @@ body {
 }
 
 .activity-card h3 {
-    color: var(--primary-color);
+    color: #bd4a00;
     font-weight: 700;
     margin-bottom: 20px;
     font-size: 1.4rem;
@@ -853,7 +853,6 @@ body {
     }
 }
 
-/* ===== FIN DU CSS DIWANE BI ===== */
 
 strong/* Section Hero */
 #hero {
