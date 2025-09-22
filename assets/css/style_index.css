@@ -1,7 +1,7 @@
- 
+
     /* ===========================================================
-   NAVIGATION BAR - DESIGN PROFESSIONNEL HARMONISÉ AVEC FOOTER
-   =========================================================== */
+    NAVIGATION BAR - DESIGN PROFESSIONNEL HARMONISÉ AVEC FOOTER
+    =========================================================== */
 
 .custom-navbar {
     background-color: var(--dark-bg);
@@ -29,8 +29,8 @@
 }
 
 /* ==============================
-   NAV LINKS (Standard Desktop)
-   ============================== */
+NAV LINKS (Standard Desktop)
+============================== */
 .custom-navbar .nav-link {
     color: var(--white-70);
     margin: 0 12px;
@@ -65,8 +65,8 @@
 }
 
 /* ==============================
-   RESPONSIVE TOGGLER BUTTON
-   ============================== */
+RESPONSIVE TOGGLER BUTTON
+============================== */
 .navbar-toggler {
     border: 1px solid var(--primary-color);
     padding: 5px 10px;
@@ -83,368 +83,367 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255,255,255,0.8%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* ==============================
-   DROPDOWN MENU
-   ============================== */
-.custom-navbar .dropdown-menu {
+    /* ==============================
+    DROPDOWN MENU
+    ============================== */
+    .custom-navbar .dropdown-menu {
     background-color: var(--dark-bg);
     border: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
+    }
 
-.custom-navbar .dropdown-item {
+    .custom-navbar .dropdown-item {
     color: var(--white-70);
     transition: background-color var(--transition-fast), color var(--transition-fast);
-}
+    }
 
-.custom-navbar .dropdown-item:hover,
-.custom-navbar .dropdown-item:focus {
+    .custom-navbar .dropdown-item:hover,
+    .custom-navbar .dropdown-item:focus {
     background-color: rgba(0, 123, 255, 0.1);
     color: var(--primary-color);
-}
+    }
 
-/* ==============================
-   NAV ON SCROLL - SHRINK EFFECT
-   ============================== */
-.custom-navbar.shrink {
+    /* ==============================
+    NAV ON SCROLL - SHRINK EFFECT
+    ============================== */
+    .custom-navbar.shrink {
     padding: 10px 25px;
     background-color: #0e1629;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
+    }
 
-/* ==============================
-   MOBILE VIEW - COLLAPSED NAV
-   ============================== */
-@media (max-width: 991px) {
+    /* ==============================
+    MOBILE VIEW - COLLAPSED NAV
+    ============================== */
+    @media (max-width: 991px) {
     .custom-navbar .nav-link {
-        display: block;
-        padding: 12px;
-        margin: 5px 0;
+    display: block;
+    padding: 12px;
+    margin: 5px 0;
     }
 
     .custom-navbar .nav-item {
-        text-align: center;
+    text-align: center;
     }
 
     .custom-navbar .navbar-collapse {
-        background-color: var(--dark-bg);
-        border-top: 1px solid rgba(255, 255, 255, 0.05);
-        padding: 15px 0;
+    background-color: var(--dark-bg);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 15px 0;
     }
 }
-        /* Variables CSS pour faciliter la personnalisation */
-        :root {
-            --primary-color: #007bff;
-            --primary-hover: #0056b3;
-            --secondary-color: #6c757d;
-            --dark-bg: #212529;
-            --darker-bg: #1a1d20;
-            --white-70: rgba(255, 255, 255, 0.7);
-            --white-50: rgba(255, 255, 255, 0.5);
-            --transition-fast: 0.3s ease;
-            --transition-medium: 0.5s ease;
-            --transition-slow: 0.8s ease;
-        }
-
-       
-
-        /* Footer principal avec animations */
-        .footer-modern {
-            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--darker-bg) 100%);
-            position: relative;
-            overflow: hidden;
-            transition: var(--transition-medium);
-        }
-
-        .footer-modern::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
-            animation: shimmer 3s infinite;
-        }
-
-        @keyframes shimmer {
-            0% { left: -100%; }
-            100% { left: 100%; }
-        }
-
-        /* Animations pour les sections */
-        .footer-about, .footer-links, .contact-info, .social-links {
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 0.8s ease forwards;
-        }
-
-        .footer-about { animation-delay: 0.1s; }
-        .footer-links { animation-delay: 0.2s; }
-        .contact-info { animation-delay: 0.3s; }
-        .social-links { animation-delay: 0.4s; }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Effets hover pour les titres */
-        .footer-modern h5 {
-            position: relative;
-            transition: var(--transition-fast);
-            cursor: pointer;
-        }
-
-        .footer-modern h5::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--primary-color);
-            transition: var(--transition-fast);
-        }
-
-        .footer-modern h5:hover {
-            color: var(--primary-color) !important;
-            transform: translateX(5px);
-        }
-
-        .footer-modern h5:hover::after {
-            width: 100%;
-        }
-
-        /* Liens de navigation avec effets */
-        .footer-links li {
-            transition: var(--transition-fast);
-            border-radius: 5px;
-            margin-bottom: 5px;
-        }
-
-        .footer-links li:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: translateX(10px);
-            padding-left: 10px;
-        }
-
-        .footer-links a {
-            transition: var(--transition-fast);
-            position: relative;
-        }
-
-        .footer-links a:hover {
-            color: var(--primary-color) !important;
-            text-decoration: none;
-        }
-
-        .footer-links a .fa-chevron-right {
-            transition: var(--transition-fast);
-        }
-
-        .footer-links a:hover .fa-chevron-right {
-            transform: translateX(5px);
-            color: var(--primary-color);
-        }
-
-        /* Informations de contact avec animations */
-        .contact-info li {
-            transition: var(--transition-fast);
-            padding: 10px;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        .contact-info li:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: scale(1.02);
-            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
-        }
-
-        .contact-info i {
-            transition: var(--transition-fast);
-        }
-
-        .contact-info li:hover i {
-            transform: scale(1.2);
-            color: var(--primary-color);
-        }
-
-        /* Style commun */
+/* Variables CSS pour faciliter la personnalisation */
+:root {
+    --primary-color: #007bff;
+    --primary-hover: #0056b3;
+    --secondary-color: #6c757d;
+    --dark-bg: #212529;
+    --darker-bg: #1a1d20;
+    --white-70: rgba(255, 255, 255, 0.7);
+    --white-50: rgba(255, 255, 255, 0.5);
+    --transition-fast: 0.3s ease;
+    --transition-medium: 0.5s ease;
+    --transition-slow: 0.8s ease;
+}
 
 
 
-        /* Newsletter avec animations */
-        .newsletter {
-            transition: var(--transition-fast);
-        }
+/* Footer principal avec animations */
+.footer-modern {
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--darker-bg) 100%);
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-medium);
+}
 
-        .newsletter:hover {
-            transform: translateY(-2px);
-        }
+.footer-modern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    animation: shimmer 3s infinite;
+}
 
-        .newsletter .form-control {
-            transition: var(--transition-fast);
-            border: 2px solid transparent;
-        }
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
 
-        .newsletter .form-control:focus {
-            border-color: var(--primary-color);
-            box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
-            transform: scale(1.02);
-        }
+/* Animations pour les sections */
+.footer-about, .footer-links, .contact-info, .social-links {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+}
 
-        .newsletter .btn {
-            transition: var(--transition-fast);
-            position: relative;
-            overflow: hidden;
-        }
+.footer-about { animation-delay: 0.1s; }
+.footer-links { animation-delay: 0.2s; }
+.contact-info { animation-delay: 0.3s; }
+.social-links { animation-delay: 0.4s; }
 
-        .newsletter .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: var(--transition-fast);
-        }
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-        .newsletter .btn:hover::before {
-            left: 100%;
-        }
+/* Effets hover pour les titres */
+.footer-modern h5 {
+    position: relative;
+    transition: var(--transition-fast);
+    cursor: pointer;
+}
 
-        .newsletter .btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
-        }
+.footer-modern h5::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: var(--transition-fast);
+}
 
-        /* Badges de confiance avec effets */
-        .trust-badges img {
-            transition: var(--transition-fast);
-            filter: grayscale(50%);
-            opacity: 0.7;
-        }
+.footer-modern h5:hover {
+    color: var(--primary-color) !important;
+    transform: translateX(5px);
+}
 
-        .trust-badges img:hover {
-            filter: grayscale(0%);
-            opacity: 1;
-            transform: scale(1.1);
-        }
+.footer-modern h5:hover::after {
+    width: 100%;
+}
 
-        /* Liens légaux avec effets */
-        .legal-links a {
-            transition: var(--transition-fast);
-            position: relative;
-        }
+/* Liens de navigation avec effets */
+.footer-links li {
+    transition: var(--transition-fast);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
 
-        .legal-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 1px;
-            background: var(--primary-color);
-            transition: var(--transition-fast);
-        }
+.footer-links li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+    padding-left: 10px;
+}
 
-        .legal-links a:hover {
-            color: var(--primary-color) !important;
-            transform: translateY(-2px);
-        }
+.footer-links a {
+    transition: var(--transition-fast);
+    position: relative;
+}
 
-        .legal-links a:hover::after {
-            width: 100%;
-        }
+.footer-links a:hover {
+    color: var(--primary-color) !important;
+    text-decoration: none;
+}
 
-        /* Animation de l'année courante */
-        .current-year {
-            display: inline-block;
-            transition: var(--transition-fast);
-        }
+.footer-links a .fa-chevron-right {
+    transition: var(--transition-fast);
+}
 
-        .current-year:hover {
-            color: var(--primary-color);
-            transform: scale(1.1);
-        }
+.footer-links a:hover .fa-chevron-right {
+    transform: translateX(5px);
+    color: var(--primary-color);
+}
 
-        /* Effets de pulsation pour attirer l'attention */
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
+/* Informations de contact avec animations */
+.contact-info li {
+    transition: var(--transition-fast);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
 
-        .newsletter .btn {
-            animation: pulse 2s infinite;
-        }
+.contact-info li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
 
-        .newsletter .btn:hover {
-            animation: none;
-        }
+.contact-info i {
+    transition: var(--transition-fast);
+}
 
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .footer-modern h5:hover {
-                transform: none;
-            }
-            
-            .footer-links li:hover {
-                transform: none;
-                padding-left: 0;
-            }
-            
-            .btn-social:hover {
-                transform: scale(1.05);
-            }
-        }
+.contact-info li:hover i {
+    transform: scale(1.2);
+    color: var(--primary-color);
+}
 
-        /* Effet de particules en arrière-plan */
-        .footer-modern::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                radial-gradient(circle at 20% 20%, rgba(0, 123, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(0, 123, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 60%, rgba(0, 123, 255, 0.05) 0%, transparent 50%);
-            pointer-events: none;
-            animation: float 6s ease-in-out infinite;
-        }
+/* Style commun */
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
 
-        /* Classe utilitaire pour le texte blanc avec opacité */
-        .text-white-70 {
-            color: var(--white-70) !important;
-        }
 
-        .text-white-50 {
-            color: var(--white-50) !important;
-        }
-  /* Flèche du dropdown */
-  .navbar .dropdown-toggle::after {
-    border-top: 0.4em solid #007bff;       /* couleur de la flèche */
-    border-right: 0.4em solid transparent;
-    border-left: 0.4em solid transparent;
-    margin-left: 0.5em;
-    vertical-align: middle;
-    transition: transform 0.3s ease;
-  }
+/* Newsletter avec animations */
+.newsletter {
+    transition: var(--transition-fast);
+}
 
-  /* Quand le menu est ouvert */
-  .navbar .dropdown-toggle[aria-expanded="true"]::after {
-    transform: rotate(180deg);
-  }
-  
+.newsletter:hover {
+    transform: translateY(-2px);
+}
+
+.newsletter .form-control {
+    transition: var(--transition-fast);
+    border: 2px solid transparent;
+}
+
+.newsletter .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+    transform: scale(1.02);
+}
+
+.newsletter .btn {
+    transition: var(--transition-fast);
+    position: relative;
+    overflow: hidden;
+}
+
+.newsletter .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: var(--transition-fast);
+}
+
+.newsletter .btn:hover::before {
+    left: 100%;
+}
+
+.newsletter .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* Badges de confiance avec effets */
+.trust-badges img {
+    transition: var(--transition-fast);
+    filter: grayscale(50%);
+    opacity: 0.7;
+}
+
+.trust-badges img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Liens légaux avec effets */
+.legal-links a {
+    transition: var(--transition-fast);
+    position: relative;
+}
+
+.legal-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--primary-color);
+    transition: var(--transition-fast);
+}
+
+.legal-links a:hover {
+    color: var(--primary-color) !important;
+    transform: translateY(-2px);
+}
+
+.legal-links a:hover::after {
+    width: 100%;
+}
+
+/* Animation de l'année courante */
+.current-year {
+    display: inline-block;
+    transition: var(--transition-fast);
+}
+
+.current-year:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+/* Effets de pulsation pour attirer l'attention */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.newsletter .btn {
+    animation: pulse 2s infinite;
+}
+
+.newsletter .btn:hover {
+    animation: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-modern h5:hover {
+        transform: none;
+    }
+    
+    .footer-links li:hover {
+        transform: none;
+        padding-left: 0;
+    }
+    
+    .btn-social:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* Effet de particules en arrière-plan */
+.footer-modern::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 20%, rgba(0, 123, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(0, 123, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 60%, rgba(0, 123, 255, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Classe utilitaire pour le texte blanc avec opacité */
+.text-white-70 {
+    color: var(--white-70) !important;
+}
+
+.text-white-50 {
+    color: var(--white-50) !important;
+}
+/* Flèche du dropdown */
+.navbar .dropdown-toggle::after {
+border-top: 0.4em solid #007bff;       /* couleur de la flèche */
+border-right: 0.4em solid transparent;
+border-left: 0.4em solid transparent;
+margin-left: 0.5em;
+vertical-align: middle;
+transition: transform 0.3s ease;
+}
+
+/* Quand le menu est ouvert */
+.navbar .dropdown-toggle[aria-expanded="true"]::after {
+transform: rotate(180deg);
+}

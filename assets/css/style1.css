@@ -14,7 +14,7 @@
   right: 0;
   bottom: 0;
   background: url('../img/pexels-23515909-6664782.jpg') top center / cover no-repeat;
-  filter: blur(8px); /* intensité du flou */
+  filter: blur(0px); /* intensité du flou */
   transform: scale(1.1); /* éviter les bords après flou */
   z-index: -1; /* derrière le contenu */
 }
