@@ -5,7 +5,7 @@
 
 .custom-navbar {
     background-color: var(--dark-bg);
-    padding: 15px 30px;
+    padding: 10px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
     transition: background-color var(--transition-fast), box-shadow var(--transition-medium);
     z-index: 1000;
@@ -447,3 +447,4 @@
   .navbar .dropdown-toggle[aria-expanded="true"]::after {
     transform: rotate(180deg);
   }
+  

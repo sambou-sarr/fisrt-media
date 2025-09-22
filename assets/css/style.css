@@ -130,7 +130,6 @@ h6 {
 #main {
 
   transition: all ease-in-out 0.5s;
-  padding:  15px;    
   background: #d8d8da;
   min-height: 100vh;  
   position: relative;
@@ -280,8 +279,8 @@ h6 {
 
 #hero p {
   color: #fff;
-  margin-bottom: 50px;
-  font-size: 26px;
+  margin-bottom: 0px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1111,4 +1110,25 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+/* Conteneur de l'image */
+.portfolio-item .img {
+    width: 100%;
+    overflow: hidden; /* empêche le débordement */
+    display: flex;
+    justify-content: center; /* centre l'image horizontalement */
+    align-items: center;     /* centre verticalement si nécessaire */
+}
+
+/* Image elle-même */
+.portfolio-item .img img {
+    width: 100%;    /* s'adapte à la largeur du conteneur */
+    height: auto;   /* conserve les proportions */
+    object-fit: contain; /* ne coupe pas l'image */
+    transition: transform 0.3s ease;
+}
+
+/* Effet au survol */
+.portfolio-item .img img.hover-zoom:hover {
+    transform: scale(1.05);
 }
