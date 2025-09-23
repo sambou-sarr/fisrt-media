@@ -447,3 +447,54 @@ transition: transform 0.3s ease;
 .navbar .dropdown-toggle[aria-expanded="true"]::after {
 transform: rotate(180deg);
 }
+/* Container */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Links */
+.footer-social .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* TikTok */
+.footer-social .tiktok {
+  background: #010101;
+}
+
+/* Facebook */
+.footer-social .facebook {
+  background: #1877f2;
+}
+
+/* YouTube */
+.footer-social .youtube {
+  background: #ff0000;
+}
+
+/* Instagram (dégradé) */
+.footer-social .instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5);
+}
+
+/* LinkedIn */
+.footer-social .linkedin {
+  background: #0077b5;
+}
+
+/* Effet hover */
+.footer-social .social-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
