@@ -498,3 +498,10 @@ transform: rotate(180deg);
   transform: scale(1.1);
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
+  .partenaire-logo {
+    max-height: 100px; /* fixe la hauteur */
+    width: auto;       /* garde le ratio */
+    object-fit: contain; /* évite la déformation */
+    display: block;
+    margin: 0 auto 15px auto; /* centre les logos et ajoute un petit espace */
+  }

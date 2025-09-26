@@ -6,82 +6,89 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Emission - Épelle-moi</title>
 
-  <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <!-- Template Main CSS File -->
-  <link href="../assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style_index.css">
-  <link rel="stylesheet" href="../assets/css/style_epellemoi.css">
-  <link rel="stylesheet" href="../assets/css/styleemission.css">
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <!--  AOS - Animate On Scroll CSS      -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Favicons -->
+<link href="../assets/img/favicon.png" rel="icon">
+<link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!-- Bootstrap (dernière version stable, 5.3.3) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- Font Awesome (une seule version) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<!-- Vendor CSS Files -->
+<link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+<!-- Ton CSS principal -->
+<link href="../assets/css/style.css" rel="stylesheet">
+<link href="../assets/css/style_index.css" rel="stylesheet">
+<link href="../assets/css/style_epellemoi.css" rel="stylesheet">
+<link href="../assets/css/styleemission.css" rel="stylesheet">
+
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top bg-dark">
-        <div class="container d-flex align-items-center justify-content-between">
-            <!-- Logo + Titre -->
-            <a class="navbar-brand d-flex align-items-center" href="../index.html" style="color: white;">
-            <img src="../assets/img/firstlogo.png" alt="Logo" class="me-2" style="width: 60px; height: 60px;">
-            <span class="d-none d-lg-inline">First Media</span>
-            </a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+  <div class="container">
 
-            <!-- Bouton responsive -->
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- Logo + Titre -->
+    <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="../index.html">
+      <img src="../assets/img/firstlogo.png" alt="Logo" 
+           style="width: 45px; height: 45px; object-fit: cover; margin-right: 8px;">
+      <span>First Media</span>
+    </a>
 
-            <!-- Liens -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <!-- Dropdown Émissions -->
-                <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle" href="#" id="emissionsDropdown" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Émissions
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="emissionsDropdown" data-bs-auto-close="false">
-                    <li><a class="dropdown-item" href="debattons.html">Débattons</a></li>
-                    <li><a class="dropdown-item" href="epelle-moi.html">Épelle-Moi</a></li>
-                    <li><a class="dropdown-item" href="diwane_bi.html">Diwane Bi</a></li>
-                    <li><a class="dropdown-item" href="sur_les_pas_des_instruction.html">Sur les pas des institutions</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../index.html#portfolio">Toutes les émissions</a></li>
-                </ul>
-                </li>
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto fs-5"> <!-- police agrandie -->
 
-                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="../index.html#abouts">À Propos</a></li>
-                <li class="nav-item"><a class="nav-link " href="../zero_faute.html">Zéro Faute</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" id="contact-link">Contact</a></li>
-            </ul>
-            </div>
-        </div>
-    </nav>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+        </li>
+
+        <!-- Dropdown Émissions -->
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="emissionsDropdown" role="button" 
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Émissions
+          </a>
+          <ul class="dropdown-menu shadow fs-6" aria-labelledby="emissionsDropdown">
+            <li><a class="dropdown-item" href="../emissions/debattons.html">Débattons</a></li>
+            <li><a class="dropdown-item" href="../emissions/epelle-moi.html">Épelle-Moi</a></li>
+            <li><a class="dropdown-item" href="../emissions/diwane_bi.html">Diwane Bi</a></li>
+            <li><a class="dropdown-item" href="../emissions/sur_les_pas_des_instruction.html">Sur les pas des institutions</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../index.html#portfolio">Toutes les émissions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="../pages/service.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/a_propos.html">À Propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/zero_faute.html">Zéro Faute</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/gallerie.html">Galerie</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <section id="hero" class="hero-section"> 
         <!-- Slides de fond -->
@@ -92,7 +99,6 @@
             <div class="slide" style="background-image: url('../assets/img/gallerie/eppellemoi/photo_hd.jpg');"></div> 
             <div class="slide" style="background-image: url('../assets/img/gallerie/eppellemoi/facebookepplemoi.png');"></div> 
         </div> 
-
         <div class="container"> 
             <div class="row align-items-center" style="margin-top: 10px;"> 
                 
@@ -124,14 +130,12 @@
             </div> 
         </div> 
     </section>
-
     <section class="section-padding feature-section">
         <div class="container">
             <div class="section-title text-center" data-aos="fade-up">
                 <h2>Épelle-Moi Sénégal : L'Excellence par les Mots</h2>
                 <p>Une initiative télévisuelle unique, produite par First Media, dédiée à la promotion de la langue française et à la valorisation des jeunes talents au cœur du système éducatif sénégalais.</p>
             </div>
-            
             <div class="row align-items-center">
                 <!-- EMPLACEMENT PHOTO 1 avec animation -->
                 <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
@@ -384,101 +388,8 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-            // Initialisation de la bibliothèque d'animation
-            AOS.init({
-                once: true, 
-                offset: 100, 
-                duration: 600, 
-            } );
-        document.getElementById("myForm").addEventListener("submit", function(e){
-        e.preventDefault(); // empêche le rechargement/redirection
-
-        var form = e.target;
-        var data = new FormData(form);
-
-        fetch(form.action, {
-            method: form.method,
-            body: data,
-            headers: { 'Accept': 'application/json' }
-        }).then(response => {
-            if (response.ok) {
-            form.reset(); // vide le formulaire
-            document.getElementById("form-message").style.display = "block"; // affiche le message
-            } else {
-            alert("❌ Une erreur est survenue. Réessayez.");
-            }
-        }).catch(error => {
-            alert("⚠️ Impossible d’envoyer le formulaire. Vérifiez votre connexion.");
-        });
-        });
-    </script>
+    <script src="../assets/js/epellemoi.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-            // Animation au scroll
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, observerOptions);
-
-            // Observer tous les éléments avec animation
-            document.querySelectorAll('.concept-card, .variant-card, .impact-stat, .timeline-content').forEach(el => {
-                el.style.opacity = '0';
-                el.style.transform = 'translateY(30px)';
-                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(el);
-            });
-
-            // Smooth scroll pour les liens d'ancrage
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-                const swipers = document.querySelectorAll('.emission-slider');
-        swipers.forEach((el) => {
-        new Swiper(el, {
-            loop: true,
-            autoplay: {
-            delay: 3000, // 3 secondes
-            disableOnInteraction: false, // continuer même après interaction
-            },
-            pagination: {
-            el: el.querySelector('.swiper-pagination'),
-            clickable: true,
-            },
-        });
-        });
-  
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll('.dropdown-menu a').forEach(function(element){
-                element.addEventListener('click', function () {
-                let navbarToggler = document.querySelector('.navbar-toggler');
-                let navbarCollapse = document.querySelector('.navbar-collapse');
-
-                if (navbarToggler && navbarCollapse.classList.contains('show')) {
-                    navbarToggler.click();
-                }
-                });
-            });
-        });
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- Vendor JS Files -->

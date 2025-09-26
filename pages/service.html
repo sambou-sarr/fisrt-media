@@ -7,85 +7,88 @@
   <title>FIRST MEDIA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <!-- CSS Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- Favicons -->
+<link href="../assets/img/favicon.png" rel="icon">
+<link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS (1 seule version, stable) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="../assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style_index.css">
-  <link rel="stylesheet" href="../assets/css/style1.css">
-  <link rel="stylesheet" href="../assets/css/service.css">
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Font Awesome (dernière version, 6.4.0) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Google Fonts (chargées 1 seule fois) -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- Tes fichiers CSS -->
+<link href="../assets/css/style.css" rel="stylesheet">
+<link href="../assets/css/style_index.css" rel="stylesheet">
+<link href="../assets/css/style1.css" rel="stylesheet">
+<link href="../assets/css/service.css" rel="stylesheet">
 
 </head>
 <body>
   <!-- ======= NAVBAR ======= -->
-  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top bg-dark">
-    <div class="container d-flex align-items-center justify-content-between">
-      <!-- Logo + Titre -->
-      <a class="navbar-brand d-flex align-items-center" href="index.html" style="color: white;">
-        <img src="../assets/img/firstlogo.png" alt="Logo" class="me-2" style="width: 60px; height: 60px;">
-        <span class="d-none d-lg-inline">First Media</span>
-      </a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+  <div class="container">
 
-      <!-- Bouton responsive -->
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Logo + Titre -->
+    <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="../index.html">
+      <img src="../assets/img/firstlogo.png" alt="Logo" 
+           style="width: 45px; height: 45px; object-fit: cover; margin-right: 8px;">
+      <span>First Media</span>
+    </a>
 
-      <!-- Liens -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-              <!-- Dropdown Émissions -->
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="emissionsDropdown" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Émissions
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="emissionsDropdown" data-bs-auto-close="false">
-                      <li><a class="dropdown-item" href="debattons.html">Débattons</a></li>
-                      <li><a class="dropdown-item" href="epelle-moi.html">Épelle-Moi</a></li>
-                      <li><a class="dropdown-item" href="diwane_bi.html">Diwane Bi</a></li>
-                      <li><a class="dropdown-item" href="sur_les_pas_des_instruction.html">Sur les pas des institutions</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="index.html#portfolio">Toutes les émissions</a></li>
-                  </ul>
-              </li>
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto fs-5"> <!-- police agrandie -->
 
-          <li class="nav-item "><a class="nav-link active" href="service.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="../index.html#abouts">À Propos</a></li>
-          <li class="nav-item"><a class="nav-link " href="../zero_faute.html">Zéro Faute</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" id="contact-link">Contact</a></li>
-        </ul>
-      </div>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+        </li>
+
+        <!-- Dropdown Émissions -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="emissionsDropdown" role="button" 
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Émissions
+          </a>
+          <ul class="dropdown-menu shadow fs-6" aria-labelledby="emissionsDropdown">
+            <li><a class="dropdown-item" href="../emissions/debattons.html">Débattons</a></li>
+            <li><a class="dropdown-item" href="../emissions/epelle-moi.html">Épelle-Moi</a></li>
+            <li><a class="dropdown-item" href="../emissions/diwane_bi.html">Diwane Bi</a></li>
+            <li><a class="dropdown-item" href="../emissions/sur_les_pas_des_instruction.html">Sur les pas des institutions</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../index.html#portfolio">Toutes les émissions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link active" href="service.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="a_propos.html">À Propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="zero_faute.html">Zéro Faute</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallerie.html">Galerie</a></li>
+
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
     <!-- ======= HERO SECTION ======= -->
   <section class="hero d-flex align-items-center justify-content-center text-center text-white" style="height: 70vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/img/hero/hc-digital-7L2h4zTYiNI-unsplash.jpg') center/cover no-repeat;">
     <div class="container" data-aos="fade-up">
@@ -223,9 +226,6 @@
   </div>
 </section>
 
-
-
-
   <!-- ======= PROCESSUS ======= -->
   <section class="py-5">
     <div class="container text-center" data-aos="fade-up">
@@ -283,6 +283,8 @@
     <div class="container" data-aos="fade-up">
       <h2 class="fw-bold text-center mb-4">Questions Fréquentes</h2>
       <div class="accordion" id="faqAccordion">
+        
+        <!-- Question 1 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="faq1">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer1">
@@ -290,9 +292,13 @@
             </button>
           </h2>
           <div id="answer1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Nous produisons des émissions, documentaires, reportages, publicités et contenus corporate adaptés à vos besoins.</div>
+            <div class="accordion-body">
+              Nous produisons des émissions, documentaires, reportages, publicités et contenus corporate adaptés à vos besoins.
+            </div>
           </div>
         </div>
+
+        <!-- Question 2 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="faq2">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer2">
@@ -300,12 +306,72 @@
             </button>
           </h2>
           <div id="answer2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Oui, nous collaborons avec des institutions publiques, ONG et entreprises privées.</div>
+            <div class="accordion-body">
+              Oui, nous collaborons avec des institutions publiques, ONG et entreprises privées.
+            </div>
           </div>
         </div>
+
+        <!-- Question 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer3">
+              Proposez-vous des services de couverture d’événements ?
+            </button>
+          </h2>
+          <div id="answer3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Oui, nous assurons la captation et la diffusion d’événements tels que conférences, séminaires, concerts et cérémonies.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer4">
+              Offrez-vous des solutions de diffusion en ligne ?
+            </button>
+          </h2>
+          <div id="answer4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Absolument, nous proposons la diffusion en direct (live streaming) sur différentes plateformes digitales.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer5">
+              Pouvez-vous adapter vos contenus aux réseaux sociaux ?
+            </button>
+          </h2>
+          <div id="answer5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Oui, nous créons des formats courts et optimisés pour Facebook, Instagram, TikTok et YouTube.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer6">
+              Comment puis-je demander un devis ?
+            </button>
+          </h2>
+          <div id="answer6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Il vous suffit de nous contacter via notre formulaire de contact ou par e-mail, nous vous répondrons rapidement avec une proposition adaptée.
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
+
 
   <!-- ======= CTA ======= -->
   <section class="cta text-white text-center py-5" style="background: url('assets/img/cta-bg.jpg') center/cover no-repeat;">

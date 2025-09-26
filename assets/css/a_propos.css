@@ -1,0 +1,21 @@
+
+.partner-logo {
+    max-width: 120px;       /* Limite la taille des logos */
+    width: 100%;            /* S'assure que l'image s'adapte à sa colonne */
+    height: auto;           /* Garde les proportions */
+    margin: 15px auto;      /* Centrage vertical et horizontal */
+    display: block;         /* Pour que le margin auto fonctionne */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animation au survol */
+}
+
+.partner-logo:hover {
+    transform: scale(1.1); /* Agrandit légèrement au survol */
+    opacity: 0.9;           /* Légère transparence au survol */
+}
+.hero-section{
+    background: url('../img/hero/hc-digital-7L2h4zTYiNI-unsplash.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}

@@ -1427,7 +1427,7 @@ section {
 }
 /* Logo plus grand */
 .hero-logo {
-  max-width: 580px; /* augmenté */
+  max-width: 780px; /* augmenté */
   filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.4));
   margin-bottom: 25px;
 }
