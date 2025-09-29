@@ -105,7 +105,7 @@
 
 #portfolio-flters li.filter-active,
 #portfolio-flters li:hover {
-    color: #000000 !important;  /* Texte blanc même au survol */
+    color: #ffffff !important;  /* Texte blanc même au survol */
     background: #007bff !important; /* Fond un peu plus foncé */
 }
 
@@ -141,4 +141,17 @@
         flex-direction: column;
         gap: 8px;
     }
+}
+/* Espace entre les items de la galerie */
+.portfolio-item {
+    margin-bottom: 30px; /* marge en bas */
+    padding: 5px; /* optionnel : un petit padding autour de l'image */
+}
+
+.portfolio-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* coins arrondis optionnels */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* ombre légère optionnelle */
 }

@@ -11,15 +11,15 @@
           montantConfirmé = false; // Réinitialise la confirmation
           if(value === 'lycee') {
               paymentDiv.style.display = 'block';
-              paymentDiv.innerHTML = "💰 Pour participer à <strong>Débattons Lycée</strong>, vous devez verser <strong>300 000 FCFA</strong>.";
+              paymentDiv.innerHTML = "💰 Pour participer à <strong>Débattons Lycée</strong>, vous devez verser <strong>300 000 FCFA comme frais de participation</strong>.";
               montantConfirmé = true;
           } else if(value === 'postbac') {
               paymentDiv.style.display = 'block';
-              paymentDiv.innerHTML = "💰 Pour participer à <strong>Débattons Post Bac</strong>, vous devez verser <strong>500 000 FCFA</strong>.";
+              paymentDiv.innerHTML = "💰 Pour participer à <strong>Débattons Post Bac</strong>, vous devez verser <strong>500 000 FCFA comme frais de participation</strong>.";
               montantConfirmé = true;
           } else if(value === 'both') {
               paymentDiv.style.display = 'block';
-              paymentDiv.innerHTML = "💰 Pour participer aux <strong>Navetanes de Débattons</strong>, vous devez verser <strong>500 000 FCFA</strong>.";
+              paymentDiv.innerHTML = "💰 Pour participer aux <strong>Navetanes de Débattons</strong>, vous devez verser <strong>500 000 FCFA comme frais de participation</strong>.";
               montantConfirmé = true;
           } else {
               paymentDiv.style.display = 'none';
