@@ -48,7 +48,10 @@
            style="width: 45px; height: 45px; object-fit: cover; margin-right: 8px;">
       <span>First Media</span>
     </a>
-
+    <!-- Petite phrase -->
+    <span class="navbar-text animated-text mx-3 d-none d-lg-block">
+        Vous pouvez voler nos idées, nous en aurons d'autres !
+    </span>
     <!-- Toggle Button -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
@@ -217,69 +220,94 @@
             </div>
         </div>
     </section>
-    <section class="emission-contact section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Rejoignez L'Epelle-moi</h2>
-          <p>Votre école souhaite participer ? Contactez-nous pour plus d'informations</p>
-        </div>
+<section class="emission-contact section-bg">
+  <div class="container">
+    <div class="section-title">
+      <h2>Rejoignez L'Epelle-moi</h2>
+      <p>Votre école souhaite participer ? Contactez-nous pour plus d'informations</p>
+    </div>
 
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="contact-form">
-            <!-- Message de confirmation (caché au départ) -->
-            <div id="form-message" class="alert alert-success text-center" style="display:none; margin-top:15px;">
-              🎉 Merci ! Votre candidature a bien été envoyée.  
-              Nous vous recontacterons très bientôt.
-            </div>
-            <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
-              <input type="hidden" name="access_key" value="1913cdc3-b90a-441a-b1a3-44219ac0bd89">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="school-name">Nom de l'École </label>
-                    <input type="text" class="form-control" name="ecole" required>
-                  </div>
-                </div>
-              </div>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="contact-form">
 
-              <div class="form-group">
-                <label for="job-title">Poste Occupé</label>
-                <input type="text" class="form-control" name="poste" required>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" name="email" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="phone">Téléphone</label>
-                    <input type="tel" class="form-control" name="telephone" required>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="message">Message (optionnel)</label>
-                <textarea class="form-control" name="message" rows="5" placeholder="Décrivez votre motivation et vos attentes..."></textarea>
-              </div>
-
-              <!-- On peut enlever redirect si on veut rester sur la même page -->
-              <!-- <input type="hidden" name="redirect" value="https://sambou-sarr.github.io/fisrt-media/emissions/debattons.html"> -->
-
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-lg">Envoyer la Candidature</button>
-              </div>
-            </form>
-            </div>
+          <!-- Message condition -->
+          <div id="payment-warning" class="alert alert-warning text-center">
+            ⚠️ Votre école doit verser <strong>250 000 FCFA</strong> pour participer.
           </div>
+
+          <!-- Message de confirmation -->
+          <div id="form-message" class="alert alert-success text-center" style="display:none; margin-top:15px;">
+            🎉 Merci ! Votre candidature a bien été envoyée.  
+            Nous vous recontacterons très bientôt.
+          </div>
+
+          <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="1913cdc3-b90a-441a-b1a3-44219ac0bd89">
+            
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="school-name">Nom de l'École </label>
+                  <input type="text" class="form-control" name="ecole" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="job-title">Poste Occupé</label>
+              <input type="text" class="form-control" name="poste" required>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" name="email" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="phone">Téléphone</label>
+                  <input type="tel" class="form-control" name="telephone" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message (optionnel)</label>
+              <textarea class="form-control" name="message" rows="5" placeholder="Décrivez votre motivation et vos attentes..."></textarea>
+            </div>
+
+            <!-- Case à cocher obligatoire -->
+            <div class="form-check my-3">
+              <input class="form-check-input" type="checkbox" id="confirmPayment" required>
+              <label class="form-check-label" for="confirmPayment">
+                 Je confirme que mon école s’engage à verser 250 000 FCFA pour participer.
+              </label>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg">Envoyer la Candidature</button>
+            </div>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(e) {
+  let confirmPayment = document.getElementById("confirmPayment");
+  
+  if (!confirmPayment.checked) {
+    e.preventDefault();
+    alert("⛔ Vous devez confirmer le paiement de 250 000 FCFA avant de soumettre.");
+  }
+});
+</script>
+
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <footer class="footer-modern bg-dark w-100">

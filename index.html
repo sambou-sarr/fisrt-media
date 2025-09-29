@@ -31,55 +31,59 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
-      <div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+  <div class="container d-flex align-items-center">
 
-        <!-- Logo + Titre -->
-        <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="index.html">
-          <img src="assets/img/firstlogo.png" alt="Logo" 
-              style="width: 45px; height: 45px; object-fit: cover; margin-right: 8px;">
-          <span>First Media</span>
-        </a>
+    <!-- Logo + Titre -->
+    <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="index.html">
+      <img src="assets/img/firstlogo.png" alt="Logo" 
+          style="width: 45px; height: 45px; object-fit: cover; margin-right: 8px;">
+      <span>First Media</span>
+    </a>
+    <!-- Petite phrase -->
+    <span class="navbar-text animated-text mx-3 d-none d-lg-block">
+      Vous pouvez voler nos idées, nous en aurons d'autres !
+    </span>
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <!-- Toggle Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
-                aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto fs-5"> <!-- fs-5 pour agrandir la police -->
 
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto fs-5"> <!-- fs-5 pour agrandir la police -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+        </li>
 
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-            </li>
-
-            <!-- Dropdown Émissions -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="emissionsDropdown" role="button" 
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Émissions
-              </a>
-              <ul class="dropdown-menu shadow fs-6" aria-labelledby="emissionsDropdown">
-                <li><a class="dropdown-item" href="emissions/debattons.html">Débattons</a></li>
-                <li><a class="dropdown-item" href="emissions/epelle-moi.html">Épelle-Moi</a></li>
-                <li><a class="dropdown-item" href="emissions/diwane_bi.html">Diwane Bi</a></li>
-                <li><a class="dropdown-item" href="emissions/sur_les_pas_des_instruction.html">Sur les pas des institutions</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="index.html#portfolio">Toutes les émissions</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item"><a class="nav-link" href="pages/service.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/a_propos.html">À Propos</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/zero_faute.html">Zéro Faute</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/gallerie.html">Galerie</a></li>
+        <!-- Dropdown Émissions -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="emissionsDropdown" role="button" 
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Émissions
+          </a>
+          <ul class="dropdown-menu shadow fs-6" aria-labelledby="emissionsDropdown">
+            <li><a class="dropdown-item" href="emissions/debattons.html">Débattons</a></li>
+            <li><a class="dropdown-item" href="emissions/epelle-moi.html">Épelle-Moi</a></li>
+            <li><a class="dropdown-item" href="emissions/diwane_bi.html">Diwane Bi</a></li>
+            <li><a class="dropdown-item" href="emissions/sur_les_pas_des_instruction.html">Sur les pas des institutions</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="index.html#portfolio">Toutes les émissions</a></li>
           </ul>
-        </div>
-      </div>
-    </nav>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="pages/service.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="pages/a_propos.html">À Propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="pages/zero_faute.html">Zéro Faute</a></li>
+        <li class="nav-item"><a class="nav-link" href="pages/gallerie.html">Galerie</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
     <!-- End NAVBAR -->
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
@@ -109,7 +113,6 @@
               </div>
             </div>
           </div>
-
           <h4 class="display-6">
             <span class="typed" data-typed-items="Première structure de communication audiovisuelle sénégalaise spécialisée dans la production de contenus éducatifs et innovants"></span>
           </h4>

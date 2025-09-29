@@ -1537,3 +1537,21 @@ section {
     opacity: 0.9;
     transform: scale(1.05);
 }
+.animated-text {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg,#007bff 20%,#ffffff 40%,#007bff 60%);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
