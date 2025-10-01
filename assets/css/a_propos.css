@@ -19,3 +19,11 @@
     text-align: center;
     padding: 100px 0;
 }
+  /* Tous les logos auront la même taille max et centrés */
+  .partner-logo {
+    max-width: 200px; /* largeur max */
+    max-height: 200px; /* hauteur max */
+    object-fit: contain; /* conserve le ratio sans déformation */
+    margin: 0 auto; /* centre dans la colonne */
+    display: block;
+  }
