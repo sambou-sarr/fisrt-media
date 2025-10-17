@@ -433,12 +433,12 @@ body, html {
     font-weight: 600;
     position: relative;
     display: inline-block;
-    background: linear-gradient(90deg,#007bff 20%,#ffffff 40%,#007bff 60%);
+    background: linear-gradient(90deg,#007bff 20%,#000000 40%,#007bff 60%);
     background-size: 200% auto;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    animation: shine 3s linear infinite;
+    animation: shine 10s linear infinite;
 }
 
 @keyframes shine {
@@ -446,3 +446,22 @@ body, html {
     100% { background-position: -200% center; }
 }
 
+/* Style général des liens */
+.navbar-nav .nav-link {
+  color: #000; /* texte par défaut */
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* Style au survol */
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* bleu Bootstrap */
+  text-decoration: underline;
+}
+
+/* Style du lien actif */
+.navbar-nav .nav-link.active {
+  color: #007bff;          /* bleu pour le lien actif */
+  font-weight: 600;        /* texte légèrement plus gras */
+  border-bottom: 3px solid #007bff; /* soulignement */
+  border-radius: 2px;
+}

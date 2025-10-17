@@ -1,7 +1,7 @@
+html {
+  font-size: 16px; 
+}
 
-    /* ===========================================================
-    NAVIGATION BAR - DESIGN PROFESSIONNEL HARMONISÉ AVEC FOOTER
-    =========================================================== */
 
 .custom-navbar {
     background-color: var(--dark-bg);
@@ -29,7 +29,7 @@
 }
 
 /* ==============================
-NAV LINKS (Standard Desktop)
+NAV LINKS 
 ============================== */
 .custom-navbar .nav-link {
     color: var(--white-70);
@@ -120,6 +120,7 @@ RESPONSIVE TOGGLER BUTTON
     display: block;
     padding: 12px;
     margin: 5px 0;
+    font-size: 18px;
     }
 
     .custom-navbar .nav-item {
@@ -145,8 +146,6 @@ RESPONSIVE TOGGLER BUTTON
     --transition-medium: 0.5s ease;
     --transition-slow: 0.8s ease;
 }
-
-
 
 /* Footer principal avec animations */
 .footer-modern {
@@ -272,10 +271,6 @@ RESPONSIVE TOGGLER BUTTON
     transform: scale(1.2);
     color: var(--primary-color);
 }
-
-/* Style commun */
-
-
 
 /* Newsletter avec animations */
 .newsletter {

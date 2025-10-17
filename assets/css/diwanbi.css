@@ -920,3 +920,22 @@ strong/* Section Hero */
         display: none !important;
     }
     }
+    /* Style général des liens */
+.navbar-nav .nav-link {
+  color: #000; /* texte par défaut */
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* Style au survol */
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* bleu Bootstrap */
+  text-decoration: underline;
+}
+
+/* Style du lien actif */
+.navbar-nav .nav-link.active {
+  color: #007bff;          /* bleu pour le lien actif */
+  font-weight: 600;        /* texte légèrement plus gras */
+  border-bottom: 3px solid #007bff; /* soulignement */
+  border-radius: 2px;
+}

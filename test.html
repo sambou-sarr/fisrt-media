@@ -1,221 +1,232 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Media Group</title>
 
-  <title>Nos Services - First Media</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <style>
+    /* Animation légère du slogan */
+    .animated-text {
+      animation: fadeSlide 6s infinite alternate;
+    }
+    @keyframes fadeSlide {
+      from { opacity: 0.6; transform: translateX(-10px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    /* Amélioration du bouton burger sur fond blanc */
+    .navbar-light .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    /* Espacement uniforme sur mobile */
+    .navbar-nav .nav-link {
+      padding: 0.5rem 1rem;
+      transition: color 0.3s;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #0d6efd; /* bleu Bootstrap */
+    }
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    /* Bande supérieure responsive */
+    .top-info-bar {
+      font-size: 0.9rem;
+    }
 
-  <!-- Vendor CSS -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS -->
-  <link href="../assets/css/style_index.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="../assets/css/service.css" rel="stylesheet">
+    @media (max-width: 991px) {
+      .top-info-bar {
+        display: none !important; /* masque la barre info sur mobile */
+      }
+      .navbar-brand img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-0 m-0">
+    <div class="container-fluid flex-column p-0 m-0">
+      <!--  Bande supérieure : infos utiles (visible seulement desktop) -->
+      <div class="top-info-bar w-100 d-none d-lg-flex justify-content-between align-items-center px-3 py-1 bg-light border-bottom">
+        <div class="contact-info">
+        <span class="navbar-text animated-text">
+          Vous pouvez voler nos idées... nous en aurons d'autres !
+        </span>
+        </div>
+        <div class="contact-info text-dark d-flex align-items-center gap-3">
+          <span><i class="bi bi-telephone-fill me-1 text-primary"></i> +221 77 631 78 92 / +221 33 842 49 00</span>
+          <span><i class="bi bi-envelope-fill me-1 text-primary"></i> info@first-media-groupe.com</span>
+          <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> 03 rue Béranger Féraud, Immeuble CTIC Dakar</span>
+        </div>
+      </div>
+      <!--  Navbar principale : logo + menu burger -->
+      <div class="container-fluid d-flex align-items-center justify-content-between py-2 px-4 bg-white">
+<a id="mobileLogo" class="navbar-brand d-flex align-items-center fw-bold fs-4 text-dark m-0" href="index.html">
+  <img src="assets/img/firstlogo.png" alt="Logo" style="width: 55px; height: 55px; object-fit: cover; margin-right: 10px;">
+  <span>First Media</span>
+</a>
 
-  <!-- ======= NAVBAR ======= -->
-  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top bg-dark">
-    <div class="container d-flex align-items-center justify-content-between">
-      <!-- Logo + Titre -->
-      <a class="navbar-brand d-flex align-items-center" href="index.html" style="color: white;">
-        <img src="../assets/img/firstlogo.png" alt="Logo" class="me-2" style="width: 60px; height: 60px;">
-        <span class="d-none d-lg-inline">First Media</span>
-      </a>
 
-      <!-- Bouton responsive -->
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Bouton hamburger : visible uniquement sur mobile -->
+    <div class="d-flex d-lg-none" style="background-color: #007bff; border-radius: 10px; padding: 5px;">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+    </div>
 
-      <!-- Liens -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
 
-              <!-- Dropdown Émissions -->
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="emissionsDropdown" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Émissions
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="emissionsDropdown" data-bs-auto-close="false">
-                      <li><a class="dropdown-item" href="debattons.html">Débattons</a></li>
-                      <li><a class="dropdown-item" href="epelle-moi.html">Épelle-Moi</a></li>
-                      <li><a class="dropdown-item" href="diwane_bi.html">Diwane Bi</a></li>
-                      <li><a class="dropdown-item" href="sur_les_pas_des_instruction.html">Sur les pas des institutions</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="index.html#portfolio">Toutes les émissions</a></li>
-                  </ul>
-              </li>
 
-          <li class="nav-item active"><a class="nav-link" href="service.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="../index.html#abouts">À Propos</a></li>
-          <li class="nav-item"><a class="nav-link " href="../zero_faute.html">Zéro Faute</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" id="contact-link">Contact</a></li>
+        <!-- Menu -->
+      <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto fs-5">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">
+              <i class="fas fa-home me-1 text-primary"></i> Accueil
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="emissionsDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-tv me-1 text-primary "></i> Émissions
+            </a>
+            <ul class="dropdown-menu shadow fs-6" aria-labelledby="emissionsDropdown">
+              <li><a class="dropdown-item" href="emissions/debattons.html"><i class="fas fa-comments me-1 text-primary "></i> Débattons</a></li>
+              <li><a class="dropdown-item" href="emissions/epelle-moi.html"><i class="fas fa-spell-check me-1 text-primary "></i> Épelle-Moi</a></li>
+              <li><a class="dropdown-item" href="emissions/diwane_bi.html"><i class="fas fa-microphone me-1 text-primary "></i> Diwane Bi</a></li>
+              <li><a class="dropdown-item" href="emissions/sur_les_pas_des_instruction.html"><i class="fas fa-university me-1 text-primary "></i> Sur les pas des institutions</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="index.html#portfolio"><i class="fas fa-list me-1 text-primary "></i> Toutes les émissions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pages/service.html">
+              <i class="fas fa-cogs me-1 text-primary "></i> Services
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pages/a_propos.html">
+              <i class="fas fa-info-circle me-1 text-primary "></i> À propos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pages/zero_faute.html">
+              <i class="fas fa-gamepad me-1 text-primary "></i> Nos jeux
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pages/gallerie.html">
+              <i class="fas fa-image me-1 text-primary "></i> Galerie
+            </a>
+          </li>
         </ul>
       </div>
+
+      </div>
+
     </div>
   </nav>
-
-
-  <!-- ======= FOOTER ======= -->
-  <footer class="footer-modern bg-dark w-100">
-        <div class="container pt-5">
-            <div class="row g-4">
-                <!-- Section À propos -->
-                <div class="col-md-4 col-lg-3 mb-4">
-                    <div class="footer-about">
-                        <h5 class="text-uppercase text-white mb-4">À propos</h5>
-                        <p class="text-white-70 mb-4">
-                            First Media - Première structure de communication audiovisuelle sénégalaise spécialisée dans la production de contenus éducatifs et innovants.
+          <section class="section section-white">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                        <h2 class="section-title">Prêt à Révolutionner l'Apprentissage ?</h2>
+                        <p class="section-subtitle">
+                            Rejoignez des milliers d'apprenants qui ont déjà transformé leur maîtrise de l'orthographe 
+                            avec Zero Faute. L'aventure éducative vous attend !
                         </p>
+                        <button class="btn btn-danger-custom btn-lg">
+                            <i class="bi bi-play-circle-fill me-2"></i>Commencer Maintenant
+                        </button>
                     </div>
-                </div>
-
-                <!-- Liens rapides -->
-                <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <h5 class="text-uppercase text-white mb-4">Navigation</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Accueil</a></li>
-                        <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Équipe</a></li>
-                        <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Réalisations</a></li>
-                        <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Coordonnées -->
-                <div class="col-md-4 col-lg-3 mb-4">
-                    <h5 class="text-uppercase text-white mb-4">Coordonnées</h5>
-                    <ul class="list-unstyled contact-info">
-                        <li class="mb-3 d-flex">
-                            <i class="fas fa-map-marker-alt text-primary mt-1 me-3"></i>
-                            <div>
-                                <span class="text-white-70 d-block">03 rue Beranger Feraud Immeuble CTIC Dakar</span>
-                                <span class="text-white-70">Dakar , Senegal</span>
-                            </div>
-                        </li>
-                        <li class="mb-3">
-                            <a href="tel:+221776317892" class="text-white-70 text-decoration-none d-flex align-items-center">
-                                <i class="fas fa-phone text-primary me-3"></i>
-                                <div>
-                                    <span class="d-block">+221 33 842 49 00</span>
-                                    <span class="d-block">+221 77 631 78 92</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="mailto:info@first-media-groupe.com" class="text-white-70 text-decoration-none d-flex align-items-center">
-                                <i class="fas fa-envelope text-primary me-3"></i>
-                                info@first-media-groupe.com
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Réseaux sociaux -->
-                <div class="col-md-4 col-lg-4 mb-4">
-                    <h5 class="text-uppercase text-white mb-4">Réseaux sociaux</h5>
-                    <div class="social-links mb-4">
-                        <a href="https://www.tiktok.com/@firstmediagroup1?_t=ZM-8ycjPuJ7uA2&_r=1" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://www.facebook.com/share/1BxVquMz8N/?mibextid=wwXIfr" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.youtube.com/@firstmediagroup5105?si=Q_0A-aNQX8ArJvKO" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/firstmediagroupdakar?igsh=MWs4NjRmMjZlb2I5NQ==" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-social rounded-circle me-2 mb-2"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                <div id="newsletter-message" class="alert alert-success text-center" style="display:none; margin-top:15px;">
-                  🎉 Merci ! Vous êtes maintenant abonné à notre newsletter.
-                </div>
-                <div class="newsletter">
-                  <h6 class="text-white mb-3">Abonnez-vous à notre newsletter</h6>
-                  <form id="newsletterForm" class="input-group">
-                    <input type="hidden" name="access_key" value="1913cdc3-b90a-441a-b1a3-44219ac0bd89">
-                    <input type="email" name="email" class="form-control border-0" placeholder="Votre email" required>
-                    <button class="btn btn-primary" type="submit">
-                      <i class="fas fa-paper-plane"></i>
-                    </button>
-                  </form>
-                </div>
                 </div>
             </div>
-            <!-- Mentions légales -->
-            <div class="footer-legal py-4 border-top border-dark">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <div class="legal-links">
-                            <a href="#" class="text-white-70 me-3">Mentions légales</a>
-                            <a href="#" class="text-white-70 me-3">Conditions</a>
-                            <a href="#" class="text-white-70">Politique de confidentialité</a>
+        </section>
+        <!-- Témoignages Section -->
+        <section class="section section-white" id="temoignages">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Ils ont Adopté Zéro Faute</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Découvrez les témoignages de ceux qui ont transformé leur apprentissage avec Zéro Faute
+                </p>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                "Mes élèves ont progressé de façon remarquable depuis que nous utilisons Zéro Faute. L'orthographe n'est plus une corvée mais un plaisir !"
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar avatar-teacher">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0" style="color: var(--text-dark);">Marie Diallo</h5>
+                                    <small style="color: var(--primary-blue);">Enseignante, École Primaire</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <p class="text-white-70 mb-0">
-                            &copy; <span class="current-year"></span> FIRST MEDIA Group — Tous droits réservés — Développé par
-                            <a href="https://wa.me/221772476160?text=Bonjour%20je%20suis%20intéressé%20par%20ton%20projet" class="text-primary text-decoration-none">sambou sarr</a>
-                        </p>
+                    <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                "Mon fils demande maintenant à jouer à Zéro Faute tous les soirs. Ses notes en dictée se sont considérablement améliorées !"
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar avatar-parent">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0" style="color: var(--text-dark);">Amadou Sow</h5>
+                                    <small style="color: var(--primary-blue);">Parent d'élève</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                "J'adore ce jeu ! Maintenant je n'ai plus peur des dictées et j'aide même mes amis avec l'orthographe."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar avatar-student">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0" style="color: var(--text-dark);">Fatou Ndiaye</h5>
+                                    <small style="color: var(--primary-blue);">Élève de CM2</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                "Une approche pédagogique innovante qui respecte les principes d'apprentissage tout en rendant l'orthographe accessible à tous."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar avatar-expert">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0" style="color: var(--text-dark);">Dr. Ousmane Fall</h5>
+                                    <small style="color: var(--primary-blue);">Expert en Pédagogie</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-  </footer>
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/js/main.js"></script>
+        </section>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
- <!-- ÉQUIPE -->
-  <section id="team" class="py-5 bg-light">
-    <div class="container">
-      <div class="section-title">
-        <h2>Notre Équipe</h2>
-        <p>Une équipe passionnée et créative qui transforme vos idées en contenus captivants.</p>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <div class="team-member">
-            <img src="assets/img/equipe/DSC_2549.jpg" alt="Membre équipe">
-            <h4>Sambou Sarr</h4>
-            <p>CEO & Fondateur</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="team-member">
-            <img src="assets/img/equipe/DSC_2594.jpg" alt="Membre équipe">
-            <h4>Aïssatou Diallo</h4>
-            <p>Directrice de production</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="team-member">
-            <img src="assets/img/equipe/DSC_2737.jpg" alt="Membre équipe">
-            <h4>Fatou Bâ</h4>
-            <p>Responsable communication</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
