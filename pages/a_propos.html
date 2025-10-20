@@ -38,69 +38,72 @@
 </head>
 <body>
   <!-- ======= NAVBAR ======= -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-0 m-0">
-        <div class="container-fluid flex-column p-0 m-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-0 m-0">
+      <div class="container-fluid flex-column p-0 m-0">
 
-            <!-- Bande supérieure (desktop seulement) -->
-            <div class="top-info-bar w-100 d-none d-lg-flex justify-content-between align-items-center px-3 py-1 bg-light border-bottom fixed-top">
-            <div class="contact-info">
-                <span class="navbar-text animated-text">
-                Vous pouvez voler nos idées... nous en aurons d'autres !
-                </span>
-            </div>
-            <div class="contact-info text-dark d-flex align-items-center gap-3">
-                <span><i class="bi bi-telephone-fill me-1 text-primary"></i> +221 77 631 78 92 / +221 33 842 49 00</span>
-                <span><i class="bi bi-envelope-fill me-1 text-primary"></i> info@first-media-groupe.com</span>
-                <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> 03 rue Béranger Féraud, Immeuble CTIC Dakar</span>
-            </div>
-            </div>
-
-            <!-- Navbar principale -->
-            <div class="container-fluid d-flex align-items-center justify-content-between py-2 px-4 bg-white mt-5">
-
-            <!-- Logo -->
-            <a id="mobileLogo" class="navbar-brand d-flex align-items-center fw-bold fs-4 text-dark m-0" href="../index.html">
-                <img src="../assets/img/firstlogo.png" alt="Logo" style="width: 55px; height: 55px; object-fit: cover; margin-right: 10px;">
-                <span>First Media</span>
-            </a>
-
-            <!-- Bouton hamburger (mobile) -->
-            <div class="d-flex d-lg-none" style="background-color: #007bff; border-radius: 10px; padding: 5px;">
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-
-            <!-- Menu -->
-            <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto fs-5">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html"><i class="fas fa-home me-1 text-primary"></i> Accueil</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="emissionsDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-tv me-1 text-primary"></i> Émissions</a>
-                    <ul class="dropdown-menu shadow fs-6" aria-labelledby="emissionsDropdown">
-                    <li><a class="dropdown-item" href="../emissions/debattons.html"><i class="fas fa-comments me-1 text-primary"></i> Débattons</a></li>
-                    <li><a class="dropdown-item" href="../emissions/epelle-moi.html"><i class="fas fa-spell-check me-1 text-primary"></i> Épelle-Moi</a></li>
-                    <li><a class="dropdown-item" href="../emissions/diwane_bi.html"><i class="fas fa-microphone me-1 text-primary"></i> Diwane Bi</a></li>
-                    <li><a class="dropdown-item" href="../emissions/sur_les_pas_des_instruction.html"><i class="fas fa-university me-1 text-primary"></i> Sur les pas des institutions</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="index.html#portfolio"><i class="fas fa-list me-1 text-primary"></i> Toutes les émissions</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="service.html"><i class="fas fa-cogs me-1 text-primary"></i> Services</a></li>
-                <li class="nav-item"><a class="nav-link active" href="a_propos.html"><i class="fas fa-info-circle me-1 text-primary"></i> À propos</a></li>
-                <li class="nav-item"><a class="nav-link " href="zero_faute.html"><i class="fas fa-gamepad me-1 text-primary "></i> Zero Faute </a></li>
-                <li class="nav-item"><a class="nav-link" href="gallerie.html"><i class="fas fa-image me-1 text-primary"></i> Galerie</a></li>
-                </ul>
-            </div>
-
-            </div>
+        <!-- Bande supérieure (visible uniquement sur desktop) -->
+        <div class="top-info-bar w-100 d-none d-lg-flex justify-content-between align-items-center px-3 py-1 bg-light border-bottom fixed-top">
+          <div class="contact-info">
+            <span class="navbar-text animated-text">
+              Vous pouvez voler nos idées... nous en aurons d'autres !
+            </span>
+          </div>
+          <div class="contact-info text-dark d-flex align-items-center gap-3">
+            <span><i class="bi bi-telephone-fill me-1 text-primary"></i> +221 77 631 78 92 / +221 33 842 49 00</span>
+            <span><i class="bi bi-envelope-fill me-1 text-primary"></i> firstmediag@gmail.com</span>
+            <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> 03 rue Béranger Féraud, Immeuble CTIC Dakar</span>
+          </div>
         </div>
-      </nav>
+
+        <!-- Menu principal -->
+        <div class="container-fluid d-flex align-items-center justify-content-between py-2 px-4 bg-white main-nav" style="margin-top: 60px;">
+          <a id="mobileLogo" class="navbar-brand d-flex align-items-center fw-bold fs-4 text-dark m-0" href="../index.html">
+            <img src="../assets/img/firstlogo.png" alt="Logo" style="width: 55px; height: 55px; object-fit: cover;">
+            <h5 style="white-space: nowrap; margin-left: 5px;">
+              <strong>
+                <span style="color: #28a745;">First</span>
+                <span style="color: #007bff;">Media</span>
+              </strong>
+            </h5>
+          </a>
+
+          <!-- Bouton hamburger -->
+          <div class="d-flex d-lg-none" style="background-color: #007bff; border-radius: 10px; padding: 5px;">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <!-- Menu déroulant -->
+          <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto fs-5">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html"><i class="fas fa-home me-1 text-primary"></i> Accueil</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="emissionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-tv me-1 text-primary"></i> Émissions
+                </a>
+                <ul class="dropdown-menu shadow fs-6" aria-labelledby="emissionsDropdown">
+                  <li><a class="dropdown-item" href="../emissions/debattons.html"><i class="fas fa-comments me-1 text-primary"></i> Débattons</a></li>
+                  <li><a class="dropdown-item" href="../emissions/epelle-moi.html"><i class="fas fa-spell-check me-1 text-primary"></i> Épelle-Moi</a></li>
+                  <li><a class="dropdown-item" href="../emissions/diwane_bi.html"><i class="fas fa-microphone me-1 text-primary"></i> Diwane Bi</a></li>
+                  <li><a class="dropdown-item" href="../emissions/sur_les_pas_des_instruction.html"><i class="fas fa-university me-1 text-primary"></i> Sur les pas des institutions</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html#portfolio"><i class="fas fa-list me-1 text-primary"></i> Toutes les émissions</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="service.html"><i class="fas fa-cogs me-1 text-primary"></i> Services</a></li>
+              <li class="nav-item"><a class="nav-link active" href="a_propos.html"><i class="fas fa-info-circle me-1 text-primary"></i> À propos</a></li>
+              <li class="nav-item"><a class="nav-link " href="zero_faute.html"><i class="fas fa-gamepad me-1 text-primary"></i> Zero Faute</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallerie.html"><i class="fas fa-image me-1 text-primary"></i> Galerie</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
   <!-- HERO SECTION -->
   <section class="hero-section">
     <div class="container">
