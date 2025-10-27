@@ -83,17 +83,31 @@
     --radius-full: 9999px;
 }
 
-html {
-    scroll-behavior: smooth;
+body {
+    font-family: var(--font-family, Arial, sans-serif);
+    line-height: 1.6;
+    color: var(--gray-800, #333);
+    background: var(--white, #fff);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    font-family: var(--font-family);
-    line-height: 1.6;
-    color: var(--gray-800);
-    background: var(--white);
-    overflow-x: hidden;
+/* Réduction des marges par défaut pour les sections */
+section {
+    margin: 1rem 0; /* au lieu de marges plus grandes par défaut */
+    padding: 2rem 0; /* tu peux réduire si besoin */
 }
+
+/* Titres et paragraphes */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem; /* réduit l’espace sous les titres */
+}
+
+p {
+    margin-bottom: 1rem; /* réduit l’espace entre paragraphes */
+}
+
 
 .container {
     max-width: 1200px;

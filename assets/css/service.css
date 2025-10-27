@@ -13,3 +13,27 @@
     transform: translateY(-10px);
     transition: transform 0.3s ease;
   }
+  .hero-section {
+  height: 70vh;
+  background: url('../img/hero/studiofirst.png') center/cover no-repeat;
+  position: relative;
+  /* Couche sombre semi-transparente */
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 40% sombre */
+  z-index: 1;
+}
+
+/* Contenu à mettre au-dessus du sombre */
+.hero-section > * {
+  position: relative;
+  z-index: 2;
+  color: white; /* texte lisible */
+}

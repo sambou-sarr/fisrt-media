@@ -35,7 +35,11 @@ body, html {
 }
 
 .section-light {
-    background: linear-gradient(135deg, var(--primary-green) 0%, rgba(166, 211, 136, 0.8) 100%);
+    background: white;
+    color: var(--text-dark);
+}
+.section-light1 {
+    background: var(--primary-green);
     color: var(--text-dark);
 }
 
@@ -90,59 +94,32 @@ body, html {
 }
 
 /* Cards de fonctionnalités */
-.feature-card {
-    background: var(--white-transparent);
-    border-radius: 20px;
-    padding: 2rem;
-    text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: var(--shadow-light);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    height: 100%;
-}
 
-.feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-heavy);
-}
-
-.feature-icon {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    color: white;
-    margin: 0 auto 1.5rem;
-    transition: all 0.3s ease;
-}
-
-.feature-card:nth-child(1) .feature-icon { background: linear-gradient(45deg, var(--accent-gold), #ff9f1c); }
 .feature-card:nth-child(2) .feature-icon { background: linear-gradient(45deg, var(--accent-red), #ff6b6b); }
 .feature-card:nth-child(3) .feature-icon { background: linear-gradient(45deg, var(--primary-blue), #74c0fc); }
 .feature-card:nth-child(4) .feature-icon { background: linear-gradient(45deg, #51cf66, var(--primary-green)); }
-.feature-card:nth-child(5) .feature-icon { background: linear-gradient(45deg, #ff9f1c, var(--accent-gold)); }
 .feature-card:nth-child(6) .feature-icon { background: linear-gradient(45deg, var(--text-dark), var(--primary-blue)); }
 
-.feature-card:hover .feature-icon {
-    transform: scale(1.1) rotate(10deg);
+  .feature-icon {
+    width: 100px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centre l'icône dans le cercle */
+    margin: 0 auto 1rem auto; /* centre horizontalement */
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  /* Légère levée de la carte au survol */
+  .feature-card {
+    transition: transform 0.3s ease;
+  }
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }.feature-icon i {
+    font-size: 4rem; /* très grande icône */
 }
 
-.feature-title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: var(--text-dark);
-}
-
-.feature-description {
-    color: var(--primary-blue);
-    line-height: 1.6;
-}
 
 /* Screenshots */
 .screenshot-item {
@@ -515,4 +492,78 @@ body, html {
   bottom: 0;
   width: 100%;
   height: 120px;
+}
+.logo-hero {
+    width: 550px; /* augmente la largeur selon tes besoins */
+    height: auto; /* pour garder les proportions */
+    max-width: 90%; /* pour rester responsive sur mobile */
+}
+
+.section-white {
+    background-color: #f8f9fa; /* Un fond légèrement gris pour contraster */
+    padding: 80px 0;
+}
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.section-subtitle {
+    text-align: center;
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+.step-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.step-number {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #0d6efd;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.step-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.icon-start { color: #28a745; }
+.icon-cards { color: #ffc107; }
+.icon-board { color: #dc3545; }
+.icon-win { color: #0d6efd; }
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #343a40;
+}
+.feature-description {
+    color: #6c757d;
+    font-size: 1rem;
+    line-height: 1.6;
 }

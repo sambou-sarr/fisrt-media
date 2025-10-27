@@ -938,4 +938,138 @@ strong/* Section Hero */
   font-weight: 600;        /* texte légèrement plus gras */
   border-bottom: 3px solid #007bff; /* soulignement */
   border-radius: 2px;
+}/* ======= Section Déroulement (Timeline Style) ======= */
+
+.deroulement-section {
+    background-color: #f8f9fa; /* Fond légèrement gris pour un bon contraste */
+    padding: 80px 0;
+}
+
+/* Conteneur du logo à gauche */
+.logo-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.section-logo {
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.4s ease;
+}
+
+.logo-container:hover .section-logo {
+    transform: scale(1.05); /* Effet de zoom léger au survol */
+}
+
+/* Contenu texte à droite */
+.deroulement-content .section-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #2c3e50; /* Bleu marine foncé */
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Ligne décorative sous le titre */
+.deroulement-content .section-title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #e74c3c; /* Bleu primaire */
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+}
+
+.deroulement-content p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+/* Style de la liste pour créer une timeline */
+.deroulement-list {
+    list-style: none;
+    padding-left: 20px;
+    position: relative;
+}
+
+/* La ligne verticale de la timeline */
+.deroulement-list::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    bottom: 5px;
+    width: 3px;
+    background-color: #e9ecef; /* Ligne de fond grise */
+    border-radius: 2px;
+}
+
+.deroulement-list li {
+    padding-left: 35px; /* Espace pour l'icône et la ligne */
+    position: relative;
+    margin-bottom: 25px; /* Espace entre les étapes */
+}
+
+/* Style de l'icône de chaque étape */
+.deroulement-list li .fa-check-circle {
+    position: absolute;
+    left: 10px; /* Positionne l'icône sur la ligne verticale */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem; /* Taille de l'icône */
+    color: #e74c3c; /* Couleur de l'icône */
+    background-color: #ffffff; /* Fond blanc pour cacher la ligne grise derrière */
+    border-radius: 50%;
+    padding: 2px; /* Petit espace autour de l'icône */
+    transition: transform 0.3s ease;
+}
+
+/* Animation de l'icône au survol de l'étape */
+.deroulement-list li:hover .fa-check-circle {
+    transform: translateY(-50%) scale(1.2);
+    color: #e74c3c; /* Changement de couleur au survol */
+}
+
+/* Style du texte de chaque étape */
+.deroulement-list li span {
+    font-size: 1.2rem;
+    color: #34495e;
+    transition: color 0.3s ease;
+}
+
+.deroulement-list li:hover span {
+    color: #e74c3c; /* Le texte devient bleu au survol */
+}
+
+.deroulement-list li span strong {
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+    .logo-container {
+        margin-bottom: 40px;
+    }
+    .deroulement-content .section-title {
+        text-align: center;
+    }
+    .deroulement-content .section-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .deroulement-content p {
+        text-align: center;
+    }
 }

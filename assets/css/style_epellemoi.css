@@ -568,42 +568,7 @@ li strong {
             color: #666;
         }
 
-.btn-hero i {
-    font-size: 1.2rem;
-}/* Style général des boutons */
-.btn-hero {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 24px;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #fff;
-    border: none;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    margin-right: 10px;
-}
 
-/* Couleur spécifique à chaque réseau */
-.btn-hero.facebook { background-color: #1877f2; }
-.btn-hero.youtube { background-color: #FF0000; }
-.btn-hero.instagram { 
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-}
-
-/* Au survol */
-.btn-hero:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-}
-
-/* Icônes Font Awesome */
-.btn-hero i {
-    font-size: 1.2rem;
-}
 
 @media (max-width: 768px) {
   .hide-mobile {
@@ -629,4 +594,136 @@ li strong {
   font-weight: 600;        /* texte légèrement plus gras */
   border-bottom: 3px solid #007bff; /* soulignement */
   border-radius: 2px;
+}
+/* ======= Section Hero pour "Épelle-Moi" avec Slideshow ======= */
+
+.hero-section {
+    position: relative; /* Indispensable pour positionner les slides en arrière-plan */
+    color: #ffffff;
+    padding: 100px 0;
+    min-height: 80vh; /* Hauteur minimale pour un bon impact visuel */
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Cache les parties des slides qui dépassent */
+}
+
+/* Conteneur pour les slides en arrière-plan */
+.hero-section .slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Placé derrière le contenu */
+}
+
+/* Style de chaque slide individuelle */
+.hero-section .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* L'image couvre toute la zone */
+    background-position: center;
+    opacity: 0; /* Toutes les slides sont invisibles au départ */
+    transition: opacity 1.5s ease-in-out; /* Transition douce pour l'opacité */
+    animation: kenBurnsEffect 25s infinite; /* Animation de zoom lent */
+}
+
+/* Animation pour le diaporama */
+.hero-section .slide:nth-child(1) { animation-delay: 0s; }
+.hero-section .slide:nth-child(2) { animation-delay: 5s; }
+.hero-section .slide:nth-child(3) { animation-delay: 10s; }
+.hero-section .slide:nth-child(4) { animation-delay: 15s; }
+.hero-section .slide:nth-child(5) { animation-delay: 20s; }
+
+/* Animation de l'effet Ken Burns (zoom lent) et du fondu */
+@keyframes kenBurnsEffect {
+    0% {
+        opacity: 0;
+        transform: scale(1.1); /* Commence légèrement zoomé */
+    }
+    10% {
+        opacity: 1; /* Apparition en fondu */
+    }
+    20% {
+        opacity: 1; /* Reste visible */
+    }
+    30% {
+        opacity: 0; /* Disparition en fondu */
+        transform: scale(1); /* Dézoom léger pendant la durée */
+    }
+    100% {
+        opacity: 0; /* Reste invisible jusqu'à la prochaine boucle */
+    }
+}
+
+/* Superposition sombre pour la lisibilité du texte */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 20, 40, 0.5); /* Filtre sombre, ajustez l'opacité si besoin */
+    z-index: 2; /* Au-dessus des slides, mais en dessous du contenu */
+}
+
+/* S'assurer que le contenu est au-dessus de tout */
+.hero-section .container {
+    position: relative;
+    z-index: 3;
+}
+
+/* Style du contenu texte (titre) */
+.hero-content .hero-title, .hero-content .display-4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style du logo */
+.hero-logo {
+    max-width: 450px;
+    width: 100%;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.4)); /* Ombre portée pour le logo */
+    animation: logoFadeIn 2s ease-out; /* Animation d'apparition pour le logo */
+}
+
+@keyframes logoFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ======= Responsive Design ======= */
+@media (max-width: 991.98px) {
+    .hero-section {
+        padding: 80px 0;
+        min-height: 60vh;
+        text-align: center;
+    }
+
+    .hero-content {
+        display: none; /* Cache le titre "Épelle-Moi" sur mobile comme demandé */
+    }
+    
+    .hero-logo {
+        max-width: 300px; /* Logo plus petit sur mobile */
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        min-height: 50vh;
+    }
 }

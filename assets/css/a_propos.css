@@ -13,7 +13,7 @@
     opacity: 0.9;           /* Légère transparence au survol */
 }
 .hero-section{
-    background: url('../img/hero/fontpropos.png') no-repeat center center;
+    background: url('../img/hero/studiofirst.png') no-repeat center center;
     background-size: cover;
     color: white;
     text-align: center;
@@ -28,3 +28,65 @@
     margin: 0 auto; /* centre dans la colonne */
     display: block;
   }
+  .partner-logo {
+  max-width: 320px; /* taille plus grande, ajuste selon besoin */
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.partner-logo:hover {
+  transform: scale(1.1); /* léger zoom au survol */
+}
+#history {
+    background-color: #f8f9fa;
+}
+.section-title h2 {
+    font-weight: 700;
+    color: #2c3e50;
+}
+.section-title p {
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+.history-content .lead {
+    font-weight: 500;
+    color: #34495e;
+}
+.history-content p {
+    line-height: 1.7;
+    color: #495057;
+}
+.history-stats {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+}
+.stat-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.stat-item:last-child {
+    margin-bottom: 0;
+}
+.stat-icon {
+    font-size: 2.5rem;
+    color: #0d6efd;
+    margin-right: 20px;
+    width: 60px;
+    text-align: center;
+}
+.stat-info {
+    display: flex;
+    flex-direction: column;
+}
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #343a40;
+}
+.stat-label {
+    font-size: 1rem;
+    color: #6c757d;
+}

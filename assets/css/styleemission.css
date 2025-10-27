@@ -1177,3 +1177,153 @@ body {
   0% { background-position: 200% center; }
   100% { background-position: -200% center; }
 }
+/* Container plus étroit sur desktop mais touche presque les bords sur mobile */
+.hero-container {
+    max-width: 1200px;
+    padding-left: 15px;   /* réduit la marge côté gauche */
+    padding-right: 15px;  /* réduit la marge côté droit */
+    margin: 0 auto;       /* centre le container */
+}
+
+/* Texte hero centré et spacing vertical */
+.hero-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+/* Logo responsive */
+.hero-logo {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Social buttons spacing */
+.social-buttons a {
+    margin: 0 5px;
+}
+
+/* Masquer sur mobile */
+.hide-mobile {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+    }
+    .hero-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+/* ======= Section Hero pour "Débattons" ======= */
+
+.hero-section {
+    /* Arrière-plan en dégradé */
+    background: linear-gradient(135deg, #003366 0%, #0055a4 50%, #0077cc 100%);
+    color: #ffffff;
+    padding: 120px 0; /* Espace intérieur (haut et bas) */
+    position: relative;
+    overflow: hidden; /* Empêche les éléments décoratifs de déborder */
+    min-height: 70vh; /* Hauteur minimale pour occuper une bonne partie de l'écran */
+    display: flex;
+    align-items: center; /* Centre le contenu verticalement */
+}
+
+/* Ajout d'un effet de superposition pour assombrir légèrement si besoin (optionnel) */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 20, 40, 0.2); /* Superposition sombre subtile */
+    z-index: 1;
+}
+
+/* S'assurer que le contenu est au-dessus de la superposition */
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Style du contenu texte */
+.hero-content {
+    text-align: left;
+}
+
+.hero-title {
+    font-family: 'Poppins', sans-serif; /* Une police moderne et audacieuse */
+    font-size: 4.5rem; /* Grande taille pour le titre */
+    font-weight: 900; /* Très gras pour un fort impact */
+    line-height: 1.1;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Ombre portée pour la lisibilité */
+}
+
+.hero-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300; /* Plus léger pour contraster avec le titre */
+    opacity: 0.9; /* Légère transparence */
+}
+
+/* Style du logo */
+.hero-logo {
+    max-width: 400px; /* Augmenter la taille maximale du logo */
+    width: 100%;
+    height: auto;
+    /* Animation subtile pour le logo */
+    animation: floatAnimation 4s ease-in-out infinite;
+}
+
+/* Animation de flottement pour le logo */
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* Le logo monte et descend */
+    }
+}
+
+/* ======= Responsive Design (pour les appareils mobiles) ======= */
+
+@media (max-width: 991.98px) { /* Tablettes et en dessous */
+    .hero-section {
+        padding: 80px 0;
+        min-height: auto; /* Hauteur automatique sur mobile */
+        text-align: center; /* Centrer tout le texte sur mobile */
+    }
+
+    .hero-content {
+        text-align: center; /* S'assurer que le contenu est centré */
+    }
+
+    .hero-title {
+        font-size: 3rem; /* Taille de titre plus petite pour mobile */
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-logo {
+        margin-top: 30px; /* Ajouter de l'espace au-dessus du logo sur mobile */
+        max-width: 300px;
+    }
+
+    /* La classe que vous avez définie pour cacher le texte sur mobile */
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) { /* Petits téléphones */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
