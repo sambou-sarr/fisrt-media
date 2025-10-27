@@ -28,72 +28,58 @@
 </head>
 <body>
   <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-0 m-0">
-      <div class="container-fluid flex-column p-0 m-0">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container d-flex align-items-center justify-content-between py-2">
 
-        <!-- Bande supérieure (visible uniquement sur desktop) -->
-        <div class="top-info-bar w-100 d-none d-lg-flex justify-content-between align-items-center px-3 py-1 bg-light border-bottom fixed-top">
-          <div class="contact-info">
-            <span class="navbar-text animated-text">
-              Vous pouvez voler nos idées... nous en aurons d'autres !
-            </span>
-          </div>
-          <div class="contact-info text-dark d-flex align-items-center gap-3">
-            <span><i class="bi bi-telephone-fill me-1 text-primary"></i> +221 77 631 78 92 / +221 33 842 49 00</span>
-            <span><i class="bi bi-envelope-fill me-1 text-primary"></i> firstmediag@gmail.com</span>
-            <span><i class="bi bi-geo-alt-fill me-1 text-primary"></i> 03 rue Béranger Féraud, Immeuble CTIC Dakar</span>
-          </div>
-        </div>
-
-        <!-- Menu principal -->
-        <div class="container-fluid d-flex align-items-center justify-content-between py-2 px-4 bg-white main-nav" style="margin-top: 0px;">
-          <a id="mobileLogo" class="navbar-brand d-flex align-items-center fw-bold fs-4 text-dark m-0" href="../index.html">
-            <img src="../assets/img/firstlogo.png" alt="Logo" style="width: 55px; height: 55px; object-fit: cover;">
-            <h5 style="white-space: nowrap; margin-left: 5px;">
-              <strong>
-                <span style="color: #28a745;">First</span>
-                <span style="color: #007bff;">Media</span>
-              </strong>
-            </h5>
-          </a>
-
-          <!-- Bouton hamburger -->
-          <div class="d-flex d-lg-none" style="background-color: #007bff; border-radius: 10px; padding: 5px;">
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-              aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-
-          <!-- Menu déroulant -->
-          <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto fs-5">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html"><i class="fas fa-home me-1 text-primary"></i> Accueil</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="emissionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fas fa-tv me-1 text-primary"></i> Émissions
-                </a>
-                <ul class="dropdown-menu shadow fs-6" aria-labelledby="emissionsDropdown">
-                  <li><a class="dropdown-item" href="../emissions/debattons.html"><i class="fas fa-comments me-1 text-primary"></i> Débattons</a></li>
-                  <li><a class="dropdown-item" href="../emissions/epelle-moi.html"><i class="fas fa-spell-check me-1 text-primary"></i> Épelle-Moi</a></li>
-                  <li><a class="dropdown-item" href="../emissions/diwane_bi.html"><i class="fas fa-microphone me-1 text-primary"></i> Diwane Bi</a></li>
-                  <li><a class="dropdown-item" href="../emissions/sur_les_pas_des_instruction.html"><i class="fas fa-university me-1 text-primary"></i> Sur les pas des institutions</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="index.html#portfolio"><i class="fas fa-list me-1 text-primary"></i> Toutes les émissions</a></li>
-                </ul>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="service.html"><i class="fas fa-cogs me-1 text-primary"></i> Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="a_propos.html"><i class="fas fa-info-circle me-1 text-primary"></i> À propos</a></li>
-              <li class="nav-item"><a class="nav-link " href="zero_faute.html"><i class="fas fa-gamepad me-1 text-primary"></i> Zero Faute</a></li>
-              <li class="nav-item"><a class="nav-link active" href="gallerie.html"><i class="fas fa-image me-1 text-primary"></i> Galerie</a></li>
-            </ul>
-          </div>
-        </div>
+    <!-- Logo + texte défilant -->
+    <div class="d-flex align-items-center">
+      <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="../index.html">
+        <img src="../assets/img/firstlogo.png" alt="Logo First Media" class="logo-img me-2">
+      </a>
+      <div class="animated-text ms-3 d-none d-md-block">
+        <span class="defilement text-primary fw-semibold">
+          Vous pouvez prendre nos idées... nous en aurons d'autres !
+        </span>
       </div>
-    </nav>
+    </div>
+
+    <!-- Bouton hamburger -->
+    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu principal -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link " href="../index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link " href="a_propos.html">À propos</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="emissionsDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Émissions</a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="emissionsDropdown">
+            <li><a class="dropdown-item" href="../emissions/debattons.html">Débattons</a></li>
+            <li><a class="dropdown-item" href="../emissions/epelle-moi.html">Épelle-Moi</a></li>
+            <li><a class="dropdown-item" href="../emissions/diwane_bi.html">Diwane Bi</a></li>
+            <li><a class="dropdown-item" href="../emissions/sur_les_pas_des_instruction.html">Sur les pas des institutions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="zero_faute.html">Zero Faute</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallerie.html">Galerie</a></li>
+
+        <!-- Bouton call-to-action -->
+        <li class="nav-item ms-lg-3">
+          <a href="contact.html" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm fw-semibold">
+            Contactez-nous
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
   <!-- ======= Portfolio Section ======= -->
   <section id="portfolio" class="portfolio section-bg py-5">
@@ -519,112 +505,77 @@
   </section>
   <!-- End Portfolio Section -->
  <!-- ======= Footer ======= -->
-  <footer class="footer-modern bg-dark w-100">
-        <div class="container pt-5">
-            <div class="row g-4">
-                <!-- Section À propos -->
-                <div class="col-md-4 col-lg-3 mb-4">
-                    <div class="footer-about">
-                        <h5 class="text-uppercase text-white mb-4">À propos</h5>
-                        <p class="text-white-70 mb-4">
-                            First Media - Première structure de communication audiovisuelle sénégalaise spécialisée dans la production de contenus éducatifs et innovants.
-                        </p>
-                    </div>
-                </div>
+  <footer class="footer-modern bg-dark w-100 text-white-50">
+      <div class="container pt-5">
+          <!-- Contenu principal du footer centré -->
+          <div class="row g-4 justify-content-center text-center">
 
-                <!-- Liens rapides -->
-                <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <h5 class="text-uppercase text-white mb-4">Navigation</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Accueil</a></li>
-                        <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Équipe</a></li>
-                        <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Réalisations</a></li>
-                        <li><a href="#" class="text-white-70 d-block py-1"><i class="fas fa-chevron-right me-2 small"></i>Contact</a></li>
-                    </ul>
-                </div>
+              <!-- Section Logo -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <h5 class="text-uppercase text-white mb-4">First Media</h5>
+                  <img src="../assets/img/logoo.png" class="img-fluid bg-light p-2 rounded" alt="Logo First Media" style="max-width: 150px;">
+              </div>
 
-                <!-- Coordonnées -->
-                <div class="col-md-4 col-lg-3 mb-4">
-                    <h5 class="text-uppercase text-white mb-4">Coordonnées</h5>
-                    <ul class="list-unstyled contact-info">
-                        <li class="mb-3 d-flex">
-                            <i class="fas fa-map-marker-alt text-primary mt-1 me-3"></i>
-                            <div>
-                                <span class="text-white-70 d-block">03 rue Beranger Feraud Immeuble CTIC Dakar</span>
-                                <span class="text-white-70">Dakar , Senegal</span>
-                            </div>
-                        </li>
-                        <li class="mb-3">
-                            <a href="tel:+221776317892" class="text-white-70 text-decoration-none d-flex align-items-center">
-                                <i class="fas fa-phone text-primary me-3"></i>
-                                <div>
-                                    <span class="d-block">+221 33 842 49 00</span>
-                                    <span class="d-block">+221 77 631 78 92</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="mailto:info@first-media-groupe.com" class="text-white-70 text-decoration-none d-flex align-items-center">
-                                <i class="fas fa-envelope text-primary me-3"></i>
-                                info@first-media-groupe.com
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+              <!-- Section Coordonnées -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <h5 class="text-uppercase text-white mb-4">Nous Contacter</h5>
+                  <ul class="list-unstyled contact-info">
+                      <li class="mb-2">
+                          <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                          <span>03 rue Beranger Feraud, CTIC Dakar</span>
+                      </li>
+                      <li class="mb-2">
+                          <i class="fas fa-phone text-primary me-2"></i>
+                          <a href="tel:+221776317892" class="text-white-50 text-decoration-none">+221 77 631 78 92</a>
+                      </li>
+                      <li class="mb-2">
+                          <i class="fas fa-envelope text-primary me-2"></i>
+                          <a href="mailto:firstmediag@gmail.com" class="text-white-50 text-decoration-none">firstmediag@gmail.com</a>
+                      </li>
+                  </ul>
+              </div>
 
-                <!-- Réseaux sociaux -->
-                <div class="col-md-4 col-lg-4 mb-4">
-                    <h5 class="text-uppercase text-white mb-4">Réseaux sociaux</h5>
-                      <div class="footer-social">
-                            <a href="https://www.tiktok.com/@firstmediagroup1" target="_blank" class="social-link tiktok">
-                                <i class="fab fa-tiktok"></i>
-                            </a>
-                            <a href="https://www.facebook.com/share/1BxVquMz8N/" target="_blank" class="social-link facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://www.youtube.com/@firstmediagroup5105" target="_blank" class="social-link youtube">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="https://www.instagram.com/firstmediagroupdakar?igsh=MWs4NjRmMjZlb2I5NQ==" class="social-link instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="social-link linkedin">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                        <br>
-                 <div id="newsletter-message" class="alert alert-success text-center" style="display:none; margin-top:15px;">
-                    🎉 Merci ! Vous êtes maintenant abonné à notre newsletter.
+              <!-- Section Réseaux sociaux & Newsletter -->
+              <div class="col-lg-4 col-md-8 mb-4">
+                  <h5 class="text-uppercase text-white mb-4">Suivez-nous</h5>
+                  <div class="footer-social mb-4">
+                      <a href="https://www.tiktok.com/@firstmediagroup1?_t=ZM-8ycjPuJ7uA2&_r=1" target="_blank" class="social-link tiktok"><i class="fab fa-tiktok"></i></a>
+                      <a href="https://www.facebook.com/share/1BxVquMz8N/" target="_blank" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.youtube.com/@firstmediagroup5105" target="_blank" class="social-link youtube"><i class="fab fa-youtube"></i></a>
+                      <a href="https://www.instagram.com/firstmediagroupdakar?igsh=MWs4NjRmMjZlb2I5NQ==" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
                   </div>
+                  
                   <div class="newsletter">
-                    <h6 class="text-white mb-3">Abonnez-vous à notre newsletter</h6>
-                    <form id="newsletterForm" class="input-group">
-                      <input type="hidden" name="access_key" value="c4f0b8a6-c0c7-4322-a996-aea8f32444a3">
-                      <input type="email" name="email" class="form-control border-0" placeholder="Votre email" required>
-                      <button class="btn btn-primary" type="submit">
-                        <i class="fas fa-paper-plane"></i>
-                      </button>
-                    </form>
+                      <h6 class="text-white mb-3">Abonnez-vous à notre newsletter</h6>
+                      <form id="newsletterForm" class="input-group">
+                          <input type="hidden" name="access_key" value="c4f0b8a6-c0c7-4322-a996-aea8f32444a3">
+                          <input type="email" name="email" class="form-control border-0" placeholder="Votre email" required>
+                          <button class="btn btn-primary" type="submit"><i class="fas fa-paper-plane"></i></button>
+                      </form>
+                      <div id="newsletter-message" class="alert alert-success text-center" style="display:none; margin-top:15px;">
+                          🎉 Merci ! Vous êtes maintenant abonné.
+                      </div>
                   </div>
-            </div>
-            <!-- Mentions légales -->
-            <div class="footer-legal py-4 border-top border-dark">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <div class="legal-links">
-                            <a href="#" class="text-white-70 me-3">Mentions légales</a>
-                            <a href="#" class="text-white-70 me-3">Conditions</a>
-                            <a href="#" class="text-white-70">Politique de confidentialité</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <p class="text-white-70 mb-0">
-                            &copy; <span class="current-year"></span> FIRST MEDIA Group — Tous droits réservés
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+              </div>
+          </div>
+
+          <!-- Mentions légales centrées -->
+          <div class="footer-legal py-4 border-top border-secondary mt-4">
+              <div class="row">
+                  <div class="col-12 text-center">
+                      <p class="mb-2">
+                          &copy; <span class="current-year"></span> FIRST MEDIA Group — Tous droits réservés.
+                      </p>
+                      <div class="legal-links">
+                          <a href="#" class="text-white-50 me-3">Mentions légales</a>
+                          <a href="#" class="text-white-50 me-3">Conditions</a>
+                          <a href="#" class="text-white-50">Confidentialité</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
   </footer>
   <!-- End  Footer -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

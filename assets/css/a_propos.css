@@ -13,11 +13,12 @@
     opacity: 0.9;           /* Légère transparence au survol */
 }
 .hero-section{
-    background: url('../img/hero/hc-digital-7L2h4zTYiNI-unsplash.jpg') no-repeat center center;
+    background: url('../img/hero/fontpropos.png') no-repeat center center;
     background-size: cover;
     color: white;
     text-align: center;
     padding: 100px 0;
+    height: 500px;
 }
   /* Tous les logos auront la même taille max et centrés */
   .partner-logo {

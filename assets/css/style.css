@@ -6,32 +6,6 @@
 * License: https://bootstrapmade.com/license/
 */
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #272829;
-}
-
-a {
-  color: #149ddd;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #37b3ed;
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
-}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -130,7 +104,7 @@ h6 {
 #main {
 
   transition: all ease-in-out 0.5s;
-  background: #d8d8da;
+  background: #ffffff;
   min-height: 100vh;  
   position: relative;
   z-index: 1;
