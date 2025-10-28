@@ -567,3 +567,114 @@ body, html {
     font-size: 1rem;
     line-height: 1.6;
 }
+.section-light {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+.made-in-senegal-card, .fmg-card {
+    border-radius: 15px;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+.made-in-senegal-card:hover, .fmg-card:hover {
+    transform: translateY(-5px);
+}
+.made-in-senegal-card {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.senegal-flag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    display: flex;
+}
+.flag-stripe { height: 100%; flex: 1; }
+.flag-green { background-color: #00853f; }
+.flag-yellow { background-color: #fdef42; }
+.flag-red { background-color: #e31b23; }
+
+.card-icon {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+.card-title {
+    font-weight: 700;
+    color: #2c3e50;
+}
+.card-description {
+    color: #6c757d;
+}
+.address-box {
+    background: #e9ecef;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+.address-box strong {
+    color: #343a40;
+}
+.fmg-card .card-title {
+    color: #00853f;
+}
+.fmg-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.fmg-icon {
+    font-size: 1.2rem;
+    color: #00853f;
+    background-color: rgba(13, 110, 253, 0.1);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+.fmg-item h5 {
+    font-weight: 600;
+    color: #343a40;
+}
+.fmg-item p {
+    color: #6c757d;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+
+/* =================================== */
+/*  Section Plaquette de Présentation (utilisée dans la section combinée)  */
+/* =================================== */
+.document-cover {
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: transform 0.4s ease;
+}
+
+.document-cover:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.document-tag {
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    background-color: #00853f; 
+    color: white;
+    padding: 5px 15px 5px 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 0 50px 50px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Assurez-vous que les styles pour .made-in-senegal-card et .fmg-card sont aussi dans votre CSS */

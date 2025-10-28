@@ -915,12 +915,12 @@ strong/* Section Hero */
   transform: scale(1.1); /* éviter les bords après flou */
   z-index: -1; /* derrière le contenu */
 }
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
     .hide-mobile {
         display: none !important;
     }
-    }
-    /* Style général des liens */
+}
+/* Style général des liens */
 .navbar-nav .nav-link {
   color: #000; /* texte par défaut */
   transition: color 0.3s, background-color 0.3s;

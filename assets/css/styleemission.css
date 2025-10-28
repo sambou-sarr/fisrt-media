@@ -28,7 +28,7 @@
 #hero {
   position: relative;
   width: 100%;
-  height: 80vh; /* ou la hauteur voulue */
+  height: 90vh; /* ou la hauteur voulue */
   overflow: hidden;
 }
 
@@ -45,48 +45,29 @@
   z-index: -1; /* derrière le contenu */
 }
 .hero-logo {
-            max-width: 300px;
-            margin-bottom: 30px;
-            animation: float 3s ease-in-out infinite;
-        }
+        max-width: 300px;
+        margin-bottom: 30px;
+        animation: float 3s ease-in-out infinite;
+    }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
 
-        .hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
+    .hero-title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
 
-        .hero-subtitle {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
+    .hero-subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+        opacity: 0.9;
+    }
 
-        .btn-hero {
-            background: var(--accent-color);
-            border: none;
-            padding: 15px 40px;
-            border-radius: 50px;
-            font-weight: 600;
-            color: white;
-            text-decoration: none;
-            display: inline-block;
-            transition: var(--transition-fast);
-            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
-        }
-
-        .btn-hero:hover {
-            background: #c0392b;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.6);
-            color: white;
-        }
 
 /* Variables CSS héritées de la page principale */
 :root {

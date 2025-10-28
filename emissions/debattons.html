@@ -36,83 +36,86 @@
 <link href="../assets/css/style.css" rel="stylesheet">
 <link href="../assets/css/style_index.css" rel="stylesheet">
 <link href="../assets/css/styleemission.css" rel="stylesheet">
-
-
 </head>
 <body>
   <!-- ======= NAVBAR ======= -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-  <div class="container d-flex align-items-center justify-content-between py-2">
-    <!-- Logo + texte défilant -->
-    <div class="d-flex align-items-center">
-      <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="index.html">
-        <img src="../assets/img/firstlogo.png" alt="Logo First Media" class="logo-img me-2">
-      </a>
-      <div class="animated-text ms-3 d-none d-md-block">
-        <span class="defilement text-primary fw-semibold">
-          Vous pouvez prendre nos idées... nous en aurons d'autres !
-        </span>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container d-flex align-items-center justify-content-between py-2">
+      <!-- Logo + texte défilant -->
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="index.html">
+          <img src="../assets/img/firstlogo.png" alt="Logo First Media" class="logo-img me-2">
+        </a>
+        <div class="animated-text ms-3 d-none d-md-block">
+          <span class="defilement text-primary fw-semibold">
+            Vous pouvez prendre nos idées... nous en aurons d'autres !
+          </span>
+        </div>
+      </div>
+      <!-- Bouton hamburger -->
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menu principal -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link " href="../index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/a_propos.html">À propos</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="emissionsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Émissions</a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="emissionsDropdown">
+              <li><a class="dropdown-item" href="debattons.html">Débattons</a></li>
+              <li><a class="dropdown-item" href="epelle-moi.html">Épelle-Moi</a></li>
+              <li><a class="dropdown-item" href="diwane_bi.html">Diwane Bi</a></li>
+              <li><a class="dropdown-item" href="sur_les_pas_des_instruction.html">Sur les pas des institutions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../pages/service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/zero_faute.html">Zero Faute</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pages/gallerie.html">Galerie</a></li>
+          <!-- Bouton call-to-action -->
+          <li class="nav-item ms-lg-3">
+            <a href="../pages/contact.html" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm fw-semibold">
+              Contactez-nous
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- Bouton hamburger -->
-    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Menu principal -->
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link " href="../index.html">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="../pages/a_propos.html">À propos</a></li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link active dropdown-toggle" href="#" id="emissionsDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">Émissions</a>
-          <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="emissionsDropdown">
-            <li><a class="dropdown-item" href="debattons.html">Débattons</a></li>
-            <li><a class="dropdown-item" href="epelle-moi.html">Épelle-Moi</a></li>
-            <li><a class="dropdown-item" href="diwane_bi.html">Diwane Bi</a></li>
-            <li><a class="dropdown-item" href="sur_les_pas_des_instruction.html">Sur les pas des institutions</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="../pages/service.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="../pages/zero_faute.html">Zero Faute</a></li>
-        <li class="nav-item"><a class="nav-link" href="../pages/gallerie.html">Galerie</a></li>
-        <!-- Bouton call-to-action -->
-        <li class="nav-item ms-lg-3">
-          <a href="../pages/contact.html" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm fw-semibold">
-            Contactez-nous
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<section id="hero" class="hero-section">
+  </nav>
+<!-- Section Hero avec classes pour le centrage et ID pour le style -->
+<section id="hero" class="hero-section d-flex align-items-center">
     <div class="container">
-        <div class="row align-items-center" style="margin-top: 100px;">
+        <div class="row align-items-center justify-content-center">
             
-            <!-- Texte caché sur mobile -->
-            <div class="col-lg-6 hide-mobile" >
-                <div class="hero-content">
-                    <h1 class="hero-title">Débattons</h1>
-                    <p class="hero-subtitle">
-                        L’émission de débats, créée par First Media.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Logo + réseaux sociaux (toujours visibles) -->
-            <div class="col-lg-6 text-center">
+            <!-- La colonne est toujours centrée et contient maintenant le logo ET le texte -->
+            <div class="col-lg-8 text-center">
+                
+                <!-- 1. Le Logo -->
                 <img src="../assets/img/debats_texte_blanc-removebg-preview.png" 
                      alt="Logo Débattons" 
-                     class="hero-logo img-fluid mb-3" 
-                     style="width: 300px; max-width: 100%; height: auto; ">
+                     class="hero-logo img-fluid mb-4">  <!-- mb-4 ajoute un espace sous le logo -->
+
+                <!-- 2. Le Titre Principal (optionnel, si le logo ne suffit pas) -->
+                <h1 class="hero-title display-4 fw-bold text-white">
+                    La parole est à vous
+                </h1>
+
+                <!-- 3. Le Sous-titre / Slogan -->
+                <p class="hero-subtitle fs-4 text-white-50 mt-3">
+                    L'arène où les idées s'affrontent et la citoyenneté se construit.
+                </p>
+
             </div>
         </div>
     </div>
 </section>
+
+
 
   <main id="main" style="margin-top: -50px; padding-top: 0px;">
     <section id="emission-hero" class="emission-hero">
@@ -506,7 +509,7 @@
                       <a href="https://www.facebook.com/share/1BxVquMz8N/" target="_blank" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
                       <a href="https://www.youtube.com/@firstmediagroup5105" target="_blank" class="social-link youtube"><i class="fab fa-youtube"></i></a>
                       <a href="https://www.instagram.com/firstmediagroupdakar?igsh=MWs4NjRmMjZlb2I5NQ==" class="social-link instagram"><i class="fab fa-instagram"></i></a>
-                      <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="https://www.linkedin.com/in/firstmediagroupofficiel/" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
                   </div>
                   
                   <div class="newsletter">

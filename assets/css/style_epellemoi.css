@@ -17,7 +17,7 @@
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: -1; /* Derrière le contenu */
 }
-
+hero
 /* Chaque image de fond */
 #hero .slide {
   position: absolute;
@@ -36,31 +36,6 @@ li strong {
 #hero .slide:nth-child(1) { animation-delay: 0s; }
 #hero .slide:nth-child(2) { animation-delay: 6s; }
 #hero .slide:nth-child(3) { animation-delay: 12s; }
-#hero .slide:nth-child(4) { animation-delay: 18s; }
-#hero .slide:nth-child(5) { animation-delay: 50s; }
-
-
-/* Animation fondu */
-@keyframes fadeSlideshow {
-  0%   { opacity: 0; }
-  10%  { opacity: 1; }  /* apparition */
-  25%  { opacity: 1; }  /* reste visible */
-  35%  { opacity: 0; }  /* disparaît */
-  100% { opacity: 0; }
-}
-#hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('../img/gallerie/eppellemoi/facebookepplemoi.png') top center / cover no-repeat;
-  filter: blur(8px); /* intensité du flou */
-  transform: scale(1.1); /* éviter les bords après flou */
-  z-index: -1; /* derrière le contenu */
-}
-
  
             /* Variables CSS héritées de la page principale */
         :root {
@@ -127,52 +102,6 @@ li strong {
             margin: 0 auto;
         }
 
-        /* Hero Section */
-     
-
-        .hero-logo {
-            max-width: 300px;
-            margin-bottom: 30px;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-
-        .hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .hero-subtitle {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-
-        .btn-hero {
-            background: var(--accent-color);
-            border: none;
-            padding: 15px 40px;
-            border-radius: 50px;
-            font-weight: 600;
-            color: white;
-            text-decoration: none;
-            display: inline-block;
-            transition: var(--transition-fast);
-            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
-        }
-
-        .btn-hero:hover {
-            background: #c0392b;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.6);
-            color: white;
-        }
 
         /* Section Concept */
         .concept-section {
@@ -482,11 +411,6 @@ li strong {
                 font-size: 2.5rem;
             }
         }
-    
-        body {
-            font-family: 'Roboto', sans-serif;
-            color: #333;
-        }
         .section-title h2 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
@@ -726,4 +650,62 @@ li strong {
     .hero-section {
         min-height: 50vh;
     }
+}
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: slideShow 25s infinite;
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 5s; }
+.slide:nth-child(3) { animation-delay: 10s; }
+.slide:nth-child(4) { animation-delay: 15s; }
+.slide:nth-child(5) { animation-delay: 20s; }
+
+@keyframes slideShow {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.hero-content {
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-logo {
+  width: 200px;
+  max-width: 80%;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* assombrit légèrement le fond */
+  z-index: 1;
 }

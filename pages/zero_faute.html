@@ -5,89 +5,93 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Zero Faute - Jeu Éducatif Révolutionnaire | First Media</title>
         <!-- Favicons -->
-        <link href="../assets/img/favicon.png" rel="icon">
-        <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-        <!-- Bootstrap CSS (dernière version stable 5.x) -->
+        <link href="assets/img/favicon.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <!-- Bootstrap CSS  -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Bootstrap Icons -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-        <!-- Font Awesome (dernière version unique) -->
+        <!-- Font Awesome  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <!-- Google Fonts (regroupées) -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-        <!-- AOS Animation Library -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Icons (pour les icônes téléphone, mail, etc.) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
         <!-- Tes fichiers CSS -->
         <link rel="stylesheet" href="../assets/css/style_index.css">
         <link rel="stylesheet" href="../assets/css/style2.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-        <div class="container d-flex align-items-center justify-content-between py-2">
+            <div class="container d-flex align-items-center justify-content-between py-2">
+                <!-- Logo + texte défilant -->
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="../index.html">
+                        <img src="../assets/img/firstlogo.png" alt="Logo First Media" class="logo-img me-2">
+                    </a>
+                    <div class="animated-text ms-3 d-none d-md-block">
+                        <span class="defilement text-primary fw-semibold">
+                            Vous pouvez prendre nos idées... nous en aurons d'autres !
+                        </span>
+                    </div>
+                </div>
+                <!-- Bouton hamburger -->
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menu principal -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link " href="../index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link " href="a_propos.html">À propos</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="emissionsDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Émissions</a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="emissionsDropdown">
+                                <li><a class="dropdown-item" href="../emissions/debattons.html">Débattons</a></li>
+                                <li><a class="dropdown-item" href="../emissions/epelle-moi.html">Épelle-Moi</a></li>
+                                <li><a class="dropdown-item" href="../emissions/diwane_bi.html">Diwane Bi</a></li>
+                                <li><a class="dropdown-item" href="../emissions/sur_les_pas_des_instruction.html">Sur les pas des institutions</a></li>
+                            </ul>
+                        </li>
 
-            <!-- Logo + texte défilant -->
-            <div class="d-flex align-items-center">
-            <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="../index.html">
-                <img src="../assets/img/firstlogo.png" alt="Logo First Media" class="logo-img me-2">
-            </a>
-            <div class="animated-text ms-3 d-none d-md-block">
-                <span class="defilement text-primary fw-semibold">
-                Vous pouvez prendre nos idées... nous en aurons d'autres !
-                </span>
+                        <li class="nav-item"><a class="nav-link " href="service.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="zero_faute.html">Zero Faute</a></li>
+                        <li class="nav-item"><a class="nav-link " href="gallerie.html">Galerie</a></li>
+
+                        <!-- Bouton call-to-action -->
+                        <li class="nav-item ms-lg-3">
+                            <a href="contact.html" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm fw-semibold">
+                                Contactez-nous
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            </div>
-
-            <!-- Bouton hamburger -->
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Menu principal -->
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-                <li class="nav-item"><a class="nav-link " href="../index.html">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link " href="a_propos.html">À propos</a></li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="emissionsDropdown" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">Émissions</a>
-                <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="emissionsDropdown">
-                    <li><a class="dropdown-item" href="../emissions/debattons.html">Débattons</a></li>
-                    <li><a class="dropdown-item" href="../emissions/epelle-moi.html">Épelle-Moi</a></li>
-                    <li><a class="dropdown-item" href="../emissions/diwane_bi.html">Diwane Bi</a></li>
-                    <li><a class="dropdown-item" href="../emissions/sur_les_pas_des_instruction.html">Sur les pas des institutions</a></li>
-                </ul>
-                </li>
-
-                <li class="nav-item"><a class="nav-link " href="service.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link active" href="zero_faute.html">Zero Faute</a></li>
-                <li class="nav-item"><a class="nav-link " href="gallerie.html">Galerie</a></li>
-
-                <!-- Bouton call-to-action -->
-                <li class="nav-item ms-lg-3">
-                <a href="contact.html" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm fw-semibold">
-                    Contactez-nous
-                </a>
-                </li>
-            </ul>
-            </div>
-        </div>
         </nav>
         <!-- ======= Section Hero ======= -->
         <section class="hero-section text-center text-light d-flex align-items-center justify-content-center position-relative" id="accueil">
-        <!-- Contenu -->
-        <div class="container mt-5" data-aos="fade-up">
-            <h1>Jouez, apprenez et progressez avec <span>ZÉRO Faute!</span></h1>
-            <p>Un jeu éducatif pour apprendre et renforcer le français, l’anglais et l’arabe en famille, tout en s’amusant !</p>
-            <button class="btn btn-danger-custom animate-btn">
-                <i class="bi bi-play-circle-fill me-2"></i> Découvrir le Jeu
-            </button>
-        </div>
-        <!-- Forme décorative verte en bas -->
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-            <path d="M-1.41,85.12 C149.99,150.00 271.78,0.00 501.41,84.89 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: white;"></path>
-        </svg>
+            <!-- Contenu -->
+            <div class="container mt-5" data-aos="fade-up">
+                <h1>Jouez, apprenez et progressez avec <span>ZÉRO Faute!</span></h1>
+                <p>Un jeu éducatif pour apprendre et renforcer le français, l’anglais et l’arabe en famille, tout en s’amusant !</p>
+                <button class="btn btn-danger-custom animate-btn">
+                    <i class="bi bi-play-circle-fill me-2"></i> Découvrir le Jeu
+                </button>
+            </div>
+            <!-- Forme décorative verte en bas -->
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                <path d="M-1.41,85.12 C149.99,150.00 271.78,0.00 501.41,84.89 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: white;"></path>
+            </svg>
         </section>
         <!-- Features Section -->
         <section class="section section-light py-5" id="zerofaute">
@@ -104,11 +108,12 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="feature-card text-center p-4 shadow-sm rounded-4 h-100">
                             <div class="feature-icon mx-auto mb-3">
+                                <!-- L'icône du trophée est parfaite ici -->
                                 <i class="bi bi-trophy-fill fs-1 text-warning"></i>
                             </div>
-                            <h5 class="fw-bold">Projet Primé</h5>
+                            <h5 class="fw-bold">Meilleur Projet Éducatif</h5>
                             <p class="text-muted mb-0">
-                                Reconnu à l'international pour son excellence, avec une 6ème place mondiale au sommet de l'ICESCO en 2024.
+                                Classé <strong> meilleur projet éducatif au monde</strong> lors du prestigieux sommet international de l'ICESCO en 2024.
                             </p>
                         </div>
                     </div>
@@ -128,7 +133,7 @@
 
                     <!-- Carte 3: Pour Tous -->
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="feature-card text-center p-4 shadow-sm rounded-4 h-100">
+                        <div class="feature-card text-center p-4 shadow-sm rounded-4 h-200">
                             <div class="feature-icon mx-auto mb-3">
                                 <i class="bi bi-people-fill fs-1 text-success"></i>
                             </div>
@@ -317,63 +322,81 @@
                 </div>
             </div>
         </section>
-        <!-- ======= Section Made in Sénégal ======= -->
-        <section class="section section-light" id="made-in-senegal">
+        <section class="section section-light" id="about-us">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Une Fierté de l'Innovation Sénégalaise</h2>
+                <!-- Titre de la section -->
+                <h2 class="section-title" data-aos="fade-up">
+                    Une Fierté de l'Innovation Sénégalaise
+                </h2>
                 <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-                    Créé à Dakar par First Media Group, Zéro Faute est le fruit d'une expertise locale au service de l'éducation en Afrique.
+                    Créé à Dakar, FIRST MEDIA GROUP est le fruit d'une expertise locale au service de l'éducation en Afrique. Découvrez notre vision, nos compétences et nos ambitions.
                 </p>
                 
-                <div class="row align-items-stretch">
-                    <!-- Carte "Made in Sénégal" -->
-                    <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-delay="200">
-                        <div class="made-in-senegal-card h-100">
-                            <div class="senegal-flag">
-                                <div class="flag-stripe flag-green"></div>
-                                <div class="flag-stripe flag-yellow"></div>
-                                <div class="flag-stripe flag-red"></div>
-                            </div>
-                            <div class="card-icon">🇸🇳</div>
-                            <h3 class="card-title">Conçu à Dakar</h3>
-                            <p class="card-description">
-                                Imaginé et développé au cœur de l'écosystème innovant de Dakar, capitale de la créativité en Afrique de l'Ouest.
-                            </p>
-                            <div class="address-box">
-                                <p class="mb-0">
-                                    <i class="fas fa-map-marker-alt me-2"></i>
-                                    <strong>Siège :</strong> 03 rue Béranger Féraud, Immeuble CTIC, Dakar, Sénégal
-                                </p>
+                <div class="row g-4 g-lg-5 align-items-center mt-4">
+
+                    <!-- PARTIE 1 : Image de la plaquette et Téléchargement -->
+                    <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+                        <div class="document-cover shadow-lg rounded-3 position-relative mb-4">
+                            <!-- Assurez-vous que ce chemin est correct -->
+                            <img src="../assets/img/zerofaute/maquette.jpg" class="img-fluid rounded-3" alt="Couverture de la plaquette de présentation First Media Group">
+                            <div class="document-tag">
+                                <i class="bi bi-file-earmark-pdf-fill me-2"></i>Présentation de la maquette
                             </div>
                         </div>
+                        <p class="text-muted small">
+                            Notre plaquette vous offre un aperçu complet de notre structure, de notre expertise et de nos projets phares.
+                        </p>
                     </div>
-                    
-                    <!-- Carte "First Media Group" -->
-                    <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-delay="300">
-                        <div class="fmg-card h-100">
-                            <h3 class="card-title text-center mb-4">Par First Media Group</h3>
-                            
-                            <div class="fmg-item">
-                                <div class="fmg-icon"><i class="fas fa-lightbulb"></i></div>
-                                <div>
-                                    <h5>Pôle Créatif et Innovant</h5>
-                                    <p>Une structure bâtie autour d'esthètes de l'image et du numérique, toujours en quête d'idées éducatives novatrices.</p>
+
+                    <div class="col-lg-7">
+                        <div class="row g-4">
+                            <!-- Carte "Made in Sénégal" -->
+                            <div class="col-12" data-aos="fade-left" data-aos-delay="300">
+                                <div class="made-in-senegal-card h-100">
+                                    <div class="senegal-flag">
+                                        <div class="flag-stripe flag-green"></div>
+                                        <div class="flag-stripe flag-yellow"></div>
+                                        <div class="flag-stripe flag-red"></div>
+                                    </div>
+                                    <div class="card-icon">🇸🇳</div>
+                                    <h3 class="card-title">Conçu à Dakar</h3>
+                                    <p class="card-description">
+                                        Imaginé et développé au cœur de l'écosystème innovant de Dakar.
+                                    </p>
+                                    <div class="address-box">
+                                        <p class="mb-0">
+                                            <i class="fas fa-map-marker-alt me-2"></i>
+                                            <strong>Siège :</strong> 03 rue Béranger Féraud, Immeuble CTIC, Dakar
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             
-                            <div class="fmg-item">
-                                <div class="fmg-icon"><i class="fas fa-graduation-cap"></i></div>
-                                <div>
-                                    <h5>Expertise Éducative</h5>
-                                    <p>Une équipe passionnée avec plus de 10 ans d'expérience dans le domaine de l'éducation et de l'audiovisuel.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="fmg-item">
-                                <div class="fmg-icon"><i class="fas fa-globe-africa"></i></div>
-                                <div>
-                                    <h5>Vision Panafricaine</h5>
-                                    <p>Des contenus impactants conçus pour rayonner sur tout le territoire sénégalais et au-delà.</p>
+                            <!-- Carte "First Media Group" -->
+                            <div class="col-12" data-aos="fade-left" data-aos-delay="400">
+                                <div class="fmg-card h-100">
+                                    <h3 class="card-title text-center mb-4">Nos Forces</h3>
+                                    <div class="fmg-item">
+                                        <div class="fmg-icon"><i class="fas fa-lightbulb"></i></div>
+                                        <div>
+                                            <h5>Pôle Créatif et Innovant</h5>
+                                            <p>Une structure bâtie autour d'esthètes de l'image et du numérique.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fmg-item">
+                                        <div class="fmg-icon"><i class="fas fa-graduation-cap"></i></div>
+                                        <div>
+                                            <h5>Expertise Éducative</h5>
+                                            <p>+10 ans d'expérience dans l'éducation et l'audiovisuel.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fmg-item">
+                                        <div class="fmg-icon"><i class="fas fa-globe-africa"></i></div>
+                                        <div>
+                                            <h5>Vision Panafricaine</h5>
+                                            <p>Des contenus impactants conçus pour rayonner au-delà de nos frontières.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -381,93 +404,6 @@
                 </div>
             </div>
         </section>
-        <!-- Assurez-vous d'avoir ce CSS dans votre fichier de style (ex: style2.css) -->
-        <style>
-        .section-light {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-        .made-in-senegal-card, .fmg-card {
-            border-radius: 15px;
-            padding: 30px;
-            background: #ffffff;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease;
-        }
-        .made-in-senegal-card:hover, .fmg-card:hover {
-            transform: translateY(-5px);
-        }
-        .made-in-senegal-card {
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .senegal-flag {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 8px;
-            display: flex;
-        }
-        .flag-stripe { height: 100%; flex: 1; }
-        .flag-green { background-color: #00853f; }
-        .flag-yellow { background-color: #fdef42; }
-        .flag-red { background-color: #e31b23; }
-
-        .card-icon {
-            font-size: 4rem;
-            margin-bottom: 15px;
-        }
-        .card-title {
-            font-weight: 700;
-            color: #2c3e50;
-        }
-        .card-description {
-            color: #6c757d;
-        }
-        .address-box {
-            background: #e9ecef;
-            border-radius: 10px;
-            padding: 15px;
-            margin-top: 20px;
-            font-size: 0.9rem;
-        }
-        .address-box strong {
-            color: #343a40;
-        }
-        .fmg-card .card-title {
-            color: #0d6efd;
-        }
-        .fmg-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 20px;
-        }
-        .fmg-icon {
-            font-size: 1.2rem;
-            color: #0d6efd;
-            background-color: rgba(13, 110, 253, 0.1);
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            flex-shrink: 0;
-        }
-        .fmg-item h5 {
-            font-weight: 600;
-            color: #343a40;
-        }
-        .fmg-item p {
-            color: #6c757d;
-            margin: 0;
-            font-size: 0.95rem;
-        }
-        </style>
-
         <!-- CTA Section -->
         <footer class="footer-modern bg-dark w-100 text-white-50">
             <div class="container pt-5">
@@ -507,9 +443,9 @@
                             <a href="https://www.facebook.com/share/1BxVquMz8N/" target="_blank" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://www.youtube.com/@firstmediagroup5105" target="_blank" class="social-link youtube"><i class="fab fa-youtube"></i></a>
                             <a href="https://www.instagram.com/firstmediagroupdakar?igsh=MWs4NjRmMjZlb2I5NQ==" class="social-link instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.linkedin.com/in/firstmediagroupofficiel/" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-                        
+                    
                         <div class="newsletter">
                             <h6 class="text-white mb-3">Abonnez-vous à notre newsletter</h6>
                             <form id="newsletterForm" class="input-group">
@@ -544,51 +480,6 @@
         <!-- Scripts -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            // Initialisation AOS
-            AOS.init({
-                duration: 1000,
-                easing: 'ease-in-out',
-                once: true,
-                mirror: false
-            });
-
-            // Navigation smooth scroll
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        const offsetTop = target.offsetTop - 80;
-                        window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-
-            // Navbar background on scroll
-            window.addEventListener('scroll', function() {
-                const navbar = document.querySelector('.navbar');
-                if (window.scrollY > 50) {
-                    navbar.style.background = 'rgba(44, 62, 80, 0.98)';
-                } else {
-                    navbar.style.background = 'rgba(44, 62, 80, 0.95)';
-                }
-            });
-
-
-            // Parallax effect for hero section
-            window.addEventListener('scroll', function() {
-                const scrolled = window.pageYOffset;
-                const heroSection = document.querySelector('.hero-section');
-                if (heroSection) {
-                    const speed = scrolled * 0.5;
-                    heroSection.style.transform = `translateY(${speed * 0.1}px)`;
-                }
-            });
-        </script>
     </body>
 </html>
 

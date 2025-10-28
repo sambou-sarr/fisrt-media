@@ -57,3 +57,11 @@ setInterval(() => {
       alert("⚠️ Impossible d’envoyer le formulaire. Vérifiez votre connexion.");
     });
   });
+  new Typed("#typed", {
+  strings: [
+    "Première structure audiovisuelle sénégalaise. Spécialisée dans la production de contenus éducatifs et innovants."
+  ],
+  typeSpeed: 45,
+  showCursor: false,
+  loop: false
+});
