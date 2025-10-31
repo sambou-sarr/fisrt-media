@@ -104,39 +104,51 @@
         <!-- Formulaire -->
         <div class="col-lg-7">
           <div class="contact-form">
-          <form action="https://api.web3forms.com/submit" method="POST" >
+            <form action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="c4f0b8a6-c0c7-4322-a996-aea8f32444a3">
+
               <div class="row g-3">
                 <div class="col-md-6">
-                  <label for="name" class="form-label fw-semibold">Nom complet </label>
-                  <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+                  <label for="name" class="form-label fw-semibold">Nom complet</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
                 </div>
+
                 <div class="col-md-6">
-                  <label for="email" class="form-label fw-semibold">Email </label>
-                  <input type="email" class="form-control" id="email" placeholder="votre@email.com" required>
+                  <label for="email" class="form-label fw-semibold">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="votre@email.com" required>
                 </div>
+
                 <div class="col-md-6">
                   <label for="phone" class="form-label fw-semibold">Téléphone</label>
-                  <input type="text" class="form-control" id="phone" placeholder="+221 XX XXX XX XX">
+                  <input type="text" class="form-control" id="phone" name="phone" placeholder="+221 XX XXX XX XX">
                 </div>
+
                 <div class="col-md-6">
                   <label for="company" class="form-label fw-semibold">Entreprise</label>
-                  <input type="text" class="form-control" id="company" placeholder="Nom de votre entreprise">
+                  <input type="text" class="form-control" id="company" name="company" placeholder="Nom de votre entreprise">
                 </div>
+
                 <div class="col-12">
-                  <label for="service" class="form-label fw-semibold">Service souhaité </label>
-                  <select id="service" class="form-select" required>
+                  <label for="service" class="form-label fw-semibold">Service souhaité</label>
+                  <select id="service" name="service" class="form-select" required>
                     <option selected disabled>Sélectionnez un service</option>
-                    <option>Production vidéo</option>
-                    <option>Photographie</option>
-                    <option>Création de contenu</option>
-                    <option>Montage audiovisuel</option>
+                    <option value="Production Audiovisuelle">Production Audiovisuelle</option>
+                    <option value="Photographie Professionnelle">Photographie Professionnelle</option>
+                    <option value="Communication Digitale">Communication Digitale</option>
+                    <option value="Création de Site Web">Création de Site Web</option>
+                    <option value="Communication Globale">Communication Globale</option>
+                    <option value="Communication d’Entreprise">Communication d’Entreprise</option>
+                    <option value="Communication Stratégique">Communication Stratégique</option>
+                    <option value="Marketing & Communication Politique">Marketing & Communication Politique</option>
+                    <option value="Événementiel">Événementiel</option>
                   </select>
                 </div>
+
                 <div class="col-12">
-                  <label for="message" class="form-label fw-semibold">Message </label>
-                  <textarea id="message" class="form-control" rows="5" maxlength="500" placeholder="Décrivez votre projet en détail..." required></textarea>
+                  <label for="message" class="form-label fw-semibold">Message</label>
+                  <textarea id="message" name="message" class="form-control" rows="5" maxlength="500" placeholder="Décrivez votre projet en détail..." required></textarea>
                 </div>
+
                 <div class="col-12 text-end">
                   <button type="submit" class="btn btn-primary px-5 py-2 mt-3">Envoyer le message</button>
                 </div>
