@@ -23,7 +23,6 @@
   top: 0; left: 0; right: 0; bottom: 0;
   background-size: cover;
   background-position: center;
-  filter: blur(0px);
   transform: scale(1.1); /* éviter les bords après flou */
   opacity: 0;
   animation: fadeSlideshow 36s infinite;

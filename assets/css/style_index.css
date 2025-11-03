@@ -249,15 +249,39 @@
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
 }
 /* ------------------ Footer général ------------------ */
+.footer-social .social-link {
+  font-size: 1.6rem; /* Taille des icônes (≈26px) */
+  color: #007bff; /* Couleur des icônes */
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Espacement automatique via gap dans le parent */
+.footer-social {
+  gap: 20px;
+}
+
+/* Effet au survol */
+.footer-social .social-link:hover {
+  transform: translateY(-4px);
+  color: #ffffff;
+}
+
 .footer-modern {
-  background-color: #1a1a1a;
-  color: #ffffffcc;
+  background-color: #000000;
+  color: #ffffff;
   font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
 }
 
 .footer-modern a {
-  color: #ffffffcc;
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -284,33 +308,6 @@
   font-size: 0.95rem;
 }
 
-/* ------------------ Réseaux sociaux ------------------ */
-.footer-social a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  margin-right: 8px;
-  border-radius: 50%;
-  background-color: #333;
-  color: #fff;
-  transition: all 0.3s ease;
-  font-size: 1.1rem;
-}
-
-.footer-social a:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-/* Couleurs spécifiques pour chaque réseau social */
-.footer-social a.facebook { background: #3b5998; }
-.footer-social a.instagram { background: #e1306c; }
-.footer-social a.youtube { background: #ff0000; }
-.footer-social a.tiktok { background: #000000; color: #fff; }
-.footer-social a.linkedin { background: #0a66c2; }
-
 /* ------------------ Newsletter ------------------ */
 .footer-modern .newsletter input.form-control {
   border-radius: 50px 0 0 50px;
@@ -336,11 +333,11 @@
 /* ------------------ Mentions légales ------------------ */
 .footer-legal {
   font-size: 0.85rem;
-  color: #ffffff99;
+  color: #ffffff;
 }
 
 .footer-legal a {
-  color: #ffffff99;
+  color: #ffffff;
 }
 
 .footer-legal a:hover {
@@ -720,8 +717,13 @@
 }
 
 /* Délai de 4s pour chaque image */
-.hero-bg-slide:nth-child(2) { animation-delay: 4s; }
-.hero-bg-slide:nth-child(3) { animation-delay: 8s; }
+.hero-bg-slide:nth-child(1) { animation-delay: 4s; }
+.hero-bg-slide:nth-child(2) { animation-delay: 8s; }
+.hero-bg-slide:nth-child(3) { animation-delay: 12s; }
+.hero-bg-slide:nth-child(4) { animation-delay: 15s; }
+.hero-bg-slide:nth-child(5) { animation-delay: 18s; }
+.hero-bg-slide:nth-child(6) { animation-delay: 21s; }
+
 
 @keyframes slideAnimation {
   0% { opacity: 0; }

@@ -30,11 +30,11 @@
 <body>
   <!-- ======= NAVBAR ======= -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-    <div class="container d-flex align-items-center justify-content-between py-2">
+    <div class="container d-flex align-items-center justify-content-between ">
       <!-- Logo + texte défilant -->
       <div class="d-flex align-items-center">
-        <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="../index.html">
-          <img src="../assets/img/firstlogo.png" alt="Logo First Media" class="logo-img me-2">
+        <a class="navbar-brand d-flex align-items-center fw-bold text-dark py-0" href="../index.html">
+          <img src="../assets/img/firstlogo.png" alt="Logo First Media" class="logo-img " style="height:70px; width:auto;">
         </a>
         <div class="animated-text ms-3 d-none d-md-block">
           <span class="defilement text-primary fw-semibold">
@@ -188,7 +188,7 @@
             <div class="icon-wrapper bg-info text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
               <i class="bi bi-globe fs-1"></i>
             </div>
-            <h5 class="fw-bold mb-3">Communication Globale</h5>
+            <h5 class="fw-bold mb-3">Communication Globale 360</h5>
             <p>Une stratégie complète alliant communication interne, externe et institutionnelle pour plus d’impact.</p>
             <ul class="text-start small list-unstyled mt-3">
               <li>💬 Relations presse et médias</li>
@@ -204,7 +204,7 @@
             <div class="icon-wrapper bg-danger text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
               <i class="bi bi-building fs-1"></i>
             </div>
-            <h5 class="fw-bold mb-3">Communication d’Entreprise</h5>
+            <h5 class="fw-bold mb-3">Communication d’Entreprise </h5>
             <p>Renforcez votre image, vos valeurs et votre notoriété auprès de vos collaborateurs et clients.</p>
             <ul class="text-start small list-unstyled mt-3">
               <li>🏢 Identité de marque</li>
@@ -220,7 +220,7 @@
             <div class="icon-wrapper bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4">
               <i class="bi bi-lightbulb fs-1"></i>
             </div>
-            <h5 class="fw-bold mb-3">Communication Stratégique</h5>
+            <h5 class="fw-bold mb-3">Regis </h5>
             <p>Concevez et pilotez une stratégie claire pour accroître votre influence et atteindre vos objectifs.</p>
             <ul class="text-start small list-unstyled mt-3">
               <li>🧠 Audit et conseil stratégique</li>
@@ -420,46 +420,55 @@
   </section>
   <br><br>
   <!-- ======= Footer ======= -->
-  <footer class="footer-modern bg-dark w-100 text-white-50">
+  <footer class="footer-modern bg-dark w-100 text-white">
       <div class="container pt-5">
           <!-- Contenu principal du footer centré -->
           <div class="row g-4 justify-content-center text-center">
 
               <!-- Section Logo -->
-              <div class="col-lg-3 col-md-6 mb-4">
-                  <h5 class="text-uppercase text-white mb-4">First Media</h5>
-                  <img src="../assets/img/logoo.png" class="img-fluid bg-light p-2 rounded" alt="Logo First Media" style="max-width: 150px;">
-              </div>
-
-              <!-- Section Coordonnées -->
               <div class="col-lg-4 col-md-6 mb-4">
-                  <h5 class="text-uppercase text-white mb-4">Nous Contacter</h5>
-                  <ul class="list-unstyled contact-info">
-                      <li class="mb-2">
-                          <i class="fas fa-map-marker-alt text-primary me-2"></i>
-                          <span>03 rue Beranger Feraud, CTIC Dakar</span>
-                      </li>
-                      <li class="mb-2">
-                          <i class="fas fa-phone text-primary me-2"></i>
-                          <a href="tel:+221776317892" class="text-white-50 text-decoration-none">+221 77 631 78 92</a>
-                      </li>
-                      <li class="mb-2">
-                          <i class="fas fa-envelope text-primary me-2"></i>
-                          <a href="mailto:firstmediag@gmail.com" class="text-white-50 text-decoration-none">firstmediag@gmail.com</a>
-                      </li>
-                  </ul>
+                  <h5 class="text-uppercase  mb-4">First Media Group</h5>
+                  <img src="../assets/img/logo/fmg_blanc.png"  alt="Logo First Media" style="max-width: 150px;">
               </div>
-
+              <!-- Section Coordonnées -->
+              <div class="col-lg-4 col-md-6 mb-4 text-center"><!-- 🔹 text-center pour centrer tout -->
+                <h5 class="text-uppercase text-white mb-4">Nous Contacter</h5>
+                <ul class="list-unstyled contact-info d-inline-block text-start"><!-- 🔹 d-inline-block pour centrer la liste -->
+                  <li class="mb-3">
+                    <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                    <span>03 rue Beranger Feraud, CTIC Dakar</span>
+                  </li>
+                  <li class="mb-3">
+                    <i class="fas fa-phone text-primary me-2"></i>
+                    <a href="tel:+221776317892" class="text-white text-decoration-none">+221 77 631 78 92</a>
+                  </li>
+                  <li class="mb-3">
+                    <i class="fas fa-envelope text-primary me-2"></i>
+                    <a href="mailto:firstmediag@gmail.com" class="text-white text-decoration-none">firstmediag@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
               <!-- Section Réseaux sociaux & Newsletter -->
               <div class="col-lg-4 col-md-8 mb-4">
                   <h5 class="text-uppercase text-white mb-4">Suivez-nous</h5>
-                  <div class="footer-social mb-4">
-                      <a href="https://www.tiktok.com/@firstmediagroup1?_t=ZM-8ycjPuJ7uA2&_r=1" target="_blank" class="social-link tiktok"><i class="fab fa-tiktok"></i></a>
-                      <a href="https://www.facebook.com/share/1BxVquMz8N/" target="_blank" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
-                      <a href="https://www.youtube.com/@firstmediagroup5105" target="_blank" class="social-link youtube"><i class="fab fa-youtube"></i></a>
-                      <a href="https://www.instagram.com/firstmediagroupdakar?igsh=MWs4NjRmMjZlb2I5NQ==" class="social-link instagram"><i class="fab fa-instagram"></i></a>
-                      <a href="https://www.linkedin.com/in/firstmediagroupofficiel/" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
-                  </div>
+              <div class="footer-social mb-4 text-center">
+                <a href="https://www.tiktok.com/@firstmediagroup1?_t=ZM-8ycjPuJ7uA2&_r=1" target="_blank" class="social-link tiktok">
+                  <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1BxVquMz8N/" target="_blank" class="social-link facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/@firstmediagroup5105" target="_blank" class="social-link youtube">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/firstmediagroupdakar?igsh=MWs4NjRmMjZlb2I5NQ==" target="_blank" class="social-link instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/firstmediagroupofficiel/" target="_blank" class="social-link linkedin">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+
                   
                   <div class="newsletter">
                       <h6 class="text-white mb-3">Abonnez-vous à notre newsletter</h6>
@@ -483,9 +492,9 @@
                           &copy; <span class="current-year"></span> FIRST MEDIA Group — Tous droits réservés.
                       </p>
                       <div class="legal-links">
-                          <a href="#" class="text-white-50 me-3">Mentions légales</a>
-                          <a href="#" class="text-white-50 me-3">Conditions</a>
-                          <a href="#" class="text-white-50">Confidentialité</a>
+                          <a href="#" class="text-white me-3">Mentions légales</a>
+                          <a href="#" class="text-white me-3">Conditions</a>
+                          <a href="#" class="text-white">Confidentialité</a>
                       </div>
                   </div>
               </div>

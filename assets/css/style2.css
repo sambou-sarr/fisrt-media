@@ -14,19 +14,6 @@
 }
 
 
-/* Reset et base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    font-family: 'Open Sans', sans-serif;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-
 /* Sections */
 .section {
     padding: 80px 0;
@@ -336,20 +323,6 @@ body, html {
     }
 }
 
-/* Navbar toggler custom */
-.navbar-toggler {
-    border: none;
-    padding: 0.25rem 0.5rem;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
 /* Amélioration des gaps et espacements */
 .d-flex.gap-3 {
     gap: 1rem !important;
@@ -387,26 +360,6 @@ body, html {
 @keyframes shine {
     0% { background-position: 200% center; }
     100% { background-position: -200% center; }
-}
-
-/* Style général des liens */
-.navbar-nav .nav-link {
-  color: #000; /* texte par défaut */
-  transition: color 0.3s, background-color 0.3s;
-}
-
-/* Style au survol */
-.navbar-nav .nav-link:hover {
-  color: #007bff; /* bleu Bootstrap */
-  text-decoration: underline;
-}
-
-/* Style du lien actif */
-.navbar-nav .nav-link.active {
-  color: #007bff;          /* bleu pour le lien actif */
-  font-weight: 600;        /* texte légèrement plus gras */
-  border-bottom: 3px solid #007bff; /* soulignement */
-  border-radius: 2px;
 }
 
 

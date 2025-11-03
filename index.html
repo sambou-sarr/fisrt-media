@@ -32,11 +32,11 @@
   <body>
     <!-- ================== NAVBAR ================== -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-      <div class="container d-flex align-items-center justify-content-between py-2">
+      <div class="container d-flex align-items-center justify-content-between ">
         <!-- Logo + texte défilant -->
         <div class="d-flex align-items-center">
-          <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="index.html">
-            <img src="assets/img/firstlogo.png" alt="Logo First Media" class="logo-img me-2">
+          <a class="navbar-brand d-flex align-items-center fw-bold text-dark py-0" href="index.html">
+            <img src="assets/img/firstlogo.png" alt="Logo First Media" class="logo-img " style="height:70px; width:auto;">
           </a>
           <div class="animated-text ms-3 d-none d-md-block">
             <span class="defilement text-primary fw-semibold">
@@ -44,20 +44,23 @@
             </span>
           </div>
         </div>
+
         <!-- Bouton hamburger -->
         <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <!-- Menu principal -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item"><a class="nav-link active" href="../index.html">Accueil</a></li>
             <li class="nav-item"><a class="nav-link" href="pages/a_propos.html">À propos</a></li>
+
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="emissionsDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Émissions</a>
+              <a class="nav-link dropdown-toggle" href="#" id="emissionsDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Émissions</a>
               <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="emissionsDropdown">
                 <li><a class="dropdown-item" href="emissions/debattons.html">Débattons</a></li>
                 <li><a class="dropdown-item" href="emissions/epelle-moi.html">Épelle-Moi</a></li>
@@ -99,50 +102,47 @@
         </a>
       </div>
       <!-- Images de fond -->
-      <div class="hero-bg-slide" style="background-image: url('assets/img/pexels-23515909-6664782.jpg');"></div>
-      <div class="hero-bg-slide" style="background-image: url('assets/img/bureaufirstmedia.png');"></div>
-      <div class="hero-bg-slide" style="background-image: url('assets/img/hero/studioMedia.png');"></div>
+      <div class="hero-bg-slide" style="background-image: url('assets/img/gallerie/gallerielycee/FILE4011.jpg');"></div>
+      <div class="hero-bg-slide" style="background-image: url('assets/img/gallerie/gallerie16.jpg');"></div>
+      <div class="hero-bg-slide" style="background-image: url('assets/img/postbac1.jpg');"></div>
+      <div class="hero-bg-slide" style="background-image: url('assets/img/gallerie/gallerielycee/FILE3972.jpg');"></div>
+      <div class="hero-bg-slide" style="background-image: url('assets/img/gallerie/gallerielycee/FILE4052.jpg');"></div>
+      <div class="hero-bg-slide" style="background-image: url('assets/img/debat.jpg');"></div>
     </section>
     <main id="main">
       <section id="about-home" class="py-5 bg-light">
         <div class="container" data-aos="fade-up">
           <!-- Titre principal -->
-          <div class="section-title text-center mb-5">
-            <h2>À propos de First Media Group</h2>
-            <p class="lead text-muted mx-auto" style="max-width: 700px;">
-              First Media Group est une agence audiovisuelle sénégalaise spécialisée dans la création de contenus éducatifs 
-              .Nous donnons vie à vos idées grâce à des vidéos, des photos et des productions 
-              sonores de haute qualité. Nous mettons la technologie au service de votre communication pour captiver 
-              votre audience et valoriser votre image.
-            </p>
-          </div>
           <div class="row align-items-center">
             <!-- Image -->
             <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
               <img src="assets/img/bureaufirstmedia.png" class="img-fluid rounded shadow-sm" alt="Équipe First Media Group">
             </div>
-
             <!-- Contenu -->
             <div class="col-lg-6" data-aos="fade-left">
-              <h3 class="mb-3">Notre mission</h3>
-              <p>Valoriser vos idées à travers des contenus visuels et sonores de qualité, qui captivent, éduquent et inspirent votre audience.</p>
-              <ul class="list-unstyled">
-                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Production audiovisuelle HD et 4K</li>
-                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Réalisation de documentaires et spots publicitaires</li>
-                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Captation et montage vidéo pour événements</li>
-                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Communication digitale et stratégie de contenus</li>
-                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Communication global et gestion des organisation </li>
-                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Communication  d'entreprise</li>
-                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Communication strategie et  marketing politique </li>
-              </ul>
-              <a href="pages/a_propos.html" class="btn btn-primary mt-3 rounded-pill px-4 py-2 shadow-sm">
+            <div class="section-title text-center mb-5">
+                <h3>À propos de First Media Group</h3>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">
+                  First Media Group est la première structure de 
+                  communication audiovisuelle sénégalaise Specialisée 
+                  dans création de contenus innovants et à fort impact social.
+                </p>
+            </div>
+            <div class="section-title text-center mb-5">
+                <h3 class="mb-3">Notre mission</h3>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">
+                    Valoriser vos idées à travers des contenus visuels et sonores de qualité, qui captivent, éduquent et inspirent votre audience.
+                    Nous appliquons des règles strictes, de la conception à la diffusion, et mettons en place un suivi personnalisé pour chaque projet en ayant comme centre de notre processus la <strong>créativité</strong>.
+                </p>
+                <a href="pages/a_propos.html" class="btn btn-primary mt-3 rounded-pill px-4 py-2 shadow-sm">
                 En savoir plus
               </a>
+            </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="about" class="about" style="margin-top: -70px;">
+      <section id="about" class="about" >
         <div class="container">
           <!-- Titre principal -->
           <div class="section-title">
@@ -176,21 +176,21 @@
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
                   <div class="service-box bg-white rounded-4 shadow-sm p-4 hover-up">
                     <i class="bi bi-globe fs-1 text-primary mb-3"></i>
-                    <h5 class="fw-bold mb-2">Communication à 360</h5>
+                    <h5 class="fw-bold mb-2">Communication global 360°</h5>
                     <p class="text-muted small">Planification et gestion de la communication interne et externe des organisations.</p>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
                   <div class="service-box bg-white rounded-4 shadow-sm p-4 hover-up">
                     <i class="bi bi-building fs-1 text-primary mb-3"></i>
-                    <h5 class="fw-bold mb-2">Communication d’Entreprise</h5>
+                    <h5 class="fw-bold mb-2">Communication d’Entreprise et gestion des organisations </h5>
                     <p class="text-muted small">Valorisez votre identité, vos valeurs et votre image auprès de vos partenaires et clients.</p>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
                   <div class="service-box bg-white rounded-4 shadow-sm p-4 hover-up">
                     <i class="bi bi-lightbulb fs-1 text-primary mb-3"></i>
-                    <h5 class="fw-bold mb-2">Communication Stratégique</h5>
+                    <h5 class="fw-bold mb-2">Régis commercial</h5>
                     <p class="text-muted small">Définissez et pilotez une stratégie claire pour renforcer votre notoriété et votre impact.</p>
                   </div>
                 </div>
@@ -269,7 +269,7 @@
                 <i class="bi bi-broadcast-pin"></i> 
                 <i class="bi bi-plus text-dark"></i>
                 <span data-purecounter-start="0" data-purecounter-end="1500000" data-purecounter-duration="1"  class="purecounter"></span> 
-                <p><strong>Téléspectateurs & Auditeurs</strong> directement affectés</p> 
+                <p><strong>Téléspectateurs & Auditeurs</strong> directement impactés</p> 
               </div> 
             </div> 
           </div>
@@ -325,14 +325,14 @@
                 <img src="assets/img/diwanebi/Logo-Diwane-BIi.png" alt="Diwane Bi" class="emission-logo me-3">
                 <div>
                   <h5 class="fw-bold mb-1">Diwane Bi</h5>
-                  <p><em>Compétition de dames, de scrabble et de cuisine dédiée au troisième âge.</em></p>
+                  <p><em>Compétition de jeu de  dames, de scrabble et de cuisine dédiée au troisième âge.</em></p>
                 </div>
               </div>
               <div class="emission-item d-flex align-items-start">
                 <img src="assets/img/spi/SUR-LES-PAS-DES-INSTITUTIONS-removebg-preview.png" alt="Sur les Pas des Institutions" class="emission-logo me-3">
                 <div>
                   <h5 class="fw-bold mb-1">Sur les Pas des Institutions</h5>
-                  <p><em>Documentaire sur les institutions sénégalaises et leur rôle.</em></p>
+                  <p><em>Documentaire institutionel sénégalaises et leur rôle.</em></p>
                 </div>
               </div>
             </div>
@@ -392,8 +392,8 @@
             <h2 class="fw-bold display-5 text-primary mb-3">🎯 ZERO FAUTE</h2>
             <p class="lead text-muted mx-auto" style="max-width: 750px;">
                 <strong>Zéro Faute</strong>, le jeu éducatif révolutionnaire conçu par First Media Group , 
-                transforme l’apprentissage des langues française, 
-                anglaise et arabe en une expérience ludique, interactive et motivante.
+                transforme l’apprentissage de la langue, 
+                anglaise et arabe en une expérience ludique, interactive et inovante.
             </p>
           </div>
 
@@ -434,7 +434,7 @@
                   <div class="feature-card">
                     <i class="fas fa-user-graduate text-primary fs-2 mb-2"></i>
                     <h6>Public</h6>
-                    <p>Élèves & étudiants</p>
+                    <p>Tout public (de 7 à X année )</p>
                   </div>
                 </div>
 
@@ -458,7 +458,7 @@
                   <div class="feature-card">
                     <i class="fas fa-chart-line text-success fs-2 mb-2"></i>
                     <h6>Résultats</h6>
-                    <p>Amélioration garantie</p>
+                    <p>Disponible dans plusieurs langue et thèmes </p>
                   </div>
                 </div>
 
@@ -566,48 +566,56 @@
           </div>
       </section>
     </main>
-    <br><br>
     <!-- ======= Footer ======= -->
-    <footer class="footer-modern bg-dark w-100 text-white-50">
+    <footer class="footer-modern bg-dark w-100 text-white">
         <div class="container pt-5">
             <!-- Contenu principal du footer centré -->
             <div class="row g-4 justify-content-center text-center">
 
                 <!-- Section Logo -->
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <h5 class="text-uppercase text-white mb-4">First Media Group</h5>
-                    <img src="assets/img/logoo.png" class="img-fluid bg-light p-2 rounded" alt="Logo First Media" style="max-width: 150px;">
+                    <h5 class="text-uppercase  mb-4">First Media Group</h5>
+                    <img src="assets/img/logo/fmg_blanc.png"  alt="Logo First Media" style="max-width: 150px;">
                 </div>
-
                 <!-- Section Coordonnées -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <h5 class="text-uppercase text-white mb-4">Nous Contacter</h5>
-                    <ul class="list-unstyled contact-info">
-                        <li class="mb-2">
-                            <i class="fas fa-map-marker-alt text-primary me-2"></i>
-                            <span>03 rue Beranger Feraud, CTIC Dakar</span>
-                        </li>
-                        <li class="mb-2">
-                            <i class="fas fa-phone text-primary me-2"></i>
-                            <a href="tel:+221776317892" class="text-white-50 text-decoration-none">+221 77 631 78 92</a>
-                        </li>
-                        <li class="mb-2">
-                            <i class="fas fa-envelope text-primary me-2"></i>
-                            <a href="mailto:firstmediag@gmail.com" class="text-white-50 text-decoration-none">firstmediag@gmail.com</a>
-                        </li>
-                    </ul>
+                <div class="col-lg-4 col-md-6 mb-4 text-center"><!-- 🔹 text-center pour centrer tout -->
+                  <h5 class="text-uppercase text-white mb-4">Nous Contacter</h5>
+                  <ul class="list-unstyled contact-info d-inline-block text-start"><!-- 🔹 d-inline-block pour centrer la liste -->
+                    <li class="mb-3">
+                      <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                      <span>03 rue Beranger Feraud, CTIC Dakar</span>
+                    </li>
+                    <li class="mb-3">
+                      <i class="fas fa-phone text-primary me-2"></i>
+                      <a href="tel:+221776317892" class="text-white text-decoration-none">+221 77 631 78 92</a>
+                    </li>
+                    <li class="mb-3">
+                      <i class="fas fa-envelope text-primary me-2"></i>
+                      <a href="mailto:firstmediag@gmail.com" class="text-white text-decoration-none">firstmediag@gmail.com</a>
+                    </li>
+                  </ul>
                 </div>
-
                 <!-- Section Réseaux sociaux & Newsletter -->
                 <div class="col-lg-4 col-md-8 mb-4">
                     <h5 class="text-uppercase text-white mb-4">Suivez-nous</h5>
-                    <div class="footer-social mb-4">
-                        <a href="https://www.tiktok.com/@firstmediagroup1?_t=ZM-8ycjPuJ7uA2&_r=1" target="_blank" class="social-link tiktok"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://www.facebook.com/share/1BxVquMz8N/" target="_blank" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.youtube.com/@firstmediagroup5105" target="_blank" class="social-link youtube"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/firstmediagroupdakar?igsh=MWs4NjRmMjZlb2I5NQ==" class="social-link instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/firstmediagroupofficiel/" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                <div class="footer-social mb-4 text-center">
+                  <a href="https://www.tiktok.com/@firstmediagroup1?_t=ZM-8ycjPuJ7uA2&_r=1" target="_blank" class="social-link tiktok">
+                    <i class="fab fa-tiktok"></i>
+                  </a>
+                  <a href="https://www.facebook.com/share/1BxVquMz8N/" target="_blank" class="social-link facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.youtube.com/@firstmediagroup5105" target="_blank" class="social-link youtube">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="https://www.instagram.com/firstmediagroupdakar?igsh=MWs4NjRmMjZlb2I5NQ==" target="_blank" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/firstmediagroupofficiel/" target="_blank" class="social-link linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+
                     
                     <div class="newsletter">
                         <h6 class="text-white mb-3">Abonnez-vous à notre newsletter</h6>
@@ -631,9 +639,9 @@
                             &copy; <span class="current-year"></span> FIRST MEDIA Group — Tous droits réservés.
                         </p>
                         <div class="legal-links">
-                            <a href="#" class="text-white-50 me-3">Mentions légales</a>
-                            <a href="#" class="text-white-50 me-3">Conditions</a>
-                            <a href="#" class="text-white-50">Confidentialité</a>
+                            <a href="#" class="text-white me-3">Mentions légales</a>
+                            <a href="#" class="text-white me-3">Conditions</a>
+                            <a href="#" class="text-white">Confidentialité</a>
                         </div>
                     </div>
                 </div>
